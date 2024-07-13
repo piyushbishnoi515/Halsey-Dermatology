@@ -8,7 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <style>
-
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -81,27 +85,27 @@
 
 
                         <select
-                            class=" w-full border border-grey-100 py-3 px-3 opacity-70 font-archivo lg:mt-4 mt-3 cursor-pointer"
+                            class=" w-full border border-grey-100 py-3 px-3 opacity-70 font-archivo lg:mt-4 mt-3 cursor-pointer outline-none"
                             required>
                             <option value="Phone Call">Phone Call</option>
                             <option value="Secure Message">Secure Message</option>
                         </select>
 
                         <input type="number" placeholder=" Phone No"
-                            class=" w-full border border-grey-100 font-archivo opacity-70 py-3 px-3 lg:mt-4 mt-3  outline-none"
-                            required>
+                            class=" w-full border border-grey-100 font-archivo opacity-70 py-3 px-3 lg:mt-4 mt-3  outline-none inputNumber"
+                            required min="0">
 
                         <select
-                            class=" w-full border border-grey-100 py-3 px-3 opacity-70 font-archivo lg:mt-4 mt-3 cursor-pointer"
+                            class=" w-full border border-grey-100 py-3 px-3 opacity-70 font-archivo lg:mt-4 mt-3 cursor-pointer outline-none"
                             required>
                             <option value="Appointment">Appointment</option>
                             <option value="More Information">More Information</option>
                         </select>
 
-                        <textarea placeholder="Comments/Information Requested"
-                            class="w-full border border-grey-100 font-archivo opacity-70 py-3 px-3 lg:mt-4 mt-3 resize-none text-black"
-                            cols="5">
-                    </textarea>
+
+                        <textarea name="" cols="5"
+                            class="w-full border border-grey-100 font-archivo opacity-70 py-3 px-3 lg:mt-4 mt-3 resize-none text-black outline-none placeholder:text-black"
+                            placeholder="Comments/Information Requested" id=""></textarea>
                         <div class=" flex items-start leading-[21px] py-2 pl-4 bg-green-50  gap-2 lg:mt-7 md:mt-5 mt-4">
                             <div
                                 class="checkBox max-w-5 h-5 border-2 border-green rounded-sm  labelCheck mt-1 flex w-full">
@@ -154,7 +158,8 @@
                     checkImg.style.display = "none";
                 }
             });
-        })
+        });
+
     </script>
 
 
