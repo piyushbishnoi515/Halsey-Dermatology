@@ -553,3 +553,123 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.relative {
+  position: relative;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
+.w-\[60px\] {
+  width: 60px;
+}
+
+.max-w-\[1140px\] {
+  max-width: 1140px;
+}
+
+.max-w-\[364px\] {
+  max-width: 364px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-\[15px\] {
+  gap: 15px;
+}
+
+.bg-red-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 146 119 / var(--tw-bg-opacity));
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-Kaushan {
+  font-family:  "Kaushan Script", cursive;
+}
+
+.font-Archivo {
+  font-family: "Archivo", sans-serif;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-\[\] {
+  line-height: ;
+}
+
+.leading-\[46px\] {
+  line-height: 46px;
+}
+
+.leading-\[62px\] {
+  line-height: 62px;
+}
+
+.text-green {
+  --tw-text-opacity: 1;
+  color: rgb(110 146 119 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
