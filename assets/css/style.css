@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
 
-.h-323 {
-    height: 323px;
-}
-
-.Message {
-    width: 170px;
-    height: 50px;
-    background: #FFFFFF;
-    padding: 15px 25px 15px 25px;
-    border: 0.8px solid #FFFFFF;
-}
-
-.Patient {
-    width: 199px;
-    height: 50px;
-    background: #FFFFFF1A;
-    border: 1px solid #FFFFFF;
-    padding: 15px 25px 15px 25px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

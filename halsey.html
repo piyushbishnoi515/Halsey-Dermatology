@@ -4,28 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>halsey</title>
+    <title>Halsey Dermatology</title>
     <link rel="stylesheet" href="./src/input.css">
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <style>
+        .Message {
+            width: 170px;
+            height: 50px;
+            background: #FFFFFF;
+            padding: 15px 25px 15px 25px;
+            border: 0.8px solid #FFFFFF;
+        }
+
+        .Patient {
+            width: 199px;
+            height: 50px;
+            background: #FFFFFF1A;
+            border: 1px solid #FFFFFF;
+            padding: 15px 25px 15px 25px;
+        }
+
+        .white_shadow:hover {
+            box-shadow: 0 0 10px #ffffff;
+        }
+    </style>
     <section class="bg-green h-auto py-5">
-        <div class="container">
+        <div class="container mx-auto my-auto">
             <div class="flex items-center justify-center text-center gap-4">
                 <span><svg width="60" height="3" viewBox="0 0 60 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="60" height="2" fill="white" />
                     </svg></span>
-                <h3 class="text-white text-[32px] font-Kaushan">Halsey Dermatology</h3>
+                <p class="text-white text-[32px] xs:text-sm font-normal font-Kaushan">Halsey Dermatology</p>
                 <span><svg width="60" height="3" viewBox="0 0 60 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="60" height="2" fill="white" />
                     </svg></span>
             </div>
-            <p class="text-white text-center text-[48px] font-Archivo">Portal & Messaging</p>
+            <p class="text-white text-center text-[48px] sm-text-35 font-semibold font-Archivo">Portal & Messaging</p>
             <div class="flex items-center justify-center flex-wrap gap-5 mt-10">
-                <button class="Message text-[#6E9277] font-Archivo">Message us</button>
-                <button class="Patient text-white font-Archivo">Patient portal</button>
+                <button
+                    class="Message text-[18px] font-medium text-[#6E9277] font-Archivo white_shadow">Message&nbsp;us</button>
+                <button
+                    class="Patient text-[18px] font-medium text-white font-Archivo white_shadow">Patient&nbsp;portal</button>
             </div>
         </div>
     </section>
