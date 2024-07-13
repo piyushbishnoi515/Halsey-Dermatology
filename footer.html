@@ -32,6 +32,8 @@
               darkBlack: "#001008",
               inputCreamy: "#DED9CC",
               borderGrey: "#CDC9C0",
+              lightWhite: "#B5BBB7",
+              borderWhite:"#BABFBA",
             },
             fontFamily: {
               archivo: '"Archivo", sans-serif',
@@ -45,9 +47,139 @@
 
   <body>
     <!-- ==========nav-bar========= -->
-     <header>
-      
-     </header>
+    <header class="bg-black">
+      <div class="container mx-auto px-3">
+        <nav class="h-[80px] flex items-center justify-between">
+          <a href="">
+            <img
+              class="max-w-[201px]"
+              src="./assets/image/png/hero-logo.png"
+              alt="hero-logo"
+          /></a>
+          <ul class="flex gap-9">
+            <li class="relative inline-block group">
+              <a
+                href=""
+                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5"
+                >Treatments
+                <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M6 8.5L10 12.5L14 8.5"
+                    stroke="white"
+                    stroke-opacity="0.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="dropdown"
+                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-white rounded-sm"
+              >
+                <span
+                  class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                  >Treatments1
+                </span>
+                <span
+                  class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                  >Treatments1
+                </span>
+              </a>
+            </li>
+              <li class="relative inline-block group">
+              <a
+                href=""
+                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5"
+                >Skin Concerns
+                <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M6 8.5L10 12.5L14 8.5"
+                    stroke="white"
+                    stroke-opacity="0.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="dropdown"
+                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-white rounded-sm"
+              >
+                <span
+                  class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                  >care1
+                </span>
+                <span
+                  class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                  >care2
+                </span>
+              </a>
+            </li>
+              <li class="relative inline-block group">
+              <a
+                href=""
+                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5"
+                >Devices
+                <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M6 8.5L10 12.5L14 8.5"
+                    stroke="white"
+                    stroke-opacity="0.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="dropdown"
+                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-white rounded-sm"
+              >
+                <span
+                  class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                  >device1
+                </span>
+                <span
+                  class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                  >device2
+                </span>
+              </a>
+            </li>
+         
+          </ul>
+          <button class="font-archivo font-[300] text-base leading-4 text-white border border-borderWhite py-4 px-6 hover:bg-green hover:border-green">Book Now</button>
+        </nav>
+      </div>
+    </header>
     <!-- ======footer========= -->
     <footer class="bg-darkwhite lg:pt-20 pt-10">
       <div class="container mx-auto px-3">
@@ -212,6 +344,5 @@
         Content © 2024 Sagaponack Medical PC dba Halsey Dermatology
       </p>
     </footer>
-
   </body>
 </html>
