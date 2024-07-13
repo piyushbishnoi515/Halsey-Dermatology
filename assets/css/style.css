@@ -1,23 +1,16 @@
 :root {
     /* ===font-size== */
-    --fs-xm: 14px;
+
+    /* --fs-xm: 14px; */
     --fs-sm: 16px;
-    --fs-md: 18px;
+    /* --fs-md: 18px; */
     --fs-base: 20px;
     --fs-lg: 24px;
-    --fs-xl: 25px;
-    --fs-2x1: 28px;
+    /* --fs-xl: 25px; */
+    /* --fs-2x1: 28px; */
     --fs-3x1: 32px;
     --fs-4x1: 48px;
-    --fs-5x1: 58px;
+    /* --fs-5x1: 58px; */
     /* =====color==== */
-    --color-gray: #B9BBBB;
-    --color-green: #6E9277;
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-lite-gray: #F5F8F6;
-    --color-gray2: #4D5852;
-    --color-lite-black: #4D5852;
-    --color-darkgreen: #48524A;
-    --color-darkwhite: #F1EDE2;
+  
 }
