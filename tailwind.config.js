@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*/.{html,js}", "./index.html"],
+  content: ["./**/*.{html,js}",],
   theme: {
     fontSize: {
       "sm": "16px",
@@ -37,4 +37,3 @@ module.exports = {
     plugins: [],
   }
 }
-
