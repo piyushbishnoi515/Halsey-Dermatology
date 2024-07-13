@@ -1,51 +1,107 @@
-<!DOCTYPE html>
 <!doctype html>
-    <html>
+<html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontSize: {
-                            "sm": "16px",
-                            "md": "18px",
-                            "xl": "25px",
-                            "2x1": "28px",
-                            "3x1": "58px",
-                        },
-                        colors: {
-                            gray: "#B9BBBB",
-                            green: "#6E9277",
-                            black: "#000000",
-                            white: "#ffffff",
-                            lite_gray: "#F5F8F6",
-                            gray2: "#4D5852",
-                            liteblack: "#4D5852",
-                            darkgreen: "#48524A",
-                            darkwhite: "#F1EDE2",
-                            clifford: '#da373d',
-                        },
-                        fontFamily: {
-                            archivo: '"Archivo", sans-serif',
-                            kaushan: ' "Kaushan Script", cursive',
-                        },
-                    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                        "32":"32px",
+                        "25":"25px"
+                    },
+                    colors: {
+                        gray: "#B9BBBB",
+                        shadeBlack: "#0000001A",
+                        green: "#6E9277",
+                        black: "#000000",
+                        white: "#ffffff",
+                        lite_gray: "#F5F8F6",
+                        gray2: "#4D5852",
+                        liteblack: "#4D5852",
+                        darkgreen: "#48524A",
+                        darkwhite: "#F1EDE2",
+                        clifford: '#da373d',
+                        black2: "#001008"
+                    },
+                    fontFamily: {
+                        archivo: '"archivo", sans-serif',
+                        kaushan: ' "Kaushan Script", cursive',
+                    },
                 }
             }
-        </script>
-    </head>
+        }
+    </script>
+</head>
 
-    <body>
-     <section>
-        <div class="">
-            <h1 class=" max "> hello</h1>
+<body>
+    <section>
+        <div class="max-w-[1164px] px-3 mx-auto pt-28">
+            <div class=" flex item-center justify-center">
+                <h4
+                    class=" text-center text-[28px] md:text-[32px] leading-[46.4px] font-kaushan text-green inline-block relative after:absolute sm:after:w-[60px] after:h-[2px] after:bg-green after:top-[50%] after:right-[-23%] before:absolute sm:before:w-[60px] before:h-[2px] before:bg-green before:top-[50%] before:left-[-22%]">
+                    Hundreds of 5 star reviews</h4>
+            </div>
+            <h2 class=" text-5xl text-center font-semibold font-archivo text-black2 leading-[62.4px]">We are grateful
+                for our patients</h2>
+            <p class=" text-xl">1500+ five star reviews</p>
+            <div class=""></div>
         </div>
-     </section>
-    </body>
+    </section>
+    <section>
+        <div class=" max-w-[1164px] px-3 mx-auto">
+            <div class=" flex  flex-col px-5 md:px-10 bg-lite_gray py-10 z-10">
+                <div class=" flex items-center justify-center">
+                    <h4
+                        class=" text-center text-[28px] md:text-[32px] leading-[46.4px] font-kaushan text-green inline-block relative after:absolute sm:after:w-[60px] after:h-[2px] after:bg-green after:top-[50%] after:right-[-23%] before:absolute sm:before:w-[60px] before:h-[2px] before:bg-green before:top-[50%] before:left-[-22%]">
+                        Cutting Edge Technology</h4>
 
-    </html>
+                </div>
+                <h2
+                    class=" max-w-[800px] text-center text-[38px] md:text-5xl leading-[48px] md:leading-[62.4px] font-archivo font-semibold mx-auto pt-[10px] pb-8 md:pb-14 mb-1">
+                    Devices and Treatments to meet your needs</h2>
+                <div class=" flex gap-8 md:gap-10 flex-col md:flex-row justify-center items-center">
+
+                    <div class=" bg-white border-[1px] border-shadeBlack max-w-[510px] xl:min-h-[627px]">
+                        <img src="./assets/image/webp/Devices.png" alt="Devices" class=" w-full" />
+                        <div class="p-6 sm:p-[30px]">
+                            <p class=" font-archivo text-[25px] leading-8 text-custom-black font-semibold">Devices</p>
+                            <p class=" text-base font-archivo font-normal leading-6 pt-[16.3px] pb-6 sm:pb-[27.2px]">Our
+                                state-of-the-art devices are designed to target a variety of skin concerns with
+                                precision and efficacy.</p>
+                            <button
+                                class=" max-w-[156.5px] w-full min-h-[52.7px] bg-green text-white text-[18px] leading-5 font-semibold">Our
+                                Devices</button>
+                        </div>
+                    </div>
+                    <div class=" bg-white border-[1px] border-shadeBlack max-w-[510px] xl:min-h-[627px]">
+                        <img src="./assets/image/webp/Treatments.png" alt="Devices" class=" w-full" />
+                        <div class="p-6 sm:p-[30px]">
+                            <p class=" font-archivo text-[25px] leading-8 text-custom-black font-semibold">Treatments
+                            </p>
+                            <p class=" text-base font-archivo font-normal leading-6 pt-[16.3px] pb-6 sm:pb-[27.2px]">At
+                                Halsey Dermatology, we offer a comprehensive range of treatments to address your unique
+                                skin care needs.</p>
+                            <button
+                                class="max-w-[182.5px] w-full min-h-[52.7px] bg-green text-white text-[18px] leading-5 font-semibold">Our
+                                Treatments</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
