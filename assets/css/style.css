@@ -1,16 +1,1 @@
-:root {
-    /* ===font-size== */
-
-    /* --fs-xm: 14px; */
-    --fs-sm: 16px;
-    /* --fs-md: 18px; */
-    --fs-base: 20px;
-    --fs-lg: 24px;
-    /* --fs-xl: 25px; */
-    /* --fs-2x1: 28px; */
-    --fs-3x1: 32px;
-    --fs-4x1: 48px;
-    /* --fs-5x1: 58px; */
-    /* =====color==== */
-  
-}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');

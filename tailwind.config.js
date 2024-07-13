@@ -20,6 +20,18 @@ module.exports = {
         "liteblack": "#4D5852",
         "darkgreen": "#48524A",
         "darkwhite": "#F1EDE2"
+      },
+      fontFamily: {
+        "Archivo": '"Archivo", sans-serif',
+        "Kaushan": ' "Kaushan Script", cursive',
+      },
+      screens: {
+        "sm": "576px",
+        "md": "768px",
+        "lg": "992px",
+        "xl": "1200px",
+        "2xl": "1440px",
+        "3xl": "1920px",
       }
     },
     plugins: [],
