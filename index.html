@@ -1,50 +1,75 @@
 <!DOCTYPE html>
 <!doctype html>
-    <html>
+<html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontSize: {
-                            "sm": "16px",
-                            "base":"32px",
-                            "md": "18px",
-                            "xl": "25px",
-                            "2x1": "28px",
-                            "3x1": "58px",
-                        },
-                        colors: {
-                            gray: "#B9BBBB",
-                            green: "#6E9277",
-                            black: "#000000",
-                            white: "#ffffff",
-                            lite_gray: "#F5F8F6",
-                            gray2: "#4D5852",
-                            liteblack: "#4D5852",
-                            darkgreen: "#48524A",
-                            darkwhite: "#F1EDE2",
-                            clifford: '#da373d',
-                        },
-                        fontFamily: {
-                            archivo: '"Archivo", sans-serif',
-                            kaushan: ' "Kaushan Script", cursive',
-                        },
-                    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                        "sm": "16px",
+                        "base": "32px",
+                        "md": "18px",
+                        "xl": "25px",
+                        "2x1": "28px",
+                        "3x1": "58px",
+                    },
+                    colors: {
+                        gray: "#B9BBBB",
+                        green: "#6E9277",
+                        black: "#000000",
+                        white: "#ffffff",
+                        lite_gray: "#F5F8F6",
+                        gray2: "#4D5852",
+                        liteblack: "#4D5852",
+                        darkgreen: "#48524A",
+                        darkwhite: "#F1EDE2",
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        archivo: '"Archivo", sans-serif',
+                        kaushan: ' "Kaushan Script", cursive',
+                    },
                 }
             }
-        </script>
-    </head>
+        }
+    </script>
+</head>
 
-    <body>
-        <h1 class="text-3xl font-bold underline font-kaushan">
-            Hello world!
-        </h1>
-    </body>
+<body>
+    <!-- =======Expertise====== -->
+    <section class="py-5">
+        <div class="container max-w[1140px] px-3  mx-auto my-5">
+            <div class="row flex flex-row flex-wrap -mx-3">
+                <div class="col-6 w-1/2 px-3 justify-center flex flex-col">
+                    <div class="flex  items-center gap-4 ">
+                        <h1 class="text-base font-normal text-green font-kaushan">Expertise</h1>
+                        <span class="w[60px] h-0.5 bg-green flex w-16"></span>
+                    </div>
+                    <p class="font-semibold text-5xl  line-height[62px] font-archivo text-black my-5">Addressing your <br>
+                        skin concerns</p>
+                    <p class="font-archivo leading-6 font-normal text-gray my-5 max-w-[437px]">Our team has decades of experience in skin
+                        aesthetics and skin disease. From Acne to Wrinkles, learn more about how we
+                        manage even the most challenging skin conditions.</p>
+                    <button
+                        class=" bg-green text-white w-36 min-h-12 font-archivo 	line-height[19px] text-md font-semibold">Learn
+                        More</button>
 
-    </html>
+                </div>
+                <div class="col-6 w-1/2 px-3">
+                  <img src="./assets/image/webp/img-1.png" alt="" class="w-full">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
