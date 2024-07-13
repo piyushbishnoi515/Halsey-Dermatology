@@ -12,6 +12,7 @@
             theme: {
                 extend: {
                     fontSize: {
+                        "xs": "14px",
                         "sm": "16px",
                         "base": "32px",
                         "md": "18px",
@@ -32,7 +33,9 @@
                         clifford: '#da373d',
 
                         // border color light grey
-                        'grey-100': "rgba(0, 16, 8, 0.06)"
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5"
                     },
                     fontFamily: {
                         archivo: '"Archivo", sans-serif',
@@ -83,10 +86,28 @@
                         <option value="audi">More Information</option>
                     </select>
 
-                    <textarea name="" id="" placeholder="Comments/Information Requestedg">
-
+                    <textarea placeholder="Comments/Information Requested"
+                        class="w-full border border-grey-100 font-archivo opacity-70 py-3 pl-3 mt-4 resize-none"
+                        cols="5">
                     </textarea>
-                    <input type="button" value="">
+                    <div class=" flex items-baseline leading-[21px] py-2 pl-4 bg-green-50 gap-2 mt-7">
+                        <input type="checkbox" name="" id="policy">
+                        <label for="policy" class=" font-archivo  font-normal text-xs">"I hereby request to be contacted
+                            for
+                            the purpose
+                            of
+                            obtaining general marketing information
+                            about the devices /
+                            treatments listed above. I acknowledge that this information is not medical advice, and that
+                            any patient-specific advice
+                            or informed consent shall only be obtained at a visit with a qualified professional
+                            (MD/PA-C) on our staff."
+                        </label>
+                    </div>
+
+                    <button
+                        class=" font-archivo font-medium  text-white uppercase max-w-[165px] h-[50px] bg-green w-full mt-10 hover:bg-white hover:bg-white hover:text-green ease-and-out duration-300 border border-green">Contact
+                        Us</button>
                 </form>
             </div>
         </div>
