@@ -11,7 +11,7 @@
         theme: {
           extend: {
             fontSize: {
-            //   sm: "16px",
+              //   sm: "16px",
               md: "18px",
               xl: "25px",
               "2x1": "28px",
@@ -31,7 +31,7 @@
               //   self
               darkBlack: "#001008",
               inputCreamy: "#DED9CC",
-              borderGrey:"#CDC9C0"
+              borderGrey: "#CDC9C0",
             },
             fontFamily: {
               archivo: '"Archivo", sans-serif',
@@ -52,13 +52,14 @@
     <!-- ======footer========= -->
     <footer class="bg-darkwhite lg:pt-20 pt-10">
       <div class="container mx-auto px-3">
-        <div class="flex flex-wrap flex-row mx-[-12px] mb-10">
-          <div class="lg:w-[41.66%] px-[12px] lg:mb-0 mb-6">
-            <img
-              class="max_w_267 lg:mb-12 mb-5"
-              src="./assets/image/png/footer-logo.png"
-              alt="footer-logo"
-            />
+        <div class="flex flex-wrap flex-row mx-[-12px] sm:mb-10 mb-6">
+          <div class="lg:w-[41.66%] px-[12px] lg:mb-0 sm:mb-6 mb-4">
+            <a href="">
+              <img
+                class="max_w_267 lg:mb-12 sm:mb-5 mb-3"
+                src="./assets/image/png/footer-logo.png"
+                alt="footer-logo"
+            /></a>
             <p
               class="font-archivo font-normal text-base leading-6 text-darkgreen underline"
             >
@@ -80,7 +81,7 @@
               <div class="sm:w-[25%] w-[50%] px-[12px]">
                 <ul>
                   <li
-                    class="font-archivo font-semibold text-sm leading-6 text-darkBlack lg:mb-[14px] mb-[5px]"
+                    class="font-archivo font-semibold text-sm leading-6 text-darkBlack lg:mb-[14px] sm:mb-[5px] mb-[2px]"
                   >
                     Quick links
                   </li>
@@ -121,7 +122,7 @@
                   >
                     Links
                   </li>
-                  <li class="lg:mb-[14px] mb-[5px]">
+                  <li class="lg:mb-[14px] sm:mb-[5px] mb-[2px]">
                     <a
                       href=""
                       class="font-archivo font-normal text-sm leading-6 text-darkgreen hover:text-green transition ease-linear duration-300"
@@ -152,7 +153,7 @@
                     class="font-archivo font-normal text-base leading-4 text-darkBlack bg-inputCreamy py-3 px-3 outline-none"
                   />
                   <button
-                    class="font-archivo font-medium text-base lh-4 text-white bg-green px-[25px] py-[11.5px] border-2 border-transparent hover:bg-white hover:text-green hover:border-2 hover:border-green transition ease-linear duration-300"
+                    class="font-archivo font-medium text-base leading-4 text-white bg-green xl:px-[25px] px-[12px] py-[11.5px] border-2 border-transparent hover:bg-white hover:text-green hover:border-2 hover:border-green transition ease-linear duration-300"
                   >
                     Submit
                   </button>
@@ -163,7 +164,10 @@
                   Let’s Connect
                 </p>
                 <div class="flex items-center gap-2">
-                  <div class="w-[30px] h-[30px] rounded-[50%] bg-green flex justify-center items-center"
+                  <a
+                    href="https://www.facebook.com/"
+                    target="blank"
+                    class="w-[30px] h-[30px] rounded-[50%] bg-green flex justify-center items-center hover:bg-darkBlack transition ease-linear duration-300"
                   >
                     <svg
                       width="18"
@@ -177,9 +181,11 @@
                         fill="white"
                       />
                     </svg>
-                  </div>
-                  <div
-                    class="w-[30px] h-[30px] rounded-[50%] bg-green flex justify-center items-center"
+                  </a>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="w-[30px] h-[30px] rounded-[50%] bg-green flex justify-center items-center hover:bg-darkBlack transition ease-linear duration-300"
                   >
                     <svg
                       width="18"
@@ -193,7 +199,7 @@
                         fill="white"
                       />
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -201,7 +207,9 @@
         </div>
       </div>
       <div class="border border-borderGrey"></div>
-      <p class="font-archivo font-normal text-sm leading-4 text-darkBlack py-[22px] text-center">
+      <p
+        class="font-archivo font-normal text-sm leading-4 text-darkBlack sm:py-[22px] py-[17px] text-center"
+      >
         Content © 2024 Sagaponack Medical PC dba Halsey Dermatology
       </p>
     </footer>
