@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+    <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontSize: {
+                            "sm": "16px",
+                            "md": "18px",
+                            "xl": "25px",
+                            "2x1": "28px",
+                            "3x1": "58px",
+                        },
+                        colors: {
+                            gray: "#B9BBBB",
+                            green: "#6E9277",
+                            black: "#000000",
+                            white: "#ffffff",
+                            lite_gray: "#F5F8F6",
+                            gray2: "#4D5852",
+                            liteblack: "#4D5852",
+                            darkgreen: "#48524A",
+                            darkwhite: "#F1EDE2",
+                            clifford: '#da373d',
+                        },
+                        fontFamily: {
+                            archivo: '"Archivo", sans-serif',
+                            kaushan: ' "Kaushan Script", cursive',
+                        },
+                    }
+                }
+            }
+        </script>
+    </head>
 
-<body>
+    <body>
+        <h1 class="text-3xl font-bold underline font-kaushan">
+            Hello world!
+        </h1>
+    </body>
 
-</body>
-
-</html>
+    </html>

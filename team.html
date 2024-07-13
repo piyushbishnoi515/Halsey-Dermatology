@@ -1,35 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                        "sm": "16px",
+                        "md": "18px",
+                        "xl": "25px",
+                        "2x1": "28px",
+                        "3x1": "58px",
+                    },
+                    colors: {
+                        gray: "#B9BBBB",
+                        green: "#6E9277",
+                        black: "#000000",
+                        white: "#ffffff",
+                        lite_gray: "#F5F8F6",
+                        gray2: "#4D5852",
+                        liteblack: "#4D5852",
+                        darkgreen: "#48524A",
+                        darkwhite: "#F1EDE2",
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        archivo: '"Archivo", sans-serif',
+                        kaushan:  ' "Kaushan Script  ", cursive',
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
     <section>
-        <div class="max-w-[1140px] mx-auto px-[12px]">
+        <div class="max-w-[1140px] mx-auto px-[12px] pb-[100px]">
             <div class="flex gap-[15px] items-center justify-center pt-[100px]">
                 <span class="h-[2px] w-[60px] bg-green block"></span>
-                <h3 class="font-medium leading-[46px] font-Kaushan text-green ">Team</h3>
+                <h3 class="font-medium leading-[46px] font-kaushan  text-green  ">Team</h3>
                 <span class="h-[2px] w-[60px] bg-green block"></span>
             </div>
-            <h2 class="font-Archivo  font-semibold text-5xl  leading-[62px] text-center">Our Team</h2>
-
-
-            <div class="max-w-[364px] relative">
-                <img src="./assets/image/webp/Frame210.webp" alt="">
-                <div class="bg-red-200">
-                    <h5 class="uppercase text-white font-Archivo font-semibold ">Fily</h5>
+            <h2 class="font-archivo  font-semibold  text-5xl  leading-[62px] text-center pb-[50px]">Our Team</h2>
+            <div class="relative  ">
+                <div class="responsive">
+                    <div class="max-w-[364px] relative group overflow-hidden">
+                        <img src="./assets/image/webp/Frame210.webp" alt="">
+                        <div
+                            class="bg-[#FFFFFF05] backdrop-blur-[10px] border-t-[1px] border-solid border-[#FFFFFFB2] w-full absolute bottom-[-25%] group-hover:bottom-0 duration-300 ease-linear">
+                            <h5 class="uppercase text-white font-archivo font-semibold text-center text-2x1 pt-2">Fily</h5>
+                            <h6 class="text-white  font-archivo font-medium leading-[24px] text-center pb-[15px]">Assistant
+                                Extraordinaire</h6>
+                        </div>
+                    </div>
+                    <div class="max-w-[364px] relative group overflow-hidden">
+                        <img src="./assets/image/webp/Frame211.webp" alt="">
+                        <div
+                            class="bg-[#FFFFFF05] backdrop-blur-[10px] border-t-[1px] border-solid border-[#FFFFFFB2] w-full absolute bottom-[-25%] group-hover:bottom-0 duration-300 ease-linear">
+                            <h5 class="uppercase text-white font-archivo font-semibold text-center text-2x1 pt-2">Fily</h5>
+                            <h6 class="text-white  font-archivo font-medium leading-[24px] text-center pb-[15px]">Assistant
+                                Extraordinaire</h6>
+                        </div>
+                    </div>
+                    <div class="max-w-[364px] relative group overflow-hidden">
+                        <img src="./assets/image/webp/Frame212.webp" alt="">
+                        <div
+                            class="bg-[#FFFFFF05] backdrop-blur-[10px] border-t-[1px] border-solid border-[#FFFFFFB2] w-full absolute bottom-[-25%] group-hover:bottom-0 duration-300 ease-linear">
+                            <h5 class="uppercase text-white font-archivo font-semibold text-center text-2x1 pt-2">Fily</h5>
+                            <h6 class="text-white  font-archivo font-medium leading-[24px] text-center pb-[15px]">Assistant
+                                Extraordinaire</h6>
+                        </div>
+                    </div>
+                    <div class="max-w-[364px] relative group overflow-hidden">
+                        <img src="./assets/image/webp/Frame210.webp" alt="">
+                        <div
+                            class="bg-[#FFFFFF05] backdrop-blur-[10px] border-t-[1px] border-solid border-[#FFFFFFB2] w-full absolute bottom-[-25%] group-hover:bottom-0 duration-300 ease-linear">
+                            <h5 class="uppercase text-white font-archivo font-semibold text-center text-2x1 pt-2">Fily</h5>
+                            <h6 class="text-white  font-archivo font-medium leading-[24px] text-center pb-[15px]">Assistant
+                                Extraordinaire</h6>
+                        </div>
+                    </div>
+                    <div class="max-w-[364px] relative group overflow-hidden">
+                        <img src="./assets/image/webp/Frame211.webp" alt="">
+                        <div
+                            class="bg-[#FFFFFF05] backdrop-blur-[10px] border-t-[1px] border-solid border-[#FFFFFFB2] w-full absolute bottom-[-25%] group-hover:bottom-0 duration-300 ease-linear">
+                            <h5 class="uppercase text-white font-archivo font-semibold text-center text-2x1 pt-2">Fily</h5>
+                            <h6 class="text-white  font-archivo font-medium leading-[24px] text-center pb-[15px]">Assistant
+                                Extraordinaire</h6>
+                        </div>
+                    </div>
+                    <div class="max-w-[364px] relative group overflow-hidden">
+                        <img src="./assets/image/webp/Frame212.webp" alt="">
+                        <div
+                            class="bg-[#FFFFFF05] backdrop-blur-[10px] border-t-[1px] border-solid border-[#FFFFFFB2] w-full absolute bottom-[-25%] group-hover:bottom-0 duration-300 ease-linear">
+                            <h5 class="uppercase text-white font-archivo font-semibold text-center text-2x1 pt-2">Fily</h5>
+                            <h6 class="text-white  font-archivo font-medium leading-[24px] text-center pb-[15px]">Assistant
+                                Extraordinaire</h6>
+                        </div>
+                    </div>
                 </div>
-
+                <button class="pre  w-[35px] h-[35px] rounded-full border-[1px] border-solid border-[#001008] flex items-center justify-center hover:bg-green hover:border-green duration-300 group absolute left-[-65px] top-[50%] translate-y-[-50%]">
+                    <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.33777 6.49974L8.28777 1.54974L6.87377 0.135742L0.509766 6.49974L6.87377 12.8637L8.28777 11.4487L3.33777 6.49874L3.33777 6.49974Z"
+                            fill="#001008" class="group-hover:fill-white" />
+                    </svg>
+                </button>
+                <button class="next w-[35px] h-[35px] rounded-full border-[1px] border-solid border-[#001008] flex items-center justify-center hover:bg-green hover:border-green duration-300 group absolute right-[-65px] top-[50%] translate-y-[-50%]">
+                    <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.62311 7.19137L1.15314 11.4503L1.91238 12.1736L7.86695 6.50026L1.9125 0.826988L1.15301 1.55113L5.62311 5.81015L6.12363 5.33326L6.12363 6.50026L6.12363 6.50126L6.12363 7.66826L5.62311 7.19137Z"
+                            fill="#001008" stroke="#001008" class="group-hover:fill-white group-hover:stroke-white" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.responsive').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('.pre'),
+            nextArrow: $('.next'),
 
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
 </body>
 
 </html>
