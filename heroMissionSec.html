@@ -7,6 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .hero-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 13, 7, 0.8);
+            z-index: 1;
+        }
+
+        .hero-overlay>* {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
     <script>
         tailwind.config = {
             theme: {
@@ -14,12 +31,12 @@
                     fontSize: {
                         "sm": "16px",
                         "md": "18px",
+                        "lg": "40px",
                         "xl": "25px",
                         "2x1": "28px",
                         "3x1": "58px",
                         // added font sizes
                         "4xl": "48px",
-                        ""
                     },
                     colors: {
                         gray: "#B9BBBB",
@@ -40,6 +57,12 @@
                     backgroundImage: {
                         // added herosection background img
                         heroBg: "url('./assets/image/png/heroGifImg.gif')",
+                    },
+                    backgroundSize: {
+                        'full': '100% 100%',
+                    },
+                    screens: {
+                        'sm': '576px',
                     }
                 }
             }
@@ -51,24 +74,32 @@
 
     <!-- Hero Section -->
 
-    <section class="bg-heroBg min-h-[810px] flex flex-col items-center justify-center bg-cover bg-no-repeat">
+    <section
+        class="bg-heroBg min-h-[810px] flex flex-col items-center justify-center bg-full bg-no-repeat max-md:bg-cover relative bg-bottom hero-overlay overflow-hidden max-w-[1920px] mx-auto">
+        <div class="absolute md:-top-[58px] top-0 left-0 lg:w-[532px] lg:h-[462px] w-[200px] h-[150px] z-0 opacity-70">
+            <img src="./assets/image/png/featherTopImg.png" alt="feather hero img" class=" w-full h-full">
+        </div>
         <div class="max-w-[853px] px-3 mx-auto flex-grow-1">
-            <div class=" flex items-center justify-center">
-                <div class="w-[60px] h-[2px] bg-green"></div>
-                <p class="font-kaushan font-normal text-[32px] leading-[46px] text-green">Halsey Dermatology</p>
-                <div class="w-[60px] h-[2px] bg-green"></div>
+            <div class="flex items-center justify-center md:gap-[15px] gap-2">
+                <div class="w-[60px] h-[2px] bg-green max-md:w-[35px]"></div>
+                <p class="font-kaushan font-normal text-[32px] leading-[46px] text-green max-md:text-xl">Halsey
+                    Dermatology</p>
+                <div class="w-[60px] h-[2px] bg-green max-md:w-[35px]"></div>
             </div>
-            <p class="font-archivo font-semibold text-3x1 leading-[64px] text-center pt-[10px] pb-[30px] text-white">
+            <p
+                class="font-archivo font-semibold text-3x1 leading-[64px] text-center pt-[30px] pb-[10px] text-white max-lg:text-4xl max-md:text-lg max-md:leading-[56px] max-sm:leading-[48px]">
                 YOUR TRUSTED
                 HAMPTONS DERMATOLOGY
                 EXPERTS</p>
-            <p class="font-archivo font-normal text-sm leading-6 text-white opacity-70 text-center pb-12">Serving the
+            <p
+                class="font-archivo font-normal text-sm leading-6 text-white opacity-70 text-center pb-12 max-sm:pb-[30px]">
+                Serving the
                 entire
                 Hamptons
                 community since 2018</p>
             <div class="flex items-center justify-center">
                 <button
-                    class="max-w-[261px] py-5 px-[25px] bg-green border-0 text-white font-archivo font-semibold text-md">Schedule
+                    class="max-w-[261px] py-5 px-[25px] bg-green border-0 text-white font-archivo font-semibold text-md hover:shadow-lg hover:bg-white hover:text-green ease-in-out duration-300">Schedule
                     an appointment</button>
             </div>
         </div>
@@ -76,18 +107,24 @@
 
     <!-- Mission and Vision Section -->
 
-    <section class="py-[100px]">
-        <div class="max-w-[1188px] px-6 mx-auto bg-lite_gray p-[40px]">
+    <section class="py-[100px] max-sm:py-[60px] relative overflow-hidden max-w-[1920px] mx-auto">
+        <div class="absolute right-[-3%] top-[-9%] w-[371px] h-[387px] -z-[1] -rotate-[29deg] max-sm:hidden">
+            <img src="./assets/image/png/featherImg.png" alt="feather image" class="w-full h-full">
+        </div>
+        <div class="max-w-[1188px] px-6 mx-auto bg-lite_gray py-[40px] pl-[40px] pr-[50px] max-sm:p-[24px]">
             <div class="-mx-3 flex flex-wrap flex-row">
                 <div class="lg:w-7/12 w-full px-3 flex items-center lg:justify-start justify-center">
-                    <div class="w-[596px] h-[475px] max-lg:h-[400px]">
-                        <img src="./assets/image/png/facialPic.png" alt="facial img" class=" w-full h-full">
+                    <div class="w-[596px] h-[475px] max-lg:h-[430px] max-md:h-[490px] max-sm:h-auto">
+                        <img src="./assets/image/png/facialPic.png" alt="facial img" class="w-full h-full">
                     </div>
                 </div>
-                <div class="lg:w-5/12 w-full px-3 flex items-center justify-center">
+                <div class="lg:w-5/12 w-full px-3 flex items-center justify-center lg:pt-0 pt-4">
                     <div class="flex lg:items-start items-center lg:justify-start justify-center flex-col">
-                        <p class="font-archivo font-semibold text-4xl max-lg:text-[40px]">Mission & Vision</p>
-                        <p class="font-archivo font-medium text-sm leading-6 opacity-70 lg:pt-4 pt-2">To deliver
+                        <p class="font-archivo font-semibold text-4xl max-lg:text-lg">Mission & Vision</p>
+                        <p
+                            class="font-archivo font-medium text-sm leading-6 opacity-70 lg:pt-4 pt-2 text-center lg:text-start">
+                            To
+                            deliver
                             world-class
                             dermatology and
                             skin
