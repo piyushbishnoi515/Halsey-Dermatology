@@ -49,26 +49,31 @@
         document.body.classList.toggle("overflow-hidden");
         document.querySelector(".menuIcon").classList.toggle("cross");
       }
+      function toggleDropdown() {
+        var dropdownMenu = document.getElementById("dropdownMenu");
+        dropdownMenu.classList.toggle("hidden");
+      }
     </script>
     <style>
       .cross span:nth-child(1) {
         transform: rotate(58deg) translateY(17px);
         transition: 300ms;
         position: relative;
-        top: -3px;
+        top: 7px;
+        right: -47%;
       }
 
       .cross span:nth-child(2) {
-        transform: translateX(-100%);
-        opacity: 0;
         transition: 300ms;
+        display: none;
       }
 
       .cross span:nth-child(3) {
         transform: rotate(123deg) translateY(19px);
         transition: 300ms;
         position: relative;
-        top: -10px;
+        top: -1px;
+        right: -47%;
       }
     </style>
   </head>
@@ -99,7 +104,7 @@
             <ul
               class="lg:gap-9 gap-7 flex max-md:flex-col max-md:justify-center max-md:items-center max-md:min-h-screen transition ease-linear duration-300"
             >
-              <li class="relative inline-block group">
+              <li class="relative inline-block group hidden md:block">
                 <a
                   href=""
                   class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300"
@@ -126,19 +131,91 @@
                 <a
                   href="#"
                   aria-label="dropdown"
-                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-white rounded-sm"
+                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white"
                 >
                   <span
-                    class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
                     >Treatments1
                   </span>
                   <span
-                    class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
-                    >Treatments1
+                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                    >Treatments2
                   </span>
                 </a>
               </li>
-              <li class="relative inline-block group">
+              <li class="relative mb-3 md:hidden mb-0">
+                <button
+                  class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                  data-collapse-target="collapse-1"
+                >
+                  <span
+                    class="font-archivo font-[100] text-base leading-4 text-lightWhite"
+                    >Treatments</span
+                  >
+                  <a
+                    class="absolute right-0 pt-1 group-open:opacity-0 text-[25px] leading-[108%]"
+                  >
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          d="M6 8.5L10 12.5L14 8.5"
+                          stroke="white"
+                          stroke-opacity="0.5"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                  <a
+                    class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"
+                  >
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          d="M6 8.5L10 12.5L14 8.5"
+                          stroke="white"
+                          stroke-opacity="0.5"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </button>
+                <div
+                  data-collapse="collapse-1"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                >
+                  <div
+                    class="bg-green flex flex-col border border-white rounded-sm"
+                  >
+                    <span
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      >Treatments1
+                    </span>
+                    <span
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      >Treatments2
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="relative inline-block group hidden md:block">
                 <a
                   href=""
                   class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300"
@@ -165,19 +242,87 @@
                 <a
                   href="#"
                   aria-label="dropdown"
-                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-white rounded-sm "
+                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white"
                 >
                   <span
-                    class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
-                    >care1
+                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                    >skin1
                   </span>
                   <span
-                    class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
-                    >care2
+                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                    >skin2
                   </span>
                 </a>
               </li>
-              <li class="relative inline-block group">
+              <li class="relative mb-3 md:hidden mb-0">
+                <button
+                  class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                  data-collapse-target="collapse-2"
+                >
+                  <span
+                    class="font-archivo font-[100] text-base leading-4 text-lightWhite"
+                    >Skin Concerns</span
+                  >
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.7">
+                      <path
+                        d="M6 8.5L10 12.5L14 8.5"
+                        stroke="white"
+                        stroke-opacity="0.5"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                  <a
+                    class="absolute right-0 pt-1 opacity-0 group-open:opacity-100 text-[25px] leading-[108%]"
+                  >
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          d="M6 8.5L10 12.5L14 8.5"
+                          stroke="white"
+                          stroke-opacity="0.5"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </button>
+                <div
+                  data-collapse="collapse-2"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                >
+                  <div
+                    class="bg-green flex flex-col border border-white rounded-sm"
+                  >
+                    <span
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      >Skin1
+                    </span>
+                    <span
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      >Skin2
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="relative inline-block group hidden md:block">
                 <a
                   href=""
                   class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300"
@@ -204,17 +349,89 @@
                 <a
                   href="#"
                   aria-label="dropdown"
-                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-white rounded-sm"
+                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white"
                 >
                   <span
-                    class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
                     >device1
                   </span>
                   <span
-                    class="text-black ff-gilroy-normal font-normal text-base leading-6 p-1 hover:bg-gray-400 w-full"
+                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
                     >device2
                   </span>
                 </a>
+              </li>
+              <li class="relative mb-3 md:hidden mb-0">
+                <button
+                  class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                  data-collapse-target="collapse-3"
+                >
+                  <span
+                    class="font-archivo font-[100] text-base leading-4 text-lightWhite"
+                    >Devices</span
+                  >
+                  <a
+                    class="absolute right-0 pt-1 group-open:opacity-0 text-[25px] leading-[108%]"
+                  >
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          d="M6 8.5L10 12.5L14 8.5"
+                          stroke="white"
+                          stroke-opacity="0.5"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                  <a
+                    class="absolute right-0 pt-1 opacity-0 group-open:opacity-100 text-[25px] leading-[108%]"
+                  >
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          d="M6 8.5L10 12.5L14 8.5"
+                          stroke="white"
+                          stroke-opacity="0.5"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </button>
+                <div
+                  data-collapse="collapse-3"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2"
+                >
+                  <div
+                    class="bg-green flex flex-col border border-white rounded-sm"
+                  >
+                    <span
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      >Devices1
+                    </span>
+                    <span
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      >Devices2
+                    </span>
+                  </div>
+                </div>
               </li>
               <li>
                 <button
@@ -236,7 +453,9 @@
     <!-- ======footer========= -->
     <footer class="bg-darkwhite lg:pt-20 pt-10 relative">
       <div class="container mx-auto px-3">
-        <div class="flex flex-wrap flex-row mx-[-12px] sm:mb-10 mb-6 z-10 relative">
+        <div
+          class="flex flex-wrap flex-row mx-[-12px] sm:mb-10 mb-6 z-10 relative"
+        >
           <div class="lg:w-[41.66%] px-[12px] lg:mb-0 sm:mb-6 mb-4">
             <a href="">
               <img
@@ -331,20 +550,24 @@
                   >
                     Get in Touch
                   </p>
-                  <div
-                    class="bg-inputCreamy flex max-w-[320px] w-full justify-between"
-                  >
-                    <input
-                      type="mail"
-                      placeholder="Type your Email"
-                      class="font-archivo font-normal text-base leading-4 text-darkBlack bg-inputCreamy py-3 px-3 outline-none"
-                    />
-                    <button
-                      class="font-archivo font-medium text-base leading-4 text-white bg-green xl:px-[25px] px-[12px] py-[11.5px] border-2 border-transparent hover:bg-white hover:text-green hover:border-2 hover:border-green transition ease-linear duration-300"
+                  <form action="">
+                    <div
+                      class="bg-inputCreamy flex max-w-[320px] w-full justify-between"
                     >
-                      Submit
-                    </button>
-                  </div>
+                      <input
+                        type="mail"
+                        required
+                        placeholder="Type your Email"
+                        class="font-archivo font-normal text-base leading-4 text-darkBlack bg-inputCreamy py-3 px-3 outline-none"
+                      />
+                      <button
+                        type="submit"
+                        class="font-archivo font-medium text-base leading-4 text-white bg-green xl:px-[25px] px-[12px] py-[11.5px] border-2 border-transparent hover:bg-white hover:text-green hover:border-2 hover:border-green transition ease-linear duration-300"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
                   <p
                     class="font-archivo font-semibold text-base leading-4 darkBlack mb-4 lg:mt-9 mt-5"
                   >
@@ -398,7 +621,11 @@
       <p
         class="font-archivo font-normal text-sm leading-4 text-darkBlack sm:py-[22px] py-[17px] text-center"
       >
-        Content © <script>document.write(new Date().getFullYear());</script> Sagaponack Medical PC dba Halsey Dermatology
+        Content ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Sagaponack Medical PC dba Halsey Dermatology
       </p>
 
       <div class="absolute end-0 bottom-0 sm:block hidden">
@@ -409,5 +636,8 @@
         />
       </div>
     </footer>
+
+    <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
   </body>
 </html>
