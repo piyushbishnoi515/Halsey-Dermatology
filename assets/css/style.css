@@ -85,3 +85,22 @@
 .slider-nav .slick-slide.slick-active {
     width: 53px !important;
 }
+
+/* APPOINTMENT SECTION CSS */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("./assets/image/png/dropdownArrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 20px;
+    border-radius: 2px;
+    margin-right: 2rem;
+}

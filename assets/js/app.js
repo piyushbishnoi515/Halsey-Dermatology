@@ -35,3 +35,18 @@ function toggleDropdown() {
     var dropdownMenu = document.getElementById("dropdownMenu");
     dropdownMenu.classList.toggle("hidden");
 }
+// APPOINTMENT SECTION JS
+let inputText = document.querySelector(".checkBoxText");
+let checkImg = document.querySelector(".checkImg");
+let clickBtn = document.querySelectorAll(".labelCheck")
+
+clickBtn.forEach((e) => {
+    e.addEventListener("click", () => {
+        let checkImgDisply = window.getComputedStyle(checkImg).display;
+        if (checkImgDisply === "none") {
+            checkImg.style.display = "block";
+        } else {
+            checkImg.style.display = "none";
+        }
+    });
+});
