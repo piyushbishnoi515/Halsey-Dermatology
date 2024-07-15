@@ -121,8 +121,3 @@ select {
     border: 1px solid #FFFFFF;
     padding: 15px 25px 15px 25px;
 }
-
-.white_shadow:hover {
-    transition: all 255ms linear;
-    box-shadow: 0 0 10px #ffffff;
-}
