@@ -51,7 +51,6 @@ clickBtn.forEach((e) => {
 });
 
 // ESTHETICS SECTION JS
-// ESTHETICS SECTION JS
 document.addEventListener("DOMContentLoaded", function () {
     const estheticsData = [
         { imgSrc: "./assets/image/webp/Esthetics1.webp", alt: "Esthetics1", text: "Acne scars" },
@@ -90,9 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
         img.className = "w-full lg:max-w-[200px] pointer-events-none";
         div.appendChild(img);
         const p = document.createElement("p");
-        p.className = "text-[17px] md:text-[20px] leading-[26px] font-semibold font-archivo text-darkBlack text-center";
-        if (index === 3) { 
-            p.classList.add("max-w-[107px]");
+        p.className = "text-[17px] md:text-[22px] lg:text-[24px] stroke-darkBlack leading-[22px] md:leading-[31.2px] font-medium font-archivo text-darkBlack text-center";
+        if (index === 3 || index === 4) { 
+            p.classList.add("max-w-[167px]");
         }
         p.textContent = data.text;
         div.appendChild(p);
