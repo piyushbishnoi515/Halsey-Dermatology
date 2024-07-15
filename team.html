@@ -35,13 +35,16 @@
             theme: {
                 extend: {
                     fontSize: {
-                        "sm": "16px",
-                        "md": "18px",
-                        "xl": "20px",
-                        "2x1": "28px",
-                        "3xl": "32px",
-                        "4xl": "36px",
+                        "xs": "14px",
+                        sm: "16px",
+                        "lg": "40px",
+                        md: "18px",
+                        xl: "25px",
+                        "2x1": "34px", //change 2xl font sizes
+                        "3x1": "24px", //change 3xl = 58px in 24px 
+                        "4xl": "48px",
                         "5x1": "58px",
+
                     },
                     colors: {
                         gray: "#B9BBBB",
@@ -53,162 +56,278 @@
                         liteblack: "#4D5852",
                         darkgreen: "#48524A",
                         darkwhite: "#F1EDE2",
-                        clifford: '#da373d',
+                        clifford: "#da373d",
+                        //   self
+                        darkBlack: "#001008",
+                        inputCreamy: "#DED9CC",
+                        borderGrey: "#CDC9C0",
+                        lightWhite: "#B5BBB7",
+                        borderWhite: "#BABFBA",                // border color light grey
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5",
+                        // added pediatrick heading color
+                        "pediatrick": "#001008",
                     },
                     fontFamily: {
                         archivo: '"Archivo", sans-serif',
                         kaushan: ' "Kaushan Script", cursive',
+                    }, backgroundImage: {
+                        // added herosection background img
+                        heroBg: "url('./assets/image/png/heroGifImg.gif')",
                     },
-                }
-            }
-        }
+                    backgroundSize: {
+                        'full': '100% 100%',
+                    },
+                    screens: {
+                        'sm': '576px',
+                    }
+                },
+            },
+        };
     </script>
 </head>
 
 <body>
 
-    <!-- ==================================================== TEAM_SECTION ================================================ -->
+    <!-- ============================================== Medical and Pediatric Dermatology ======================================== -->
 
-    <section class="Team_Section w-full pb-12 sm:pb-16  lg:pb-24 relative max-w-[1920px] mx-auto">
-        <div class="My_Container max-w-[1164px] w-full mx-auto px-3 relative z-5">
-            <div class="flex items-center justify-center gap-4">
-                <div class="max-w-[60px] h-[2px] w-full bg-green"></div>
-                <h1 class="font-kaushan font-normal text-3xl text-green">Team</h1>
-                <div class="max-w-[60px] h-[2px] w-full bg-green"></div>
-            </div>
-
+    <section class="Pediatrick_Section w-full py-12 sm:py-14 md:py-24">
+        <div class="My_Container max-w-[1140px] w-full mx-auto px-3">
             <h2
-                class="Sub_H font-semibold text-4xl sm:text-5xl font-archivo text-center leading-[130%] pt-2 max-sm:pb-[16px] pb-12">
-                Meet Our Experts
-            </h2>
+                class="Pediatrick_H font-archivo font-semibold text-2xl sm:text-lg lg:text-4xl leading-[130%] text-center text-pediatrick max-w-[738px] mx-auto">
+                Medical and Pediatric Dermatology</h2>
 
-            <div class="row flex flex-wrap flex-row mx-auto max-lg:justify-center lg:-mx-3">
-
-                <div class="col-4 max-sm:w-full sm:1/2 lg:w-1/3 sm:px-3 max-sm:flex max-sm:justify-center ">
-
-                    <div
-                        class="Experts_Card flex flex-col justify-between max-w-[353px] w-full border-[1px] border-solid border-[#00000033] h-full">
-
-                        <div>
-                            <img src="./assets/image/webp/Ashton_Wilson.webp" alt="Ashton_Wilson"
-                                class="w-full h-[288px] max-sm:h-[235px]">
-
-                            <div class="Experts_Card_Txt px-[26px] py-[29px] pb-0">
-                                <h2
-                                    class="Expert_H font-archivo font-semibold text-xl leading-auto text-center uppercase">
-                                    Ashton
-                                    Wilson, PA-C</h2>
-                                <p
-                                    class="font-archivo font-normal text-sm leading-[150%] text-center text-liteblack pt-2">
-                                    Diplomate Fellow, Society of Dermatology Physician Assistants</p>
+            <div class="w-full mx-auto flex flex-col max-lg:flex-col-reverse max-md:flex-col max-sm:flex-col-reverse lg:mt-12">
+                <div class="row flex flex-row -mx-3 flex-wrap mt-6 lg:mt-0 justify-center">
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Acne.webp" alt="Acne_Webp" class="w-full rounded-[10px]">
                             </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Acne</div>
                         </div>
+                    </div>
 
-                        <div class="flex justify-center pt-6 pb-[29px]">
-                            <a href="#"
-                                class="font-archivo font-medium text-md leading-auto underline text-green text-center uppercase">View
-                                Profile</a>
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Dermatitis.webp" alt="Dermatitis_webp"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Dermatitis</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 max-sm:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Eczema.webp" alt="Eczema_webp"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Eczema</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 max-md:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Hives.webp" alt="Hives_webp"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Hives</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 max-lg:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Moles.webp" alt="Moles_(nevi)"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Moles (nevi)</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Psoriasis.webp" alt="Psoriasis"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Psoriasis</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Melasma.webp" alt="Melasma"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Melasma</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Molluscum.webp" alt="Molluscum"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Molluscum</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Rosacea.webp" alt="Rosacea"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Rosacea</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Warts.webp" alt="Warts" class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Warts</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Vitiligo.webp" alt="Vitiligo"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Vitiligo</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Contact Dermatitis.webp" alt="Contact Dermatitis"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Contact Dermatitis</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Skin cancer.webp" alt="Skin cancer"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Skin cancer</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Dry_Skin.webp" alt="Dry Skin"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Dry Skin</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Birthmarks.webp" alt="Birthmarks"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Birthmarks</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-4 max-sm:w-full sm:1/2 lg:w-1/3 sm:px-3 max-sm:flex max-sm:justify-center  max-md:mt-6">
-                    <div
-                        class="Experts_Card flex flex-col justify-between max-w-[353px] w-full border-[1px] border-solid border-[#00000033] h-full pt-[5px]">
+                <div class="row flex flex-row -mx-3 flex-wrap sm:mt-6 lg:mt-0 justify-center">
 
-                        <div>
-                            <div class="flex justify-center">
-                                <img src="./assets/image/webp/Mark_Halsey.webp" alt="Mark_Halsey"
-                                    class="w-full max-w-[326px] w-full h-[288px] sm:object-cover lg:border-[1px] lg:border-solid lg:border-[#E5E7E6] max-sm:h-[235px] px-[10px]">
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Diaper_rash.webp" alt="Diaper rash"
+                                    class="w-full rounded-[10px]">
                             </div>
-
-                            <div class="Experts_Card_Txt pb-0">
-                                <h2
-                                    class="Expert_H font-archivo font-semibold text-xl leading-auto text-center pt-[29px] uppercase">
-                                    Mark
-                                    Halsey, MD, FAAD</h2>
-                                <p
-                                    class="font-archivo font-normal text-sm leading-[150%] text-center text-liteblack pt-2">
-                                    Asst. Clinical Professor of DermatologyNYU Langone</p>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-center pt-6 pb-[29px]">
-                            <a href="#"
-                                class="font-archivo font-medium text-md leading-auto underline text-green text-center uppercase">View
-                                Profile</a>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Diaper rash</div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-4 max-sm:w-full sm:1/2 lg:w-1/3 sm:px-3 max-sm:flex max-sm:justify-center  max-lg:mt-6">
-                    <div
-                        class="Experts_Card flex flex-col justify-between max-w-[353px] w-full border-[1px] border-solid border-[#00000033] h-full">
-
-                        <div>
-                            <img src="./assets/image/webp/Aimee_Drexel.webp" alt="Aimee_Drexel"
-                                class="w-full h-[288px] max-sm:h-[235px]">
-
-                            <div class="Experts_Card_Txt pb-0 px-[26px] py-[29px]">
-                                <h2
-                                    class="Expert_H font-archivo font-semibold text-xl leading-auto text-center uppercase">
-                                    Aimee
-                                    Drexel, LE</h2>
-                                <p
-                                    class="font-archivo font-normal text-sm leading-[150%] text-center text-liteblack pt-2">
-                                    Licensed Esthetician</p>
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Hair_loss.webp" alt="Hair loss"
+                                    class="w-full rounded-[10px]">
                             </div>
-                        </div>
-
-                        <div class="flex justify-center pt-6 pb-[29px]">
-                            <a href="#"
-                                class="font-archivo font-medium text-md leading-auto underline text-green text-center uppercase">View
-                                Profile</a>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Hair loss</div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-        </div>
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Scarring.webp" alt="Scarring"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Scarring</div>
+                        </div>
+                    </div>
 
-        <img src="./assets//image/png/Left_Side_Ellips.png" alt="Left_Side_Ellips"
-            class="Left_Side_Ellips absolute top-[-140px] left-0 opacity-[18%]">
-    </section>
-
-    <!-- ==================================================== COMMUNITY_SECTION ============================================ -->
-    <section class="Community_Section overflow-hidden max-w-[1920px] mx-auto">
-        <div class="My_Container max-w-[1340px] w-full mx-auto px-3">
-            <h2 class="Community_H font-archivo font-semibold text-5xl text-center leading-[130%] capitalize">Community
-            </h2>
-            <p
-                class="font-archivo font-normal text-sm leading-[150%] text-center text-gray2 pt-2 max-w-[676px] mx-auto pb-[37px]">
-                We share our success with the community that supports us. In 2023 alone, Halsey Dermatology provided
-                over $20,000 in
-                sponsorships & direct monetary support to:</p>
-
-            <div class="All_Slider_Images flex justify-between gap-3 sm:gap-8">
-                <div class="Community_Slider1">
-                    <img src="./assets/image/webp/Pediatrick.webp" alt="Pediatrick">
-                </div>
-
-                <div class="Community_Slider2">
-                    <img src="./assets/image/webp/ASDS.webp" alt="ASDS">
-                </div>
-
-                <div class="Community_Slider3">
-                    <img src="./assets/image/webp/Amrica.webp" alt="Amrica">
-                </div>
-
-                <div class="Community_Slider4">
-                    <img src="./assets/image/webp//Dermatology.webp" alt="Dermatology">
-                </div>
-
-                <div class="Community_Slider5">
-                    <img src="./assets/image/webp/Daxify.webp" alt="Daxify">
-                </div>
-
-                <div class="Community_Slider6">
-                    <img src="./assets/image/webp/Ximin.webp" alt="Ximin">
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div class="Pediatrick_Image border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Muscle laxity.webp" alt="Muscle laxity"
+                                    class="w-full rounded-[10px]">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-3xl leading-[130%] text-center text-darkBlack mt-3">
+                                Muscle laxity</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
