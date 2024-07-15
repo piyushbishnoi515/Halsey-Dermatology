@@ -33,6 +33,23 @@
     right: -47%;
 }
 
+/* HERO MISSION SECTION CSS */
+.hero-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 13, 7, 0.8);
+    z-index: 1;
+}
+
+.hero-overlay>* {
+    position: relative;
+    z-index: 2;
+}
+
 /* TEAM SECTION CSS */
 @media (max-width: 991.11px) {
     .All_Slider_Images {
