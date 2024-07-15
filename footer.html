@@ -35,6 +35,7 @@
               borderGrey: "#CDC9C0",
               lightWhite: "#B5BBB7",
               borderWhite: "#BABFBA",
+              // self
             },
             fontFamily: {
               archivo: '"Archivo", sans-serif',
@@ -110,6 +111,7 @@
                   class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300"
                   >Treatments
                   <svg
+                    class="group:hover:rotate-90"
                     width="20"
                     height="21"
                     viewBox="0 0 20 21"
@@ -175,7 +177,7 @@
                     </svg>
                   </a>
                   <a
-                    class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"
+                    class="absolute right-0 pt-1 opacity-0 group-open:opacity-100 text-[25px] leading-[108%]"
                   >
                     <svg
                       width="20"
@@ -205,11 +207,11 @@
                     class="bg-green flex flex-col border border-white rounded-sm"
                   >
                     <span
-                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer"
                       >Treatments1
                     </span>
                     <span
-                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer"
                       >Treatments2
                     </span>
                   </div>
@@ -242,7 +244,7 @@
                 <a
                   href="#"
                   aria-label="dropdown"
-                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white"
+                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-[50px] items-start bg-green rounded-sm border border-white"
                 >
                   <span
                     class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
@@ -312,11 +314,11 @@
                     class="bg-green flex flex-col border border-white rounded-sm"
                   >
                     <span
-                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer"
                       >Skin1
                     </span>
                     <span
-                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer"
                       >Skin2
                     </span>
                   </div>
@@ -349,7 +351,7 @@
                 <a
                   href="#"
                   aria-label="dropdown"
-                  class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white"
+                  class="flex-col justify-center gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-[65px] items-start bg-green rounded-sm border border-white"
                 >
                   <span
                     class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
@@ -423,11 +425,11 @@
                     class="bg-green flex flex-col border border-white rounded-sm"
                   >
                     <span
-                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer"
                       >Devices1
                     </span>
                     <span
-                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green"
+                      class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer"
                       >Devices2
                     </span>
                   </div>
@@ -636,6 +638,123 @@
         />
       </div>
     </footer>
+    <!-- ===========Treatments for Acne========== -->
+    <section>
+      <div class="container mx-auto px-3">
+        <h3
+          class="font-archivo font-semibold lg:text-5xl md:text-3xl text-2xl leading-[62px] text-darkBlack lg:pb-[73px] md:pb-[50px] pb-[25px] text-center lg:pt-24 md:pt-16 sm:pt-12 pt-5"
+        >
+          Treatments for Acne
+        </h3>
+        <div
+          class="flex max-lg:flex-wrap lg:gap-6 md:gap-4 gap-2 justify-center mb-12"
+        >
+          <div class="max-w-[226px] group relative">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300"
+            >
+              Most Popular
+            </p>
+            <div
+              class="border-4 border-green max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300"
+            >
+              <img
+                class="w-full max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300"
+                src="./assets/image/webp/medical-visit1.webp"
+                alt="medical-visit1"
+              />
+            </div>
+            <p
+              class="font-archivo font-semibold text-2xl text-darkBlack pt-3.5 text-center"
+            >
+              Medical Visit
+            </p>
+          </div>
+          <div class="max-w-[226px] group relative">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300"
+            >
+              Most Popular
+            </p>
+            <div
+              class="border-4 border-green max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300"
+            >
+              <img
+                class="w-full max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300"
+                src="./assets/image/webp/skinwave2-img.webp"
+                alt="skinwave2-img.webp"
+              />
+            </div>
+            <p
+              class="font-archivo font-semibold text-2xl text-darkBlack pt-3.5 text-center text-nowrap"
+            >
+              Signature Skinwave
+            </p>
+          </div>
+          <div class="max-w-[226px] group relative">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300"
+            >
+              Most Popular
+            </p>
+            <div
+              class="border-4 border-green max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300"
+            >
+              <img
+                class="w-full max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300"
+                src="./assets/image/webp/acne-skinwave3.webp"
+                alt="acne-skinwave3"
+              />
+            </div>
+            <p
+              class="font-archivo font-semibold text-2xl text-darkBlack pt-3.5 text-center"
+            >
+              Acne Skinwave
+            </p>
+          </div>
+          <div class="max-w-[226px] group relative">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300"
+            >
+              Most Popular
+            </p>
+            <div
+              class="border-4 border-green max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300"
+            >
+              <img
+                class="w-full max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300"
+                src="./assets/image/webp/facial4.webp"
+                alt="facial4"
+              />
+            </div>
+            <p
+              class="font-archivo font-semibold text-2xl text-darkBlack pt-3.5 text-center"
+            >
+              Acne facial
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center cursor-pointer">
+          <div
+            class="w-[38px] h-[38px] bg-green rounded-full flex justify-center items-center"
+          >
+            <svg
+              width="14"
+              height="10"
+              viewBox="0 0 14 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.30866 6.20874L1.62553 1.2935L0.780945 2.17995L6.99982 8.70704L13.2186 2.18007L12.3731 1.29336L7.68989 6.20874L8.16682 6.70931L6.99982 6.70931L6.99873 6.70931L5.83173 6.70931L6.30866 6.20874Z"
+                fill="#6E9277"
+                stroke="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
