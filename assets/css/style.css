@@ -25,3 +25,26 @@
     top: -1px;
     right: -47%;
 }
+
+/* TEAM SECTION CSS */
+@media (max-width: 991.11px) {
+    .All_Slider_Images {
+        width: 1660px;
+        margin: 10px -400px;
+        animation: nav_move 20s infinite linear;
+    }
+
+    .All_Slider_Images:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes nav_move {
+        0% {
+            margin-left: 0px;
+        }
+
+        100% {
+            margin-left: -800px;
+        }
+    }
+}
