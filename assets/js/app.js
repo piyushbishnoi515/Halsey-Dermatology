@@ -51,6 +51,7 @@ clickBtn.forEach((e) => {
 });
 
 // ESTHETICS SECTION JS
+// ESTHETICS SECTION JS
 document.addEventListener("DOMContentLoaded", function () {
     const estheticsData = [
         { imgSrc: "./assets/image/webp/Esthetics1.webp", alt: "Esthetics1", text: "Acne scars" },
@@ -80,16 +81,19 @@ document.addEventListener("DOMContentLoaded", function () {
         { imgSrc: "./assets/image/webp/Esthetics25.webp", alt: "Esthetics25", text: "Wrinkles" },
     ];
     const container = document.getElementById("esthetics-container");
-    estheticsData.map(data => {
+    estheticsData.map((data, index) => {
         const div = document.createElement("div");
-        div.className = "flex items-center  flex-col gap-2 md:gap-[15px] w-[50%] sm:w-[33.33%] md:w-[25%] px-2 sm:px-3 py-2 sm:py-3 lg:w-[228px]";
+        div.className = "flex items-center flex-col gap-2 md:gap-[15px] w-[50%] sm:w-[33.33%] md:w-[25%] px-2 sm:px-3 py-2 sm:py-3 lg:w-[228px]";
         const img = document.createElement("img");
         img.src = data.imgSrc;
         img.alt = data.alt;
-        img.className = "w-full lg:max-w-[200px]";
+        img.className = "w-full lg:max-w-[200px] pointer-events-none";
         div.appendChild(img);
         const p = document.createElement("p");
-        p.className = "text-[17px] md:text-[22px] lg:text-[23px] leading-[22px] md:leading-[31.2px] font-semibold font-archivo text-darkBlack text-center";
+        p.className = "text-[17px] md:text-[20px] leading-[26px] font-semibold font-archivo text-darkBlack text-center";
+        if (index === 3) { 
+            p.classList.add("max-w-[107px]");
+        }
         p.textContent = data.text;
         div.appendChild(p);
         container.appendChild(div);
