@@ -48,3 +48,40 @@
         }
     }
 }
+
+/* REVIEW SECTION CSS */
+.slider-nav .slick-track {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 25px;
+    min-height: 109px;
+}
+
+.arrow:hover svg path {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+}
+
+.slider-nav .slick-slide {
+    transition: all 500ms linear !important;
+    width: 53px !important;
+    margin: 0 12px;
+}
+
+.slider-nav .slick-slide.slick-current.slick-active img {
+    transform: scale(1.9);
+    transition: all 500ms linear !important;
+}
+
+.slick-slide.slick-cloned {
+    width: 53px !important;
+}
+
+.slick-slide.slick-cloned.slick-active {
+    width: 53px !important;
+}
+
+.slider-nav .slick-slide.slick-active {
+    width: 53px !important;
+}
