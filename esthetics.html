@@ -60,9 +60,9 @@
 <body>
     <!-- ESTHETICS SECTION  -->
 <section class="bg-lite_gray">
-    <div class="max-w-[1165px] mx-auto px-3">
-        <h2 class="text-[48px] font-archivo leading-[62.4px] font-semibold text-darkBlack text-center">Rejuvenation and Esthetics</h2>
-        <div id="esthetics-container" class="flex flex-wrap"></div>
+    <div class="max-w-[1165px] mx-auto px-3 pt-12 md:pt-20">
+        <h2 class="text-[37px] md:text-[48px] font-archivo leading-[42.4px] sm:leading-[50px] md:leading-[62.4px] font-semibold text-darkBlack text-center pb-[24px] md:pb-[45px]">Rejuvenation and Esthetics</h2>
+        <div id="esthetics-container" class="flex flex-wrap justify-center"></div>
     </div>
 </section>
 <script>
@@ -98,16 +98,16 @@
         const container = document.getElementById("esthetics-container");
         estheticsData.map(data => {
             const div = document.createElement("div");
-            div.className = "flex items-center  flex-col gap-[15px] w-[50%] sm:w-[33.33%] md:w-[25%] px-3 py-3 xl:w-[228px]";
+            div.className = "flex items-center  flex-col gap-2 md:gap-[15px] w-[50%] sm:w-[33.33%] md:w-[25%] px-2 sm:px-3 py-2 sm:py-3 lg:w-[228px]";
             
             const img = document.createElement("img");
             img.src = data.imgSrc;
             img.alt = data.alt;
-            img.className = "w-full xl:max-w-[200px]";
+            img.className = "w-full lg:max-w-[200px]";
             div.appendChild(img);
 
             const p = document.createElement("p");
-            p.className = "text-[18px] md:text-[22px] lg:text-[23px] leading-[31.2px] font-semibold font-archivo text-darkBlack text-center";
+            p.className = "text-[17px] md:text-[22px] lg:text-[23px] leading-[22px] md:leading-[31.2px] font-semibold font-archivo text-darkBlack text-center";
             p.textContent = data.text;
             div.appendChild(p);
 
