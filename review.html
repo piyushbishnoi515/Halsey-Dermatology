@@ -49,35 +49,55 @@
             width: 53px !important;
         }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontSize: {
-
-                    },
-                    colors: {
-                        gray: "#B9BBBB",
-                        shadeBlack: "#0000001A",
-                        green: "#6E9277",
-                        black: "#000000",
-                        white: "#ffffff",
-                        lite_gray: "#F5F8F6",
-                        gray2: "#4D5852",
-                        liteblack: "#4D5852",
-                        darkgreen: "#48524A",
-                        darkwhite: "#F1EDE2",
-                        clifford: '#da373d',
-                        black2: "#001008"
-                    },
-                    fontFamily: {
-                        archivo: '"Archivo", sans-serif',
-                        kaushan: ' "Kaushan Script", cursive',
-                    },
+   <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontSize: {
+                    //   sm: "16px",
+                    md: "18px",
+                    xl: "25px",
+                    "2x1": "28px",
+                    "3x1": "58px", "4xl": "48px", "5x1": "58px",
+                },
+                colors: {
+                    gray: "#B9BBBB",
+                    green: "#6E9277",
+                    black: "#000000",
+                    white: "#ffffff",
+                    lite_gray: "#F5F8F6",
+                    gray2: "#4D5852",
+                    liteblack: "#4D5852",
+                    darkgreen: "#48524A",
+                    darkwhite: "#F1EDE2",
+                    clifford: "#da373d",
+                    //   self
+                    darkBlack: "#001008",
+                    inputCreamy: "#DED9CC",
+                    borderGrey: "#CDC9C0",
+                    lightWhite: "#B5BBB7",
+                    borderWhite: "#BABFBA",                // border color light grey
+                    'grey-100': "rgba(0, 16, 8, 0.06)",
+                    // light green color
+                    "green-50": "#F1FFF5"
+                },
+                fontFamily: {
+                    archivo: '"Archivo", sans-serif',
+                    kaushan: ' "Kaushan Script", cursive',
+                }, backgroundImage: {
+                    // added herosection background img
+                    heroBg: "url('./assets/image/png/heroGifImg.gif')",
+                },
+                backgroundSize: {
+                    'full': '100% 100%',
+                },
+                screens: {
+                    'sm': '576px',
                 }
-            }
-        }
-    </script>
+            },
+        },
+    };
+</script>
 </head>
 
 <body>
@@ -236,6 +256,15 @@
             </div>
         </div>
     </section>
+        <!-- ESTHETICS SECTION  -->
+        <section class="bg-lite_gray">
+            <div class="max-w-[1165px] mx-auto px-3 pt-12 md:pt-20">
+                <h2
+                    class="text-[37px] md:text-[48px] font-archivo leading-[42.4px] sm:leading-[50px] md:leading-[62.4px] font-semibold text-darkBlack text-center pb-[24px] md:pb-[45px]">
+                    Rejuvenation and Esthetics</h2>
+                <div id="esthetics-container" class="flex flex-wrap justify-center"></div>
+            </div>
+        </section>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
