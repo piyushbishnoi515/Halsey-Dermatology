@@ -6,11 +6,11 @@
 
 /* HEADER CSS */
 .cross span:nth-child(1) {
-  transform: rotate(55deg) translateY(17px);
+  transform: rotate(61deg) translateY(18px);
   transition: 300ms;
   position: relative;
-  top: 7px;
-  right: -45%;
+  top: 8px;
+  right: -47%;
 }
 
 .cross span:nth-child(2) {
@@ -19,10 +19,10 @@
 }
 
 .cross span:nth-child(3) {
-  transform: rotate(123deg) translateY(19px);
+  transform: rotate(117deg) translateY(19px);
   transition: 300ms;
   position: relative;
-  top: 1px;
+  top: -1px;
   right: -47%;
 }
 [data-collapse] {
