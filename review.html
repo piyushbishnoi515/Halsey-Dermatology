@@ -12,75 +12,135 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                fontSize: {
-                    //   sm: "16px",
-                    md: "18px",
-                    xl: "25px",
-                    "2x1": "28px",
-                    "3x1": "58px", "4xl": "48px", "5x1": "58px",
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                        //   sm: "16px",
+                        md: "18px",
+                        xl: "25px",
+                        "2x1": "28px",
+                        "3x1": "58px", "4xl": "48px", "5x1": "58px",
+                    },
+                    colors: {
+                        gray: "#B9BBBB",
+                        green: "#6E9277",
+                        black: "#000000",
+                        white: "#ffffff",
+                        lite_gray: "#F5F8F6",
+                        gray2: "#4D5852",
+                        liteblack: "#4D5852",
+                        darkgreen: "#48524A",
+                        darkwhite: "#F1EDE2",
+                        clifford: "#da373d",
+                        //   self
+                        darkBlack: "#001008",
+                        inputCreamy: "#DED9CC",
+                        borderGrey: "#CDC9C0",
+                        lightWhite: "#B5BBB7",
+                        borderWhite: "#BABFBA",                // border color light grey
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5"
+                    },
+                    fontFamily: {
+                        archivo: '"Archivo", sans-serif',
+                        kaushan: ' "Kaushan Script", cursive',
+                    }, backgroundImage: {
+                        // added herosection background img
+                        heroBg: "url('./assets/image/png/heroGifImg.gif')",
+                    },
+                    backgroundSize: {
+                        'full': '100% 100%',
+                    },
+                    screens: {
+                        'sm': '576px',
+                    },
+                    // box shadow 
+                    boxShadow: {
+                        "ImageGallery" : "0px 7px 10.9px 0px #0000002E",
+                    },
                 },
-                colors: {
-                    gray: "#B9BBBB",
-                    green: "#6E9277",
-                    black: "#000000",
-                    white: "#ffffff",
-                    lite_gray: "#F5F8F6",
-                    gray2: "#4D5852",
-                    liteblack: "#4D5852",
-                    darkgreen: "#48524A",
-                    darkwhite: "#F1EDE2",
-                    clifford: "#da373d",
-                    //   self
-                    darkBlack: "#001008",
-                    inputCreamy: "#DED9CC",
-                    borderGrey: "#CDC9C0",
-                    lightWhite: "#B5BBB7",
-                    borderWhite: "#BABFBA",                // border color light grey
-                    'grey-100': "rgba(0, 16, 8, 0.06)",
-                    // light green color
-                    "green-50": "#F1FFF5"
-                },
-                fontFamily: {
-                    archivo: '"Archivo", sans-serif',
-                    kaushan: ' "Kaushan Script", cursive',
-                }, backgroundImage: {
-                    // added herosection background img
-                    heroBg: "url('./assets/image/png/heroGifImg.gif')",
-                },
-                backgroundSize: {
-                    'full': '100% 100%',
-                },
-                screens: {
-                    'sm': '576px',
-                }
             },
-        },
-    };
-</script>
+        };
+    </script>
 </head>
 
 <body>
-        <!-- ESTHETICS SECTION  -->
-        <section class="bg-lite_gray">
-            <div class="max-w-[1165px] mx-auto px-3 py-12 md:py-20">
-                <h2
-                    class="text-[37px] md:text-[48px] font-archivo leading-[42.4px] sm:leading-[50px] md:leading-[62.4px] font-medium text-darkBlack text-center pb-[24px] md:pb-[45px]">
-                    Rejuvenation and Esthetics</h2>
-                <div id="esthetics-container" class="flex flex-wrap justify-center"></div>
+    <!-- ESTHETICS SECTION  -->
+    <section class="bg-lite_gray">
+        <div class="max-w-[1165px] mx-auto px-3 py-12 md:py-20">
+            <h2
+                class="text-[37px] md:text-[48px] font-archivo leading-[42.4px] sm:leading-[50px] md:leading-[62.4px] font-medium text-darkBlack text-center pb-[24px] md:pb-[45px]">
+                Rejuvenation and Esthetics</h2>
+            <div id="esthetics-container" class="flex flex-wrap justify-center"></div>
+        </div>
+    </section>
+    <!-- IMAGE GALLERY SECTION -->
+    <section>
+        <div class="max-w-[1188px] mx-auto px-3 sm:px-6 py-12 md:py-[100px]">
+            <div class=" flex items-center justify-center">
+                <h4
+                    class=" text-center text-[28px] md:text-[32px] leading-[46.4px] font-kaushan text-green inline-block relative after:absolute after:w-[40px] sm:after:w-[60px] after:h-[2px] after:bg-green after:top-[50%] after:right-[-25%] sm:after:right-[-35%] before:absolute before:w-[40px] sm:before:w-[60px] before:h-[2px] before:bg-green before:top-[50%] 
+                    before:left-[-25%] sm:before:left-[-32%]">
+                    Before And After</h4>
             </div>
-        </section>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <h2 class="text-[37px] md:text-[48px] font-archivo leading-[36.4px] md:leading-[42.4px] sm:leading-[50px] md:leading-[62.4px] font-archivo text-darkBlack text-center font-medium pb-6 sm:pb-[35px]">Patient Image
+                Gallery</h2>
+            <div class=" flex flex-wrap -mx-3 pb-10 md:pb-[50px] justify-center">
+                <div class="w-full sm:w-6/12 flex items-center justify-center md:w-[33.33%] px-3">
+                    <div
+                        class=" flex flex-col justify-between max-w-[364px] xl:min-h-[451px] border-[1.1px] border-[#0000001A] duration-300 ease-linear group hover:shadow-ImageGallery">
+                        <div class=" relative">
+                            <div
+                                class=" flex items-center justify-center absolute top-0 w-full h-full bg-[#001008A3] duration-500 ease-linear group-hover:opacity-100 opacity-0">
+                                <img src="./assets/image/webp/Expand-outline.webp" alt="Expand-outline"
+                                    class=" max-w-[66.32px] w-full">
+                            </div>
+                            <img src="./assets/image/webp/PoreCongestion.webp" alt=" PoreCongestion" class=" w-full ">
+                        </div>
+                        <p
+                            class=" capitalize text-center text-[22px] sm:text-[25px] font-archivo font-medium text-darkBlack pt-4 pb-[18.8px]">
+                            pore congestion</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-6/12 flex items-center justify-center mt-6 sm:mt-0 md:w-[33.33%] px-3">
+                    <div
+                        class=" flex flex-col justify-between max-w-[364px] xl:min-h-[451px] border-[1.1px] border-[#0000001A] duration-300 ease-linear group hover:shadow-ImageGallery">
+                        <div class=" relative">
+                            <div
+                                class=" flex items-center justify-center absolute top-0 w-full h-full bg-[#001008A3] duration-500 ease-linear group-hover:opacity-100 opacity-0">
+                                <img src="./assets/image/webp/Expand-outline.webp" alt="Expand-outline"
+                                    class=" max-w-[66.32px] w-full">
+                            </div>
+                            <img src="./assets/image/webp/FineLines.webp" alt=" FineLines" class=" w-full ">
+                        </div>
+                        <p
+                            class=" capitalize text-center text-[22px] sm:text-[25px] font-archivo font-medium text-darkBlack pt-4 pb-[18.8px]">
+                            Fine lines</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-6/12 flex items-center justify-center mt-6 md:mt-0 md:w-[33.33%] px-3">
+                    <div
+                        class=" flex flex-col justify-between max-w-[364px] xl:min-h-[451px] border-[1.1px] border-[#0000001A] duration-300 ease-linear group hover:shadow-ImageGallery">
+                        <div class=" relative">
+                            <div
+                                class=" flex items-center justify-center absolute top-0 w-full h-full bg-[#001008A3] duration-500 ease-linear group-hover:opacity-100 opacity-0">
+                                <img src="./assets/image/webp/Expand-outline.webp" alt="Expand-outline"
+                                    class=" max-w-[66.32px] w-full">
+                            </div>
+                            <img src="./assets/image/webp/EnlargedPores.webp" alt=" EnlargedPores" class=" w-full ">
+                        </div>
+                        <p
+                            class=" capitalize text-center text-[22px] sm:text-[25px] font-archivo font-medium text-darkBlack pt-4 pb-[18.8px]">
+                            enlarged pores</p>
+                    </div>
+                </div>
+            </div>
+            <button class="mx-auto px-4 sm:px-6 max-w-[387px] flex items-center justify-center py-2 sm:py-[15px] uppercase text-white bg-green min-h-[50px] text-base sm:text-[18px] font-medium font-archivo border-[1.1px] border-green hover:border-darkBlack hover:text-darkBlack duration-300 ease-linear">See all before and after photos</button>
+        </div>
+    </section>
     <script src="./assets/js/app.js"></script>
 </body>
 
