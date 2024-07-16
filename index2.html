@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.css">
+    <style>
+        .hero-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 13, 7, 0.8);
+            z-index: 1;
+        }
+
+        .hero-overlay>* {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                        "xs": "14px",
+                        sm: "16px",
+                        "lg": "40px",
+                        md: "18px",
+                        xl: "25px",
+                        "xmd": "20px",
+                        "2x1": "28px",
+                        "3x1": "58px",
+                        "4xl": "48px",
+                        "5x1": "58px",
+                        "6xl": "290px"
+                    },
+                    colors: {
+                        gray: "#B9BBBB",
+                        green: "#6E9277",
+                        black: "#000000",
+                        white: "#ffffff",
+                        lite_gray: "#F5F8F6",
+                        gray2: "#4D5852",
+                        liteblack: "#4D5852",
+                        darkgreen: "#48524A",
+                        darkwhite: "#F1EDE2",
+                        clifford: "#da373d",
+                        // self
+                        darkBlack: "#001008",
+                        inputCreamy: "#DED9CC",
+                        borderGrey: "#CDC9C0",
+                        lightWhite: "#B5BBB7",
+                        borderWhite: "#BABFBA", // border color light grey
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5",
+                        // added pediatrick heading color
+                        "pediatrick": "#001008",
+                        darkgrey: "#49534A",
+                        borderlightblack: "#CFCFCF"
+                    },
+                    fontFamily: {
+                        archivo: '"Archivo", sans-serif',
+                        kaushan: ' "Kaushan Script", cursive',
+                    }, backgroundImage: {
+                        // added herosection background img
+                        heroBg: "url('./assets/image/png",
+                        skinConcernBg: "url('./assets/image/png/woman-making-beauty-procedures-beauty-salon.webp')"
+                    },
+                    backgroundSize: {
+                        'full': '100% 100%',
+                    },
+                    screens: {
+                        'sm': '576px',
+                    },
+                    container: {
+                        center: true,
+                        screens: {
+                            sm: "540px",
+                            md: "720px",
+                            lg: "1022px",
+                            xl: "1164px",
+                        },
+                        padding: {
+                            DEFAULT: "12px",
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+
+    <!-- Skin Concerns -->
+
+    <section
+        class="bg-skinConcernBg min-h-[510px] flex flex-col items-center justify-center bg-full bg-no-repeat max-lg:bg-cover relative bg-bottom hero-overlay overflow-hidden max-w-[1920px] mx-auto">
+        <div class="absolute xl:-top-[120px] top-0 left-5 lg:w-[348px] lg:h-[462px] w-[200px] h-[150px] z-0 opacity-70">
+            <img src="./assets/image/png/overFeatherImg.webp" alt="feather hero section img" class=" w-full h-full">
+        </div>
+        <div class="absolute top-0 left-0 h-[150px] opacity-30">
+            <img src="./assets/image/png/featherTopHero.webp" alt="feather hero section img" class=" w-full h-full">
+        </div>
+        <div class="max-w-[853px] px-3 mx-auto flex-grow-1">
+            <div class="flex items-center justify-center md:gap-[15px] gap-2">
+                <div class="w-[60px] h-[2px] bg-green max-md:w-[35px]"></div>
+                <p class="font-kaushan font-normal text-[32px] leading-[46px] text-green max-md:text-xl">Halsey
+                    Dermatology</p>
+                <div class="w-[60px] h-[2px] bg-green max-md:w-[35px]"></div>
+            </div>
+            <p
+                class="font-archivo font-semibold text-3x1 leading-[64px] text-center md:pt-[30px] pt-4 pb-[10px] text-white max-lg:text-4xl max-md:text-lg max-md:leading-[56px] max-sm:leading-[48px]">
+                Skin Concerns</p>
+        </div>
+    </section>
+
+    <!-- ============================================== Medical and Pediatric Dermatology ======================================== -->
+
+    <section class="Pediatrick_Section w-full py-12 sm:py-14 md:py-24 relative overflow-hidden">
+        <div class="My_Container max-w-[1188px] w-full mx-auto px-6">
+            <h2
+                class="Pediatrick_H font-archivo font-semibold text-2xl sm:text-lg lg:text-4xl leading-[130%] text-center text-pediatrick max-w-[738px] mx-auto uppercase">
+                Medical and Pediatric Dermatology</h2>
+
+            <div
+                class="w-full mx-auto flex flex-col max-lg:flex-col-reverse max-md:flex-col max-sm:flex-col-reverse lg:mt-12 px-[10px]">
+                <div class="row flex flex-row -mx-3 flex-wrap mt-6 lg:mt-0 justify-center">
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Acne.webp" alt="Acne_Webp" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Acne</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-3">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Dermatitis.webp" alt="Dermatitis_webp" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Dermatitis</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 max-sm:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Eczema.webp" alt="Eczema_webp" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Eczema</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 max-md:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Hives.webp" alt="Hives_webp" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Hives</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 max-lg:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Moles.webp" alt="Moles_(nevi)" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Moles (nevi)</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Psoriasis.webp" alt="Psoriasis" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Psoriasis</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Melasma.webp" alt="Melasma" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Melasma</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Molluscum.webp" alt="Molluscum" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Molluscum</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Rosacea.webp" alt="Rosacea" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Rosacea</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Warts.webp" alt="Warts" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Warts</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Vitiligo.webp" alt="Vitiligo" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Vitiligo</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Contact Dermatitis.webp" alt="Contact Dermatitis"
+                                    class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Contact Dermatitis</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Skin cancer.webp" alt="Skin cancer" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Skin cancer</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Dry_Skin.webp" alt="Dry Skin" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Dry Skin</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Birthmarks.webp" alt="Birthmarks" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Birthmarks</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row flex flex-row -mx-3 flex-wrap sm:mt-6 lg:mt-0 justify-center">
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Diaper_rash.webp" alt="Diaper rash"
+                                    class="w-full h-full ">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Diaper rash</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Hair_loss.webp" alt="Hair loss" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Hair loss</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Scarring.webp" alt="Scarring" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Scarring</div>
+                        </div>
+                    </div>
+
+                    <div class="col_20 lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[6px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Pediatrick_Image overflow-hidden border-[1px] border-solid border-black rounded-[10px]">
+                                <img src="./assets//image/webp/Muscle laxity.webp" alt="Muscle laxity" class="w-full">
+                            </div>
+                            <div
+                                class="Pediatrick_Txt font-archivo font-semibold text-md lg:text-xl leading-[130%] text-center text-darkBlack mt-3">
+                                Muscle laxity</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets//image/png/Top_Right_Side.png" alt="Top_Right_Ellips"
+            class="Top_Right_Ellips absolute top-[-300px] sm:top-[-320px] right-[-50px] pointer-events-none">
+    </section>
+
+    <!-- ESTHETICS SECTION  -->
+
+    <section class="bg-lite_gray">
+        <div class="max-w-[1165px] mx-auto px-3 py-12 md:py-20">
+            <h2
+                class="text-[37px] md:text-[48px] font-archivo leading-[42.4px] sm:leading-[50px] md:leading-[62.4px] font-medium text-darkBlack text-center pb-[24px] md:pb-[45px]">
+                Rejuvenation and Esthetics</h2>
+            <div id="esthetics-container" class="flex flex-wrap justify-center"></div>
+        </div>
+    </section>
+
+    <!------ FAQ-section --->
+    <div class="bg-darkwhite">
+        <div class="container py-[40px] lg:py-[80px]">
+            <div class="lg:flex gap-[90px]">
+                <div class="">
+                    <h2
+                        class=" text-[55px] sm:text-[75px] lg:text-6xl text-vertical font-archivo lg:rotate-[-180deg] font-bold leading-[40px] sm:leading-[60px] lg:leading-[290px] lg:ml-[-30px] text-center lg:text-start">
+                        FAQ
+                    </h2>
+                    <div class="flex justify-center lg:block">
+                        <p
+                            class=" font-archivo foont-normal text-base leading-[24px] text-darkgrey max-w-[298px] mt-4 text-center lg:text-start">
+                            Answers
+                            to
+                            your frequently asked questions.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center mt-6 lg:mt-0">
+                    <div class="relative max-w-[776px] w-full">
+                        <div class="mb-0 border-y border-borderlightblack">
+                            <button
+                                class="relative flex items-center py-[20px] lg:pt-[30px] lg:pb-[23px] text-left transition-all ease-in w-full  cursor-pointer group"
+                                data-collapse-target="collapse-1">
+                                <div class="flex">
+                                    <span
+                                        class=" font-archivo font-semibold text-[19px] xl:text-[20px] leading-[26px] text-black max-w-[316px] sm:max-w-full">How
+                                        do I know which skin treatment is right for me?</span>
+                                    <i
+                                        class="absolute right-0 pt-1 fa fa-plus group-open:opacity-0 text-[#FDDA60]  text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                                                fill="black" />
+                                        </svg>
+                                    </i>
+                                    <i
+                                        class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19 12.998H13H11H5V10.998H11H13H19V12.998Z" fill="black" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </button>
+                            <div data-collapse="collapse-1"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" font-archivo font-normal text-base leading-[24px] pb-[29px] text-darkgrey max-w-[692px]">
+                                    Lorem ipsum dolor sit amet consectetur. Ac pharetra sit quam eu senectus. Sit eget
+                                    et nisl imperdiet. Dui tristique auctor tellus diam nibh arcu eget. Pretium volutpat
+                                    leo odio morbi ultrices commodo sem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative max-w-[776px] w-full">
+                        <div class="mb-0 border-b border-borderlightblack">
+                            <button
+                                class="relative flex items-center py-[20px] lg:pt-[30px] lg:pb-[23px] text-left transition-all ease-in w-full  cursor-pointer group"
+                                data-collapse-target="collapse-2">
+                                <div class=" flex">
+                                    <span
+                                        class=" font-archivo font-semibold text-[19px] xl:text-[20px] leading-[26px] text-black max-w-[286px] sm:max-w-full">How
+                                        many sessions will I need to see results?</span>
+                                    <i
+                                        class="absolute right-0 pt-1 fa fa-plus group-open:opacity-0 text-[#FDDA60]  text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                                                fill="black" />
+                                        </svg>
+                                    </i>
+                                    <i
+                                        class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19 12.998H13H11H5V10.998H11H13H19V12.998Z" fill="black" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </button>
+                            <div data-collapse="collapse-2"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" font-archivo font-normal text-base leading-[24px] pb-[29px] text-darkgrey max-w-[692px]">
+                                    Lorem ipsum dolor sit amet consectetur. Ac pharetra sit quam eu senectus. Sit eget
+                                    et nisl imperdiet. Dui tristique auctor tellus diam nibh arcu eget. Pretium volutpat
+                                    leo odio morbi ultrices commodo sem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative max-w-[776px] w-full">
+                        <div class="mb-0 border-b border-borderlightblack">
+                            <button
+                                class="relative flex items-center py-[20px] lg:pt-[30px] lg:pb-[23px] text-left transition-all ease-in w-full  cursor-pointer group"
+                                data-collapse-target="collapse-3">
+                                <div class=" flex">
+                                    <span
+                                        class=" font-archivo font-semibold text-[19px] xl:text-[20px] leading-[26px] text-black max-w-[316px] sm:max-w-full">How
+                                        long do the results of the treatment typically last?</span>
+                                    <i
+                                        class="absolute right-0 pt-1 fa fa-plus group-open:opacity-0 text-[#FDDA60]  text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                                                fill="black" />
+                                        </svg>
+                                    </i>
+                                    <i
+                                        class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19 12.998H13H11H5V10.998H11H13H19V12.998Z" fill="black" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </button>
+                            <div data-collapse="collapse-3"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" font-archivo font-normal text-base leading-[24px] pb-[29px] text-darkgrey max-w-[692px]">
+                                    Lorem ipsum dolor sit amet consectetur. Ac pharetra sit quam eu senectus. Sit eget
+                                    et nisl imperdiet. Dui tristique auctor tellus diam nibh arcu eget. Pretium volutpat
+                                    leo odio morbi ultrices commodo sem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative max-w-[776px] w-full">
+                        <div class="mb-0 border-b border-borderlightblack">
+                            <button
+                                class="relative flex items-center py-[20px] lg:pt-[30px] lg:pb-[23px] text-left transition-all ease-in w-full  cursor-pointer group"
+                                data-collapse-target="collapse-4">
+                                <div class="flex">
+                                    <span
+                                        class=" font-archivo font-semibold text-[19px] xl:text-[20px] leading-[26px] text-black max-w-[316px] sm:max-w-full">Can
+                                        the treatment be performed on all skin tones and ethnicities?</span>
+                                    <i
+                                        class="absolute right-0 pt-1 fa fa-plus group-open:opacity-0 text-[#FDDA60]  text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                                                fill="black" />
+                                        </svg>
+                                    </i>
+                                    <i
+                                        class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19 12.998H13H11H5V10.998H11H13H19V12.998Z" fill="black" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </button>
+                            <div data-collapse="collapse-4"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" font-archivo font-normal text-base leading-[24px] pb-[29px] text-darkgrey max-w-[692px]">
+                                    Lorem ipsum dolor sit amet consectetur. Ac pharetra sit quam eu senectus. Sit eget
+                                    et nisl imperdiet. Dui tristique auctor tellus diam nibh arcu eget. Pretium volutpat
+                                    leo odio morbi ultrices commodo sem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative max-w-[776px] w-full">
+                        <div class="mb-0 border-b border-borderlightblack">
+                            <button
+                                class="relative flex items-center py-[20px] lg:pt-[30px] lg:pb-[23px] text-left transition-all ease-in w-full  cursor-pointer group"
+                                data-collapse-target="collapse-5">
+                                <span
+                                    class=" font-archivo font-semibold text-[19px] xl:text-[20px] leading-[26px] text-black max-w-[316px] sm:max-w-full">What
+                                    are the common side effects?</span>
+                                <i
+                                    class="absolute right-0 pt-1 fa fa-plus group-open:opacity-0 text-[#FDDA60]  text-[25px] leading-[108%]"><svg
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                                            fill="black" />
+                                    </svg>
+                                </i>
+                                <i
+                                    class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"><svg
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 12.998H13H11H5V10.998H11H13H19V12.998Z" fill="black" />
+                                    </svg>
+                                </i>
+                            </button>
+                            <div data-collapse="collapse-5"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" font-archivo font-normal text-base leading-[24px] pb-[29px] text-darkgrey max-w-[692px]">
+                                    Lorem ipsum dolor sit amet consectetur. Ac pharetra sit quam eu senectus. Sit eget
+                                    et nisl imperdiet. Dui tristique auctor tellus diam nibh arcu eget. Pretium volutpat
+                                    leo odio morbi ultrices commodo sem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative max-w-[776px] w-full">
+                        <div class="mb-0 border-b border-borderlightblack">
+                            <button
+                                class="relative flex items-center py-[20px] lg:pt-[30px] lg:pb-[23px] text-left transition-all ease-in w-full  cursor-pointer group"
+                                data-collapse-target="collapse-6">
+                                <div class="flex">
+                                    <span
+                                        class=" font-archivo font-semibold text-[19px] xl:text-[20px] leading-[26px] text-black max-w-[326px] sm:max-w-full">Is
+                                        there a minimum age requirement for the treatment?</span>
+                                    <i
+                                        class="absolute right-0 pt-1 fa fa-plus group-open:opacity-0 text-[#FDDA60]  text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                                                fill="black" />
+                                        </svg>
+                                    </i>
+                                    <i
+                                        class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19 12.998H13H11H5V10.998H11H13H19V12.998Z" fill="black" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </button>
+                            <div data-collapse="collapse-6"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" font-archivo font-normal text-base leading-[24px] pb-[29px] text-darkgrey max-w-[692px]">
+                                    Lorem ipsum dolor sit amet consectetur. Ac pharetra sit quam eu senectus. Sit eget
+                                    et nisl imperdiet. Dui tristique auctor tellus diam nibh arcu eget. Pretium volutpat
+                                    leo odio morbi ultrices commodo sem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative max-w-[776px] w-full">
+                        <div class="mb-0 border-b border-borderlightblack">
+                            <button
+                                class="relative flex items-center py-[20px] lg:pt-[30px] lg:pb-[23px] text-left transition-all ease-in w-full  cursor-pointer group"
+                                data-collapse-target="collapse-7">
+                                <div class="flex">
+                                    <span
+                                        class=" font-archivo font-semibold text-[19px] xl:text-[20px] leading-[26px] text-black  max-w-[285px] sm:max-w-full">What
+                                        are the qualifications of the practitioners?</span>
+                                    <i
+                                        class="absolute right-0 pt-1 fa fa-plus group-open:opacity-0 text-[#FDDA60]  text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                                                fill="black" />
+                                        </svg>
+                                    </i>
+                                    <i
+                                        class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19 12.998H13H11H5V10.998H11H13H19V12.998Z" fill="black" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </button>
+                            <div data-collapse="collapse-7"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" font-archivo font-normal text-base leading-[24px] pb-[29px] text-darkgrey max-w-[692px]">
+                                    Lorem ipsum dolor sit amet consectetur. Ac pharetra sit quam eu senectus. Sit eget
+                                    et nisl imperdiet. Dui tristique auctor tellus diam nibh arcu eget. Pretium volutpat
+                                    leo odio morbi ultrices commodo sem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative max-w-[776px] w-full">
+                        <div class="mb-0 border-b border-borderlightblack">
+                            <button
+                                class="relative flex items-center py-[20px] lg:pt-[30px] lg:pb-[23px] text-left transition-all ease-in w-full  cursor-pointer group"
+                                data-collapse-target="collapse-8">
+                                <div class="flex">
+                                    <span
+                                        class=" font-archivo font-semibold text-[19px] xl:text-[20px] leading-[26px] text-black max-w-[297px] sm:max-w-full">Are
+                                        there any specific limitations for the treatment?</span>
+                                    <i
+                                        class="absolute right-0 pt-1 fa fa-plus group-open:opacity-0 text-[#FDDA60]  text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                                                fill="black" />
+                                        </svg>
+                                    </i>
+                                    <i
+                                        class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19 12.998H13H11H5V10.998H11H13H19V12.998Z" fill="black" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </button>
+                            <div data-collapse="collapse-8"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" font-archivo font-normal text-base leading-[24px] pb-[29px] text-darkgrey max-w-[692px]">
+                                    Lorem ipsum dolor sit amet consectetur. Ac pharetra sit quam eu senectus. Sit eget
+                                    et nisl imperdiet. Dui tristique auctor tellus diam nibh arcu eget. Pretium volutpat
+                                    leo odio morbi ultrices commodo sem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.js"></script>
+    <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+
+    <script>
+        // ESTHETICS SECTION JS
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const estheticsData = [
+                { imgSrc: "./assets/image/webp/Esthetics1.webp", alt: "Esthetics1", text: "Acne scars" },
+                { imgSrc: "./assets/image/webp/Esthetics2.webp", alt: "Esthetics2", text: "Benign pigmented lesions" },
+                { imgSrc: "./assets/image/webp/Esthetics3.webp", alt: "Esthetics3", text: "Vascular lesions" },
+                { imgSrc: "./assets/image/webp/Esthetics4.webp", alt: "Esthetics4", text: "Cherry angiomas" },
+                { imgSrc: "./assets/image/webp/Esthetics5.webp", alt: "Esthetics5", text: "Dehydrated skin" },
+                { imgSrc: "./assets/image/webp/Esthetics6.webp", alt: "Esthetics6", text: "Dullness" },
+                { imgSrc: "./assets/image/webp/Esthetics7.webp", alt: "Esthetics7", text: "Dyspigmentation" },
+                { imgSrc: "./assets/image/webp/Esthetics8.webp", alt: "Esthetics8", text: "Enlarged pores" },
+                { imgSrc: "./assets/image/webp/Esthetics9.webp", alt: "Esthetics9", text: "   Fine lines" },
+                { imgSrc: "./assets/image/webp/Esthetics10.webp", alt: "Esthetics10", text: "Pore Congestion" },
+                { imgSrc: "./assets/image/webp/Esthetics11.webp", alt: "Esthetics11", text: "Prejuvenation" },
+                { imgSrc: "./assets/image/webp/Esthetics12.webp", alt: "Esthetics12", text: "Redness" },
+                { imgSrc: "./assets/image/webp/Esthetics13.webp", alt: "Esthetics13", text: "Seborrheic Keratosis" },
+                { imgSrc: "./assets/image/webp/Esthetics14.webp", alt: "Esthetics14", text: "Skin laxity" },
+                { imgSrc: "./assets/image/webp/Esthetics15.webp", alt: "Esthetics15", text: "Spider veins" },
+                { imgSrc: "./assets/image/webp/Esthetics16.webp", alt: "Esthetics16", text: "Stretch marks" },
+                { imgSrc: "./assets/image/webp/Esthetics17.webp", alt: "Esthetics17", text: "Submental fat" },
+                { imgSrc: "./assets/image/webp/Esthetics18.webp", alt: "Esthetics18", text: "Sun damage" },
+                { imgSrc: "./assets/image/webp/Esthetics19.webp", alt: "Esthetics19", text: "Syringomas" },
+                { imgSrc: "./assets/image/webp/Esthetics20.webp", alt: "Esthetics20", text: "Irregular Texture" },
+                { imgSrc: "./assets/image/webp/Esthetics21.webp", alt: "Esthetics21", text: "Uneven tone" },
+                { imgSrc: "./assets/image/webp/Esthetics22.webp", alt: "Esthetics22", text: "Unwanted hair" },
+                { imgSrc: "./assets/image/webp/Esthetics23.webp", alt: "Esthetics23", text: "Unwanted tattoo" },
+                { imgSrc: "./assets/image/webp/Esthetics24.webp", alt: "Esthetics24", text: "Volume loss" },
+                { imgSrc: "./assets/image/webp/Esthetics25.webp", alt: "Esthetics25", text: "Wrinkles" },
+            ];
+            const container = document.getElementById("esthetics-container");
+            estheticsData.map((data, index) => {
+                const div = document.createElement("div");
+                div.className = "flex items-center flex-col gap-2 md:gap-[15px] w-[50%] sm:w-[33.33%] md:w-[25%] px-2 sm:px-3 py-2 sm:py-3 lg:w-[228px]";
+                const img = document.createElement("img");
+                img.src = data.imgSrc;
+                img.alt = data.alt;
+                img.className = "w-full lg:max-w-[200px] pointer-events-none";
+                div.appendChild(img);
+                const p = document.createElement("p");
+                p.className = "text-[17px] md:text-[22px] lg:text-[24px] stroke-darkBlack leading-[22px] md:leading-[31.2px] font-medium font-archivo text-darkBlack text-center";
+                if (index === 3 || index === 4) {
+                    p.classList.add("max-w-[167px]");
+                }
+                p.textContent = data.text;
+                div.appendChild(p);
+                container.appendChild(div);
+            });
+        });
+    </script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

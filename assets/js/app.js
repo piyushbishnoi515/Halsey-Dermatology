@@ -51,6 +51,7 @@ clickBtn.forEach((e) => {
 });
 
 // ESTHETICS SECTION JS
+
 document.addEventListener("DOMContentLoaded", function () {
     const estheticsData = [
         { imgSrc: "./assets/image/webp/Esthetics1.webp", alt: "Esthetics1", text: "Acne scars" },
