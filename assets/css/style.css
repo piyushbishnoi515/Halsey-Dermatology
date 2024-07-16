@@ -1,22 +1,17 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
+<<<<<<< HEAD @import url("https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&display=swap");
+=======@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-=======
-@import url('https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&display=swap');
-@tailwind base;
+>>>>>>>cbfa6627a5b9dc9a39f635c480222b40a655f7b0 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* HEADER CSS */
 .cross span:nth-child(1) {
-    transform: rotate(58deg) translateY(17px);
+    transform: rotate(61deg) translateY(18px);
     transition: 300ms;
     position: relative;
-    top: 7px;
+    top: 8px;
     right: -47%;
 }
 
@@ -26,11 +21,64 @@
 }
 
 .cross span:nth-child(3) {
-    transform: rotate(123deg) translateY(19px);
+    transform: rotate(117deg) translateY(19px);
     transition: 300ms;
     position: relative;
     top: -1px;
     right: -47%;
+}
+
+[data-collapse] {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+
+li:hover [data-collapse] {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+li:hover .icon-svg {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease;
+}
+
+/* HERO MISSION SECTION CSS */
+.hero-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 13, 7, 0.8);
+    z-index: 1;
+}
+
+.hero-overlay>* {
+    position: relative;
+    z-index: 2;
+}
+
+/* HERO MISSION SECTION */
+.hero-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 13, 7, 0.8);
+    z-index: 1;
+}
+
+.hero-overlay>* {
+    position: relative;
+    z-index: 2;
 }
 
 /* TEAM SECTION CSS */
@@ -66,8 +114,8 @@
 }
 
 .arrow:hover svg path {
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
+    fill: #ffffff;
+    stroke: #ffffff;
 }
 
 .slider-nav .slick-slide {
@@ -116,12 +164,25 @@ select {
 .Message {
     width: 170px;
     height: 50px;
-    background: #FFFFFF;
+    background: #ffffff;
     padding: 15px 25px 15px 25px;
-    border: 0.8px solid #FFFFFF;
+    border: 0.8px solid #ffffff;
 }
 
 .Patient {
+    width: 199px;
+    height: 50px;
+    background: #ffffff1a;
+    border: 1px solid #ffffff;
+    padding: 15px 25px 15px 25px;
+}
+
+.white_shadow:hover {
+    transition: all 255ms linear;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.Common_btn {
     width: 199px;
     height: 50px;
     background: #FFFFFF1A;
@@ -133,4 +194,87 @@ select {
     transition: all 255ms linear;
     box-shadow: 0 0 10px #ffffff;
 }
->>>>>>> 59e02c3c23000e730767a9b4470c3e3543d889cc
+
+/* SKIN CONCERN */
+
+/* TEAM SECTION */
+@media (max-width: 991.11px) {
+    .All_Slider_Images {
+        width: 1660px;
+        margin: 10px -400px;
+        animation: nav_move 20s infinite linear;
+    }
+
+    .All_Slider_Images:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes nav_move {
+        0% {
+            margin-left: 0px;
+        }
+
+        100% {
+            margin-left: -800px;
+        }
+    }
+}
+
+/* FAQ SECTION */
+
+@media (min-width:1024px) {
+    .text-vertical {
+        writing-mode: vertical-rl;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("./assets/image/png/dropdownArrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 20px;
+    border-radius: 2px;
+    margin-right: 2rem;
+}
+
+/* halsey section */
+
+.Common_btn {
+    width: 199px;
+    height: 50px;
+    background: #FFFFFF1A;
+    border: 1px solid #FFFFFF;
+    padding: 15px 25px 15px 25px;
+}
+
+/* Footer and HEADER css */
+
+.cross span:nth-child(1) {
+    transform: rotate(58deg) translateY(17px);
+    transition: 300ms;
+    position: relative;
+    top: 7px;
+    right: -47%;
+}
+
+.cross span:nth-child(2) {
+    transition: 300ms;
+    display: none;
+}
+
+.cross span:nth-child(3) {
+    transform: rotate(123deg) translateY(19px);
+    transition: 300ms;
+    position: relative;
+    top: -1px;
+    right: -47%;
+}
