@@ -82,7 +82,7 @@
             <div class="max-w-[1188px] px-6 mx-auto">
                 <nav class="h-[80px] flex items-center justify-between">
                     <a href="">
-                        <img class="max-w-[201px]" src="./assets/image/png/hero-logo.png" alt="hero-logo" /></a>
+                        <img class="max-w-[201px]" src="./assets/image/webp/hero-logo.webp" alt="hero-logo" /></a>
                     <div onclick="openNav()"
                         class="menuIcon max-md:w-[30px] max-md:h-[30px] max-md:flex max-md:justify-between z-[15] max-md:flex-col max-md:cursor-pointer start-0 transition ease-linear duration-300 hidden">
                         <span class="max-md:h-[4px] max-md:bg-[white]"></span>
@@ -92,7 +92,7 @@
                     <div onclick="openNav()"
                         class="menuList max-md:w-full max-md:h-full max-md:min-h-screen max-md:bg-black max-md:justify-center max-md:items-center max-md:flex-col max-md:fixed max-md:top-0 max-md:-right-full max-md:z-[11] transition ease-linear duration-300">
                         <ul
-                            class="lg:gap-9 gap-7 flex max-md:flex-col max-md:justify-center max-md:items-center max-md:min-h-screen transition ease-linear duration-300">
+                            class="lg:gap-9 gap-4 flex max-md:flex-col max-md:justify-center max-md:items-center max-md:min-h-screen transition ease-linear duration-300">
                             <li class="relative inline-block group hidden md:block">
                                 <a href=""
                                     class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300">Treatments
@@ -227,25 +227,23 @@
                                         class="font-archivo font-[100] text-base leading-4 text-green w-full p-1 hover:bg-green hover:text-white cursor-ponter">device1
                                     </span>
                                     <span
-                                        class="font-archivo font-[100] text-base leading-4 text-green w-full p-1 hover:bg-white hover:text-green cursor-ponter">device2
+                                        class="font-archivo font-[100] text-base leading-4 text-green w-full p-1 hover:bg-green hover:text-white  cursor-ponter">device2
                                     </span>
                                 </a>
                             </li>
                             <li class="relative mb-3 md:hidden mb-0">
                                 <button
                                     class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
-                                    data-collapse-target="collapse-3">
-                                    <span
-                                        class="font-archivo font-[100] text-base leading-4 text-lightWhite">Devices</span>
-                                    <a class="absolute right-0 pt-1 group-open:opacity-0 text-[25px] leading-[108%]">
-                                        <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g opacity="0.7">
-                                                <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
-                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </g>
-                                        </svg>
-                                    </a>
+                                    data-collapse-target="collapse-2">
+                                    <span class="font-archivo font-[100] text-base leading-4 text-lightWhite">Devices
+                                    </span>
+                                    <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
                                     <a
                                         class="absolute right-0 pt-1 opacity-0 group-open:opacity-100 text-[25px] leading-[108%]">
                                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -257,14 +255,14 @@
                                         </svg>
                                     </a>
                                 </button>
-                                <div data-collapse="collapse-3"
+                                <div data-collapse="collapse-2"
                                     class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2">
-                                    <div class="bg-white flex flex-col border border-white rounded-sm">
+                                    <div class="bg-white flex flex-col border border-white rounded-sm w-full">
                                         <span
                                             class="font-archivo font-[100] text-base leading-4 text-green w-full p-1 hover:bg-green hover:text-white cursor-pointer">device1
                                         </span>
                                         <span
-                                            class="font-archivo font-[100] text-base leading-4 text-green w-full p-1 hover:bg-green hover:text-white cursor-pointer">device1
+                                            class="font-archivo font-[100] text-base leading-4 text-green w-full p-1 hover:bg-green hover:text-white cursor-pointer">device2
                                         </span>
                                     </div>
                                 </div>
@@ -786,13 +784,13 @@
     <section class=" lg:py-[100px] md:py-[70px] py-10">
         <div class=" container max-w-[1188px] px-6 mx-auto">
             <div class="-mx-3 flex flex-row flex-wrap items-center max-lg:flex-col-reverse ">
-                <div class=" lg:w-1/2 px-3 lg:pr-6 max-lg:mt-3">
+                <div class=" lg:w-1/2 px-3 lg:pr-6 max-lg:mt-5">
                     <div class=" flex items-center gap-4">
-                        <h3 class=" font-kaushan text-green text-base leading-[46px]">Appointment</h3>
+                        <h3 class=" font-kaushan text-green text-base md:leading-[46px] leading-8">Appointment</h3>
                         <div class="max-w-[60px] w-full h-[2px] bg-green"></div>
                     </div>
                     <h1
-                        class=" font-archivo font-semibold sm:text-5xl text-4xl text-black max-w-[484px] pt-2 leading-10 sm:leading-[62px]">
+                        class=" font-archivo font-semibold md:text-5xl sm:text-4xl text-lg  text-black max-w-[484px] md:pt-2 pt-1 leading-[45px] sm:leading-[62px]">
                         Book Your
                         Appointment Now
                     </h1>
@@ -900,7 +898,7 @@
             <div class="flex flex-wrap flex-row mx-[-12px] sm:mb-10 mb-6 z-10 relative">
                 <div class="lg:w-[41.66%] px-[12px] lg:mb-0 sm:mb-6 mb-4">
                     <a href="">
-                        <img class="max-w-[267px] lg:mb-12 sm:mb-5 mb-3" src="./assets/image/png/footer-logo.png"
+                        <img class="max-w-[267px] lg:mb-12 sm:mb-5 mb-3" src="./assets/image/webp/footer-logo.webp"
                             alt="footer-logo" /></a>
                     <p class="font-archivo font-normal text-base leading-6 text-darkgreen underline underline-offset-4">
                         3350 Noyac Rd
@@ -1004,7 +1002,8 @@
             </div>
         </div>
         <div class="border border-borderGrey"></div>
-        <p class="font-archivo font-normal text-sm leading-4 text-darkBlack sm:py-[22px] py-[17px] text-center">
+        <p
+            class="font-archivo font-normal text-sm leading-4 text-darkBlack sm:py-[22px] py-[17px] text-center lg:px-0 px-3">
             Content ©
             <script>
                 document.write(new Date().getFullYear());
@@ -1013,7 +1012,7 @@
         </p>
 
         <div class="absolute end-0 bottom-0 sm:block hidden">
-            <img class="max-w-[309px]" src="./assets/image/png/footer-leaf.png" alt="footer-leaf" />
+            <img class="max-w-[309px]" src="./assets/image/webp/footer-leaf.webp" alt="footer-leaf" />
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
