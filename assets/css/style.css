@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-=======
-@import url('https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -150,4 +143,3 @@ select {
     transition: all 255ms linear;
     box-shadow: 0 0 10px #ffffff;
 }
->>>>>>> 59e02c3c23000e730767a9b4470c3e3543d889cc
