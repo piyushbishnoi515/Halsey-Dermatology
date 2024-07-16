@@ -196,3 +196,26 @@ select {
     border: 1px solid #FFFFFF;
     padding: 15px 25px 15px 25px;
 }
+
+/* Footer and HEADER css */
+
+.cross span:nth-child(1) {
+    transform: rotate(58deg) translateY(17px);
+    transition: 300ms;
+    position: relative;
+    top: 7px;
+    right: -47%;
+}
+
+.cross span:nth-child(2) {
+    transition: 300ms;
+    display: none;
+}
+
+.cross span:nth-child(3) {
+    transform: rotate(123deg) translateY(19px);
+    transition: 300ms;
+    position: relative;
+    top: -1px;
+    right: -47%;
+}
