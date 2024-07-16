@@ -29,34 +29,44 @@
             theme: {
                 extend: {
                     fontSize: {
-                        "sm": "16px",
-                        "md": "18px",
+                        "xs": "14px",
+                        sm: "16px",
                         "lg": "40px",
-                        "xl": "25px",
+                        md: "18px",
+                        xl: "25px",
                         "2x1": "28px",
                         "3x1": "58px",
-                        // added font sizes
                         "4xl": "48px",
+                        "5x1": "58px",
                     },
                     colors: {
                         gray: "#B9BBBB",
                         green: "#6E9277",
-                        black: "#001008",
+                        black: "#000000",
                         white: "#ffffff",
                         lite_gray: "#F5F8F6",
                         gray2: "#4D5852",
                         liteblack: "#4D5852",
                         darkgreen: "#48524A",
                         darkwhite: "#F1EDE2",
-                        clifford: '#da373d',
+                        clifford: "#da373d",
+                        // self
+                        darkBlack: "#001008",
+                        inputCreamy: "#DED9CC",
+                        borderGrey: "#CDC9C0",
+                        lightWhite: "#B5BBB7",
+                        borderWhite: "#BABFBA", // border color light grey
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5"
                     },
                     fontFamily: {
                         archivo: '"Archivo", sans-serif',
                         kaushan: ' "Kaushan Script", cursive',
-                    },
-                    backgroundImage: {
+                    }, backgroundImage: {
                         // added herosection background img
-                        heroBg: "url('./assets/image/png/heroGifImg.gif')",
+                        heroBg: "url('./assets/image/png",
+                        skinConcernBg: "url('./assets/image/png/woman-making-beauty-procedures-beauty-salon.webp')"
                     },
                     backgroundSize: {
                         'full': '100% 100%',
@@ -64,18 +74,18 @@
                     screens: {
                         'sm': '576px',
                     }
-                }
-            }
-        }
+                },
+            },
+        };
     </script>
 </head>
 
 <body>
 
-    <!-- Hero Section -->
+    <!-- Skin Concerns -->
 
     <section
-        class="bg-heroBg min-h-[810px] flex flex-col items-center justify-center bg-full bg-no-repeat max-lg:bg-cover relative bg-bottom hero-overlay overflow-hidden max-w-[1920px] mx-auto">
+        class="bg-skinConcernBg min-h-[510px] flex flex-col items-center justify-center bg-full bg-no-repeat max-lg:bg-cover relative bg-bottom hero-overlay overflow-hidden max-w-[1920px] mx-auto">
         <div class="absolute xl:-top-[120px] top-0 left-5 lg:w-[348px] lg:h-[462px] w-[200px] h-[150px] z-0 opacity-70">
             <img src="./assets/image/png/overFeatherImg.webp" alt="feather hero section img" class=" w-full h-full">
         </div>
@@ -91,56 +101,10 @@
             </div>
             <p
                 class="font-archivo font-semibold text-3x1 leading-[64px] text-center md:pt-[30px] pt-4 pb-[10px] text-white max-lg:text-4xl max-md:text-lg max-md:leading-[56px] max-sm:leading-[48px]">
-                YOUR TRUSTED
-                HAMPTONS DERMATOLOGY
-                EXPERTS</p>
-            <p
-                class="font-archivo font-normal text-sm leading-6 text-white opacity-70 text-center pb-12 max-sm:pb-[30px]">
-                Serving the
-                entire
-                Hamptons
-                community since 2018</p>
-            <div class="flex items-center justify-center">
-                <button
-                    class="max-w-[261px] py-5 px-[25px] bg-green border-0 text-white font-archivo font-semibold text-md hover:shadow-lg hover:bg-white hover:text-green ease-in-out duration-300 text-nowrap">Schedule
-                    an appointment</button>
-            </div>
+                Skin Concerns</p>
         </div>
     </section>
 
-    <!-- Mission and Vision Section -->
-
-    <section class="py-[100px] max-sm:py-[60px] relative overflow-hidden max-w-[1920px] mx-auto px-3">
-        <div class="absolute right-[-3%] top-[-6%] w-[371px] h-[387px] -z-[1] -rotate-[29deg] max-sm:hidden">
-            <img src="./assets/image/png/featherImg.webp" alt="feather mission and vision image" class="w-full h-full">
-        </div>
-        <div class="max-w-[1188px] px-6 mx-auto bg-lite_gray py-[40px] pl-[40px] pr-[50px] max-sm:p-[12px]">
-            <div class="-mx-3 flex flex-wrap flex-row">
-                <div class="lg:w-7/12 w-full px-3 flex items-center lg:justify-start justify-center">
-                    <div class="w-[596px] h-[475px] max-lg:h-auto">
-                        <img src="./assets/image/png/facialPic.webp" alt="girl doing her facial img"
-                            class="w-full h-full">
-                    </div>
-                </div>
-                <div class="lg:w-5/12 w-full px-3 flex items-center justify-center lg:pt-0 pt-4">
-                    <div class="flex lg:items-start items-center lg:justify-start justify-center flex-col">
-                        <p class="font-archivo font-semibold text-4xl max-lg:text-[38px] lg:text-nowrap text-black">
-                            Mission
-                            & Vision
-                        </p>
-                        <p
-                            class="font-archivo font-medium text-sm leading-6 opacity-70 lg:pt-4 pt-2 text-center lg:text-start">
-                            To
-                            deliver
-                            world-class
-                            dermatology and
-                            skin
-                            care to the Hamptons community.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
 
 </html>
