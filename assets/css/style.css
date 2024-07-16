@@ -129,7 +129,6 @@ select {
     background: #FFFFFF1A;
     border: 1px solid #FFFFFF;
     padding: 15px 25px 15px 25px;
-<<<<<<< HEAD
 }
 
 .white_shadow:hover {
@@ -186,6 +185,14 @@ select {
     background-position-y: 20px;
     border-radius: 2px;
     margin-right: 2rem;
-=======
->>>>>>> e909837a2350cb0eebbbfa624e5f5e394aba1d5b
+}
+
+/* halsey section */
+
+.Common_btn {
+    width: 199px;
+    height: 50px;
+    background: #FFFFFF1A;
+    border: 1px solid #FFFFFF;
+    padding: 15px 25px 15px 25px;
 }
