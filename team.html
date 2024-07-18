@@ -35,13 +35,16 @@
             theme: {
                 extend: {
                     fontSize: {
-                        "sm": "16px",
-                        "md": "18px",
-                        "xl": "20px",
-                        "2x1": "28px",
-                        "3xl": "32px",
-                        "4xl": "36px",
+                        "xs": "14px",
+                        sm: "16px",
+                        "lg": "40px",
+                        md: "18px",
+                        // xl: "25px",
+                        "2x1": "34px", //change 2xl font sizes
+                        "3x1": "24px", //change 3xl = 58px in 24px 
+                        "4xl": "48px",
                         "5x1": "58px",
+                        "Custom_xl": "24px", //add the custom font size
                     },
                     colors: {
                         gray: "#B9BBBB",
@@ -53,165 +56,216 @@
                         liteblack: "#4D5852",
                         darkgreen: "#48524A",
                         darkwhite: "#F1EDE2",
-                        clifford: '#da373d',
+                        clifford: "#da373d",
+                        //   self
+                        darkBlack: "#001008",
+                        inputCreamy: "#DED9CC",
+                        borderGrey: "#CDC9C0",
+                        lightWhite: "#B5BBB7",
+                        borderWhite: "#BABFBA",
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5",
+                        // added pediatrick heading color
+                        "pediatrick": "#001008",
+                        // added Device box border color
+                        "deviceBox": "#F1EDE2",
                     },
                     fontFamily: {
                         archivo: '"Archivo", sans-serif',
                         kaushan: ' "Kaushan Script", cursive',
+                    }, backgroundImage: {
+                        // added herosection background img
+                        heroBg: "url('./assets/image/png/heroGifImg.gif')",
                     },
-                }
-            }
-        }
+                    backgroundSize: {
+                        'full': '100% 100%',
+                    },
+                    screens: {
+                        'sm': '576px',
+                    },
+                    boxShadow: {
+                        'xl': ' 3px 3px 12px #cacaca',
+                    }
+                },
+            },
+        };
     </script>
 </head>
 
 <body>
-
-    <!-- ==================================================== TEAM_SECTION ================================================ -->
-
-    <section class="Team_Section w-full pb-12 sm:pb-16  lg:pb-24 relative max-w-[1920px] mx-auto">
-        <div class="My_Container max-w-[1164px] w-full mx-auto px-3 relative z-5">
-            <div class="flex items-center justify-center gap-4">
-                <div class="max-w-[60px] h-[2px] w-full bg-green"></div>
-                <h1 class="font-kaushan font-normal text-3xl text-green">Team</h1>
-                <div class="max-w-[60px] h-[2px] w-full bg-green"></div>
-            </div>
-
+    <!-- ============================================================= All Devices ==================================================== -->
+    <section class="Pediatrick_Section w-full py-12 sm:py-14 md:py-24 relative overflow-hidden">
+        <div class="My_Container max-w-[1188px] w-full mx-auto px-6">
             <h2
-                class="Sub_H font-semibold text-4xl sm:text-5xl font-archivo text-center leading-[130%] pt-2 max-sm:pb-[16px] pb-12">
-                Meet Our Experts
-            </h2>
+                class="Pediatrick_H font-archivo font-semibold text-2xl sm:text-lg lg:text-4xl leading-[130%] text-center text-pediatrick max-w-[738px] mx-auto">
+                All Devices</h2>
 
-            <div class="row flex flex-wrap flex-row mx-auto max-lg:justify-center lg:-mx-3">
-
-                <div class="col-4 max-sm:w-full sm:1/2 lg:w-1/3 sm:px-3 max-sm:flex max-sm:justify-center ">
-
-                    <div
-                        class="Experts_Card flex flex-col justify-between max-w-[353px] w-full border-[1px] border-solid border-[#00000033] h-full">
-
-                        <div>
-                            <img src="./assets/image/webp/Ashton_Wilson.webp" alt="Ashton_Wilson"
-                                class="w-full h-[288px] max-sm:h-[235px]">
-
-                            <div class="Experts_Card_Txt px-[26px] py-[29px] pb-0">
-                                <h2
-                                    class="Expert_H font-archivo font-semibold text-xl leading-auto text-center uppercase">
-                                    Ashton
-                                    Wilson, PA-C</h2>
-                                <p
-                                    class="font-archivo font-normal text-sm leading-[150%] text-center text-liteblack pt-2">
-                                    Diplomate Fellow, Society of Dermatology Physician Assistants</p>
+            <div
+                class="w-full mx-auto flex flex-col max-lg:flex-col-reverse max-md:flex-col max-sm:flex-col-reverse lg:mt-12 px-[10px]">
+                <div class="row flex flex-row -mx-3 flex-wrap mt-6 lg:mt-0 justify-center">
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Helix1.webp" alt="Helix" class="w-full">
                             </div>
-                        </div>
-
-                        <div class="flex justify-center pt-6 pb-[29px]">
-                            <a href="#"
-                                class="font-archivo font-medium text-md leading-auto underline text-green text-center uppercase">View
-                                Profile</a>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Helix</div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-4 max-sm:w-full sm:1/2 lg:w-1/3 sm:px-3 max-sm:flex max-sm:justify-center  max-md:mt-6">
-                    <div
-                        class="Experts_Card flex flex-col justify-between max-w-[353px] w-full border-[1px] border-solid border-[#00000033] h-full pt-[5px]">
-
-                        <div>
-                            <div class="flex justify-center">
-                                <img src="./assets/image/webp/Mark_Halsey.webp" alt="Mark_Halsey"
-                                    class="w-full max-w-[326px] w-full h-[288px] sm:object-cover lg:border-[1px] lg:border-solid lg:border-[#E5E7E6] max-sm:h-[235px] px-[10px]">
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/VirtueRF.webp" alt="VirtueRF" class="w-full">
                             </div>
-
-                            <div class="Experts_Card_Txt pb-0">
-                                <h2
-                                    class="Expert_H font-archivo font-semibold text-xl leading-auto text-center pt-[29px] uppercase">
-                                    Mark
-                                    Halsey, MD, FAAD</h2>
-                                <p
-                                    class="font-archivo font-normal text-sm leading-[150%] text-center text-liteblack pt-2">
-                                    Asst. Clinical Professor of DermatologyNYU Langone</p>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-center pt-6 pb-[29px]">
-                            <a href="#"
-                                class="font-archivo font-medium text-md leading-auto underline text-green text-center uppercase">View
-                                Profile</a>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                VirtueRF</div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-4 max-sm:w-full sm:1/2 lg:w-1/3 sm:px-3 max-sm:flex max-sm:justify-center  max-lg:mt-6">
-                    <div
-                        class="Experts_Card flex flex-col justify-between max-w-[353px] w-full border-[1px] border-solid border-[#00000033] h-full">
-
-                        <div>
-                            <img src="./assets/image/webp/Aimee_Drexel.webp" alt="Aimee_Drexel"
-                                class="w-full h-[288px] max-sm:h-[235px]">
-
-                            <div class="Experts_Card_Txt pb-0 px-[26px] py-[29px]">
-                                <h2
-                                    class="Expert_H font-archivo font-semibold text-xl leading-auto text-center uppercase">
-                                    Aimee
-                                    Drexel, LE</h2>
-                                <p
-                                    class="font-archivo font-normal text-sm leading-[150%] text-center text-liteblack pt-2">
-                                    Licensed Esthetician</p>
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 max-sm:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Suprema.webp" alt="Suprema_webp" class="w-full">
                             </div>
-                        </div>
-
-                        <div class="flex justify-center pt-6 pb-[29px]">
-                            <a href="#"
-                                class="font-archivo font-medium text-md leading-auto underline text-green text-center uppercase">View
-                                Profile</a>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Suprema</div>
                         </div>
                     </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 max-md:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/GlacialRx.webp" alt="Glacial_Rx" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Glacial Rx</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 max-lg:mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/NitronoxPlus.webp" alt="Nitronox_Plus" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Nitronox Plus</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Mosaic_3D.webp" alt="Mosaic 3D" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Mosaic 3D</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Bovie.webp" alt="Bovie" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Bovie</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Chrome.webp" alt="Chrome" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Chrome</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Sub-Z.webp" alt="Sub-Z" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Sub-Z</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/DenaVe.webp" alt="DenaVe" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                DenaVe</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Vectra.webp" alt="Vectra" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Vectra</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Skinwave.webp" alt="Skinwave" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Skinwave</div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[25%] sm:w-[33.33%] w-[50%] px-[10px] sm:px-3 mt-6">
+                        <div class="Pediatrick_Content xl:max-w-[200px] w-full">
+                            <div
+                                class="Devices_Image hover:shadow-xl cursor-pointer transition-all overflow-hidden border-[4.5px] border-solid border-deviceBox rounded-[10px]">
+                                <img src="./assets//image/webp/Ultra.webp" alt="Ultra" class="w-full">
+                            </div>
+                            <div
+                                class="DEvices_Txt font-archivo font-semibold text-md lg:text-Custom_xl leading-[130%] text-center text-darkBlack mt-3">
+                                Ultra</div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
-
         </div>
-
-        <img src="./assets//image/png/Left_Side_Ellips.png" alt="Left_Side_Ellips"
-            class="Left_Side_Ellips absolute top-[-140px] left-0 opacity-[18%]">
-    </section>
-
-    <!-- ==================================================== COMMUNITY_SECTION ============================================ -->
-    <section class="Community_Section overflow-hidden max-w-[1920px] mx-auto">
-        <div class="My_Container max-w-[1340px] w-full mx-auto px-3">
-            <h2 class="Community_H font-archivo font-semibold text-5xl text-center leading-[130%] capitalize">Community
-            </h2>
-            <p
-                class="font-archivo font-normal text-sm leading-[150%] text-center text-gray2 pt-2 max-w-[676px] mx-auto pb-[37px]">
-                We share our success with the community that supports us. In 2023 alone, Halsey Dermatology provided
-                over $20,000 in
-                sponsorships & direct monetary support to:</p>
-
-            <div class="All_Slider_Images flex justify-between gap-3 sm:gap-8">
-                <div class="Community_Slider1">
-                    <img src="./assets/image/webp/Pediatrick.webp" alt="Pediatrick">
-                </div>
-
-                <div class="Community_Slider2">
-                    <img src="./assets/image/webp/ASDS.webp" alt="ASDS">
-                </div>
-
-                <div class="Community_Slider3">
-                    <img src="./assets/image/webp/Amrica.webp" alt="Amrica">
-                </div>
-
-                <div class="Community_Slider4">
-                    <img src="./assets/image/webp//Dermatology.webp" alt="Dermatology">
-                </div>
-
-                <div class="Community_Slider5">
-                    <img src="./assets/image/webp/Daxify.webp" alt="Daxify">
-                </div>
-
-                <div class="Community_Slider6">
-                    <img src="./assets/image/webp/Ximin.webp" alt="Ximin">
-                </div>
-            </div>
-        </div>
+        <img src="./assets//image/png/Top_Right_Side.png" alt="Top_Right_Ellips"
+            class="Top_Right_Ellips absolute top-[-300px] top-0 md:top-[30px] right-[0px] pointer-events-none max-w-[286px] h-[261px]">
     </section>
 </body>
 
