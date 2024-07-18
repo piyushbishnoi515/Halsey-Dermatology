@@ -35,6 +35,9 @@
               borderGrey: "#CDC9C0",
               lightWhite: "#B5BBB7",
               borderWhite: "#BABFBA",
+              // self
+              green20: "#6E927733",
+              lightGrey: "#E3E3E3",
             },
             fontFamily: {
               archivo: '"Archivo", sans-serif',
@@ -48,6 +51,33 @@
       * {
         scroll-behavior: smooth !important;
       }
+      input[type="range"] {
+        overflow: hidden;
+        width: 100%;
+        max-width: 239px;
+        height: 5px;
+        -webkit-appearance: none;
+        background: #0000001c;
+        border-radius: 262px;
+      }
+
+      input[type="range"]::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        margin-top: -1px;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        width: 26px;
+        height: 26px;
+        -webkit-appearance: none;
+        cursor: ew-resize;
+        margin-top: -8px;
+        position: relative;
+        z-index: 10;
+        border-radius: 262px;
+        box-shadow: -220px 0 0 200px black;
+      }
     </style>
   </head>
 
@@ -56,16 +86,16 @@
     <section>
       <div class="container mx-auto px-3">
         <h3
-          class="font-archivo font-semibold lg:text-5xl text-3xl leading-[62px] text-darkBlack lg:pb-[73px] md:pb-[20px] pb-[5px] text-center lg:pt-24 md:pt-10 sm:pt-12 pt-5"
+          class="font-archivo font-semibold lg:text-5xl text-3xl !leading-[62px] text-darkBlack lg:pb-[40px] md:pb-[20px] pb-[5px] text-center lg:pt-24 md:pt-10 sm:pt-12 pt-5"
         >
           Treatments for Acne
         </h3>
         <div
-          class="flex max-lg:flex-wrap lg:gap-6 md:gap-4 gap-2 justify-center mb-12"
+          class="flex max-lg:flex-wrap lg:gap-6 md:gap-4 gap-2 justify-center lg:mb-12 md:mb-9 mb-5"
         >
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -86,7 +116,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -107,7 +137,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -128,7 +158,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -174,16 +204,16 @@
     <section>
       <div class="container mx-auto px-3">
         <h3
-          class="font-archivo font-semibold lg:text-5xl text-3xl leading-[62px] text-darkBlack lg:pb-[73px] md:pb-[20px] pb-[5px] text-center lg:pt-24 md:pt-10 sm:pt-12 pt-5"
+          class="font-archivo font-semibold lg:text-5xl text-3xl !leading-[62px] text-darkBlack lg:pb-40px] md:pb-[20px] pb-[5px] text-center lg:pt-24 md:pt-10 sm:pt-12 pt-5"
         >
           Treatments for Acne
         </h3>
         <div
-          class="flex max-lg:flex-wrap lg:gap-6 md:gap-4 gap-2 justify-center mb-12"
+          class="flex max-lg:flex-wrap lg:gap-6 md:gap-4 gap-2 justify-center lg:mb-12 md:mb-9 mb-5"
         >
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -204,7 +234,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -225,7 +255,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -246,7 +276,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -292,16 +322,16 @@
     <section>
       <div class="container mx-auto px-3">
         <h3
-          class="font-archivo font-semibold lg:text-5xl text-3xl leading-[62px] text-darkBlack lg:pb-[73px] md:pb-[20px] pb-[5px] text-center lg:pt-24 md:pt-10 sm:pt-12 pt-5"
+          class="font-archivo font-semibold lg:text-5xl text-3xl !leading-[62px] text-darkBlack lg:pb-[40px] md:pb-[20px] pb-[5px] text-center lg:pt-24 md:pt-10 sm:pt-12 pt-5"
         >
           Treatments for Acne
         </h3>
         <div
-          class="flex max-lg:flex-wrap lg:gap-6 md:gap-4 gap-2 justify-center mb-12"
+          class="flex max-lg:flex-wrap lg:gap-6 md:gap-4 gap-2 justify-center lg:mb-12 md:mb-9 mb-5"
         >
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -322,7 +352,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -344,7 +374,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px]"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px]"
             >
               Most Popular
             </p>
@@ -365,7 +395,7 @@
           </div>
           <div class="max-w-[226px] group relative">
             <p
-              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
             >
               Most Popular
             </p>
@@ -404,6 +434,743 @@
             </svg>
           </div>
         </a>
+      </div>
+    </section>
+    <!-- ===========treatment-options1====== -->
+    <section class="lg:py-24 md:py-14 sm:py-10 py-8">
+      <div class="container mx-auto px-3">
+        <h3
+          class="font-archivo font-semibold lg:text-5xl sm:text-4xl text-3xl leading-[62px] text-darkBlack lg:pb-12 md:pb-7 sm:pb-3 pb-2 text-center"
+        >
+          Treatment Options
+        </h3>
+        <div class="flex max-lg:flex-wrap lg:gap-5 gap-4 justify-center">
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+                Fusion
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    none
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                   none
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+               Cool Peel
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+                CoolPeel Plus
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[68px] md:pb-[30px] sm:pb-[56px] pb-[40px]"
+              >
+               Curettage & CO2 <span class="lg:block">laser (cancer</span> treatment)
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- ===========treatment-options2====== -->
+    <section class="lg:py-24 md:py-14 sm:py-10 py-8">
+      <div class="container mx-auto px-3">
+        <h3
+          class="font-archivo font-semibold lg:text-5xl sm:text-4xl text-3xl leading-[62px] text-darkBlack lg:pb-12 md:pb-7 sm:pb-3 pb-2 text-center"
+        >
+          Treatment Options
+        </h3>
+        <div class="flex max-lg:flex-wrap lg:gap-5 gap-4 justify-center">
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+                Smart RF
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    none
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                   none
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+               Deep RF
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+                Exact RF
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- ===========treatment-options3====== -->
+    <section class="lg:py-24 md:py-14 sm:py-10 py-8">
+      <div class="container mx-auto px-3">
+        <h3
+          class="font-archivo font-semibold lg:text-5xl sm:text-4xl text-3xl leading-[62px] text-darkBlack lg:pb-12 md:pb-7 sm:pb-3 pb-2 text-center"
+        >
+          Treatment Options
+        </h3>
+        <div class="flex max-lg:flex-wrap lg:gap-5 gap-4 justify-center">
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+                Skinwave Deluxe
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    none
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                   none
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px] text-nowrap"
+              >
+              Signature Skinwave
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+                Acne Skinwave
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[99px] md:pb-[30px] sm:pb-[56px] pb-[40px]"
+              >
+               Skinwave with <span class="lg:block">Glide</span>
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+         <!-- ===========treatment-options4====== -->
+    <section class="lg:py-24 md:py-14 sm:py-10 py-8">
+      <div class="container mx-auto px-3">
+        <h3
+          class="font-archivo font-semibold lg:text-5xl sm:text-4xl text-3xl leading-[62px] text-darkBlack lg:pb-12 md:pb-7 sm:pb-3 pb-2 text-center"
+        >
+          Treatment Options
+        </h3>
+        <div class="flex max-lg:flex-wrap lg:gap-5 gap-4 justify-center">
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]"
+              >
+                Ultra
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    none
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                   none
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group max-w-[271px] w-full">
+            <p
+              class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase"
+            >
+              Most Popular
+            </p>
+            <div
+              class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4"
+            >
+              <p
+                class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px] text-nowrap"
+              >
+             UltraGlo
+              </p>
+              <div class="md:mb-8 mb-5">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Downtime:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    minimal
+                  </p>
+                </div>
+                <input type="range" min="0" class="slider" />
+              </div>
+              <div class="blank">
+                <div class="flex items-center justify-between">
+                  <p
+                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase"
+                  >
+                    Pain Level:
+                  </p>
+                  <p
+                    class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase"
+                  >
+                    Moderate
+                  </p>
+                </div>
+                <input type="range" class="slider" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
