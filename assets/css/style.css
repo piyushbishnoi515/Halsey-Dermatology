@@ -1,12 +1,8 @@
-<<<<<<< HEAD <<<<<<< HEAD @import url("https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&display=swap");
-=======@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
->>>>>>>cbfa6627a5b9dc9a39f635c480222b40a655f7b0 @tailwind base;
-=======@import url('https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
->>>>>>>ea66c3b260bb15aa3dd1289206d05abc8166e750 @tailwind components;
+@tailwind components;
 @tailwind utilities;
 
 /* HEADER CSS */
