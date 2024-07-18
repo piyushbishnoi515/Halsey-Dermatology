@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.css">
     <style>
-        .hero-overlay::after {
+        /* .hero-overlay::after {
             content: '';
             position: absolute;
             top: 0;
@@ -24,7 +24,7 @@
         .hero-overlay>* {
             position: relative;
             z-index: 2;
-        }
+        } */
     </style>
     <script>
         tailwind.config = {
@@ -74,7 +74,8 @@
                     }, backgroundImage: {
                         // added herosection background img
                         heroBg: "url('./assets/image/png",
-                        skinConcernBg: "url('./assets/image/png/woman-making-beauty-procedures-beauty-salon.webp')"
+                        skinConcernBg: "url('./assets/image/png/woman-making-beauty-procedures-beauty-salon.webp')",
+                        treatmentBg: "url('./assets/image/png/treatmentBg.png')"
                     },
                     backgroundSize: {
                         'full': '100% 100%',
@@ -103,7 +104,7 @@
 <body>
     <!-- ==========nav-bar========= -->
     <header
-        class="bg-skinConcernBg min-h-[510px] flex flex-col bg-full bg-no-repeat max-lg:bg-cover relative bg-bottom hero-overlay overflow-hidden max-w-[1920px] mx-auto">
+        class="bg-treatmentBg min-h-[510px] flex flex-col bg-full bg-no-repeat max-lg:bg-cover relative bg-bottom hero-overlay overflow-hidden max-w-[1920px] mx-auto">
         <div class="container mx-auto px-3">
             <nav class="h-[80px] flex items-center justify-between">
                 <a href="">
@@ -306,12 +307,6 @@
                     Book Now
                 </button>
             </nav>
-        </div>
-        <div class="absolute xl:-top-[120px] top-0 left-5 lg:w-[348px] lg:h-[462px] w-[200px] h-[150px] z-0 opacity-70">
-            <img src="./assets/image/png/overFeatherImg.webp" alt="feather hero section img" class=" w-full h-full">
-        </div>
-        <div class="absolute top-0 left-0 h-[150px] opacity-30">
-            <img src="./assets/image/png/featherTopHero.webp" alt="feather hero section img" class=" w-full h-full">
         </div>
         <div class="max-w-[853px] flex px-3 flex-col mx-auto flex-grow items-center justify-center">
             <div class="flex items-center justify-center md:gap-[15px] gap-2">
