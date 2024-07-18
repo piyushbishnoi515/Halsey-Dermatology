@@ -12,53 +12,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .slider-nav .slick-track {
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            gap: 25px;
-            min-height: 109px;
-        }
-
-        .arrow:hover svg path {
-            fill: #FFFFFF;
-            stroke: #FFFFFF;
-        }
-
-        .slider-nav .slick-slide {
-            transition: all 500ms linear !important;
-            width: 53px !important;
-            margin: 0 12px;
-        }
-
-        .slider-nav .slick-slide.slick-current.slick-active img {
-            transform: scale(1.9);
-            transition: all 500ms linear !important;
-        }
-
-        .slick-slide.slick-cloned {
-            width: 53px !important;
-        }
-
-        .slick-slide.slick-cloned.slick-active {
-            width: 53px !important;
-        }
-
-        .slider-nav .slick-slide.slick-active {
-            width: 53px !important;
-        }
-    </style>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontSize: {
-
+                        //   sm: "16px",
+                        md: "18px",
+                        xl: "25px",
+                        "2x1": "28px",
+                        "3x1": "58px", "4xl": "48px", "5x1": "58px",
                     },
                     colors: {
                         gray: "#B9BBBB",
-                        shadeBlack: "#0000001A",
                         green: "#6E9277",
                         black: "#000000",
                         white: "#ffffff",
@@ -67,181 +33,114 @@
                         liteblack: "#4D5852",
                         darkgreen: "#48524A",
                         darkwhite: "#F1EDE2",
-                        clifford: '#da373d',
-                        black2: "#001008"
+                        clifford: "#da373d",
+                        //   self
+                        darkBlack: "#001008",
+                        inputCreamy: "#DED9CC",
+                        borderGrey: "#CDC9C0",
+                        lightWhite: "#B5BBB7",
+                        borderWhite: "#BABFBA",                // border color light grey
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5"
                     },
                     fontFamily: {
-                        archivo: '"archivo", sans-serif',
+                        archivo: '"Archivo", sans-serif',
                         kaushan: ' "Kaushan Script", cursive',
+                    }, backgroundImage: {
+                        // added herosection background img
+                        heroBg: "url('./assets/image/png/heroGifImg.gif')",
                     },
-                }
-            }
-        }
+                    backgroundSize: {
+                        'full': '100% 100%',
+                    },
+                    screens: {
+                        'sm': '576px',
+                    },
+                    // box shadow 
+                    boxShadow: {
+                        "ImageGallery" : "0px 7px 10.9px 0px #0000002E",
+                    },
+                },
+            },
+        };
     </script>
 </head>
 
 <body>
-    <section class=" relative overflow-hidden">
-        <img src="./assets/image/webp/ReviewLeaves.png" alt=" ReviewLeaves" class=" absolute right-0">
-        <div class="max-w-[1164px] px-3 mx-auto pt-16 md:pt-28 relative">
-            <img src="./assets/image/webp/SemicollenUpper.png" alt="SemicollenUpper"
-                class=" w-full max-w-[59px] absolute right-[85%] top-[65%]">
-            <img src="./assets/image/webp/SemicollenBottom.png" alt="SemicollenBottom"
-                class="w-full max-w-[43.5px] absolute bottom-0 left-[90%]">
-            <div class=" flex items-center justify-center">
-                <h4
-                    class=" text-center text-[28px] md:text-[32px] leading-[46.4px] font-kaushan text-green inline-block relative after:absolute sm:after:w-[60px] after:h-[2px] after:bg-green after:top-[50%] after:right-[-23%] before:absolute sm:before:w-[60px] before:h-[2px] before:bg-green before:top-[50%] before:left-[-22%]">
-                    Hundreds of 5 star reviews</h4>
-            </div>
-            <h2 class=" text-4xl md:text-5xl text-center font-semibold font-archivo text-black2 leading-[40px] md:leading-[62.4px] pt-[10px] pb-3">We
-                are grateful
-                for our patients</h2>
-            <p class=" text-xl text-center leading-[26px] font-archivo font-medium uppercase text-black2">1500+ five
-                star reviews</p>
-            <div class=" flex items-center justify-center gap-[3px] pb-8 md:pb-[70px]">
-                <img src="./assets/image/svg/Star.svg" alt="star">
-                <img src="./assets/image/svg/Star.svg" alt="star">
-                <img src="./assets/image/svg/Star.svg" alt="star">
-                <img src="./assets/image/svg/Star.svg" alt="star">
-                <img src="./assets/image/svg/Star.svg" alt="star">
-            </div>
-            <div class="">
-                <div class=" slider-nav max-w-[265px] mx-auto z-0">
-                    <div class=" flex items-center justify-center">
-                        <img src="./assets/image/webp/NavImgOne.png" alt="NavImgOne" class=" w-full ">
-                    </div>
-                    <div class=" flex items-center justify-center">
-                        <img src="./assets/image/webp/NavImgTwo.png" alt="NavImgTwo" class=" w-full">
-                    </div>
-                    <div class=" flex items-center justify-center">
-                        <img src="./assets/image/webp/NavImgThree.png" alt="NavImgThree" class=" w-full">
-                    </div>
-                    <div class=" flex items-center justify-center">
-                        <img src="./assets/image/webp/NavImgThree.png" alt="NavImgThree" class=" w-full">
-                    </div>
-                </div>
-                <div class=" slider-for z-0 ">
-                    <div class=" flex items-center justify-center px-[35px]">
-                        <p
-                            class=" text-2xl uppercase leading-[31.2px] text-black2 text-center font-semibold  pb-4 md:b-16 pt-4 font-archivo sm:pt-5">
-                            Jane Cooper</p>
-                        <p
-                            class=" text-xl font-archivo sm:text-[22px] md:text-[25px] leading-7 sm:leading-[33px] md:leading-[40px] md:leading-[46px]  mx-auto text-black2 opacity-70 font-normal text-center max-w-[809px]">
-                            Lorem ipsum dolor sit amet consectetur. Ut enim velit sed suspendisse pellentesque. Aliquam
-                            blandit malesuada tristique vel rhoncus penatibus risus vitae. Maecenas tempus urna
-                            adipiscing
-                            velit. Dignissim at ullamcorper magna morbi leo lorem at. Amet.</p>
-                    </div>
-                    <div class=" flex items-center justify-center px-[35px]">
-                        <p
-                            class=" text-2xl uppercase leading-[31.2px] text-black2 text-center font-semibold pb-4 md:pb-16 pt-4 font-archivo sm:pt-5">
-                            Jane Cooper</p>
-                        <p
-                            class="text-xl font-archivo sm:text-[22px] md:text-[25px] leading-7 sm:leading-[33px] md:leading-[40px] md:leading-[46px] mx-auto font-archivo text-black2 opacity-70 font-normal text-center max-w-[809px]">
-                            Lorem ipsum dolor sit amet consectetur. Ut enim velit sed suspendisse pellentesque. Aliquam
-                            blandit malesuada tristique vel rhoncus penatibus risus vitae. Maecenas tempus urna
-                            adipiscing
-                            velit. Dignissim at ullamcorper magna morbi leo lorem at. Amet.</p>
-                    </div>
-                    <div class=" flex items-center justify-center px-[35px]">
-                        <p
-                            class=" text-2xl uppercase leading-[31.2px] text-black2 text-center font-semibold pb-4 md:pb-16 pt-4 font-archivo sm:pt-5">
-                            Jane Cooper</p>
-                        <p
-                            class="text-xl font-archivo sm:text-[22px] md:text-[25px] leading-7 sm:leading-[33px] md:leading-[40px] md:leading-[46px] mx-auto font-archivo text-black2 opacity-70 font-normal text-center max-w-[809px]">
-                            Lorem ipsum dolor sit amet consectetur. Ut enim velit sed suspendisse pellentesque. Aliquam
-                            blandit malesuada tristique vel rhoncus penatibus risus vitae. Maecenas tempus urna
-                            adipiscing
-                            velit. Dignissim at ullamcorper magna morbi leo lorem at. Amet.</p>
-                    </div>
-                    <div class=" flex items-center justify-center px-[35px]">
-                        <p
-                            class=" text-2xl uppercase leading-[31.2px] text-black2 text-center font-semibold pb-4 md:pb-16 pt-4 font-archivo sm:pt-5">
-                            Jane Cooper</p>
-                        <p
-                            class="text-xl font-archivo sm:text-[22px] md:text-[25px] leading-7 sm:leading-[33px] md:leading-[40px] md:leading-[46px] mx-auto font-archivo text-black2 opacity-70 font-normal text-center max-w-[809px]">
-                            Lorem ipsum dolor sit amet consectetur. Ut enim velit sed suspendisse pellentesque. Aliquam
-                            blandit malesuada tristique vel rhoncus penatibus risus vitae. Maecenas tempus urna
-                            adipiscing
-                            velit. Dignissim at ullamcorper magna morbi leo lorem at. Amet.</p>
-                    </div>
-                </div>
-                <div class=" custom-arrows flex items-center justify-between">
-                    <div
-                        class="h-[35px] w-[35px] cursor-pointer hover:bg-green hover:border-green duration-300 ease-linear arrow flex items-center justify-center border border-black2 rounded-full arrow-left absolute bottom-[26%] left-3">
-                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M3.328 6.49974L8.278 1.54974L6.864 0.135742L0.5 6.49974L6.864 12.8637L8.278 11.4487L3.328 6.49874L3.328 6.49974Z"
-                                fill="#001008" />
-                        </svg>
-                    </div>
-                    <div
-                        class="h-[35px] w-[35px] cursor-pointer hover:bg-green hover:border-green duration-300 ease-linear arrow flex items-center justify-center border border-black2 rounded-full arrow-right absolute bottom-[26%] right-3">
-                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.61334 7.19137L1.14337 11.4503L1.90261 12.1736L7.85719 6.50026L1.90274 0.826988L1.14324 1.55113L5.61334 5.81015L6.11387 5.33326L6.11387 6.50026L6.11387 6.50126L6.11387 7.66826L5.61334 7.19137Z"
-                                fill="#001008" stroke="#001008" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-    <section>
-        <div class=" max-w-[1164px] mx-auto pt-10 sm:pt-16  md:pt-24">
-            <div class=" flex  flex-col px-5 md:px-10 bg-lite_gray py-10 z-10">
-                <div class=" flex items-center justify-center">
-                    <h4
-                        class=" text-center text-[28px] md:text-[32px] leading-[46.4px] font-kaushan text-green inline-block relative after:absolute sm:after:w-[60px] after:h-[2px] after:bg-green after:top-[50%] after:right-[-23%] before:absolute sm:before:w-[60px] before:h-[2px] before:bg-green before:top-[50%] before:left-[-22%]">
-                        Cutting Edge Technology</h4>
-
-                </div>
-                <h2
-                    class=" max-w-[800px] text-center text-4xl md:text-5xl leading-[40px] md:leading-[62.4px] font-archivo font-semibold mx-auto pt-[10px] pb-8 md:pb-14 mb-1 text-black2">
-                    Devices and Treatments to meet your needs</h2>
-                <div class=" flex gap-8 md:gap-10 flex-col md:flex-row justify-center items-center">
-
-                    <div class=" bg-white border-[1px] border-shadeBlack max-w-[510px] xl:min-h-[627px]">
-                        <img src="./assets/image/webp/Devices.png" alt="Devices" class=" w-full" />
-                        <div class="p-4 sm:p-6 sm:p-[30px]">
-                            <p class=" font-archivo text-[25px] leading-8  text-black2 font-semibold">Devices</p>
-                            <p
-                                class=" text-base font-archivo font-normal leading-6 pt-[10px] sm:pt-[16.3px] pb-4 sm:pb-6 sm:pb-[27.2px] text-black2 opacity-70">
-                                Our
-                                state-of-the-art devices are designed to target a variety of skin concerns with
-                                precision and efficacy.</p>
-                            <button
-                                class=" max-w-[156.5px] border border-green hover:border-black2 hover:text-black2 duration-300 ease-linear w-full min-h-[52.7px] bg-green text-white text-[18px] leading-5 font-semibold">Our
-                                Devices</button>
-                        </div>
-                    </div>
-                    <div class=" bg-white border-[1px] border-shadeBlack max-w-[510px] xl:min-h-[627px]">
-                        <img src="./assets/image/webp/Treatments.png" alt="Devices" class=" w-full" />
-                        <div class="p-4 sm:p-6 sm:p-[30px]">
-                            <p class=" font-archivo text-[25px] leading-8 text-black2 font-semibold">Treatments
-                            </p>
-                            <p
-                                class=" text-base font-archivo font-normal leading-6 pt-[10px] sm:pt-[16.3px] pb-4 sm:pb-6 sm:pb-[27.2px] text-black2 opacity-70">
-                                At
-                                Halsey Dermatology, we offer a comprehensive range of treatments to address your unique
-                                skin care needs.</p>
-                            <button
-                                class="max-w-[182.5px] border border-green hover:border-black2 hover:text-black2 duration-300 ease-linear w-full min-h-[52.7px] bg-green text-white text-lg leading-5 font-semibold">Our
-                                Treatments</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <!-- ESTHETICS SECTION  -->
+    <section class="bg-lite_gray">
+        <div class="max-w-[1165px] mx-auto px-3 py-12 md:py-20">
+            <h2
+                class="text-[37px] md:text-[48px] font-archivo leading-[42.4px] sm:leading-[50px] md:leading-[62.4px] font-medium text-darkBlack text-center pb-[24px] md:pb-[45px]">
+                Rejuvenation and Esthetics</h2>
+            <div id="esthetics-container" class="flex flex-wrap justify-center"></div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- IMAGE GALLERY SECTION -->
+    <section>
+        <div class="max-w-[1188px] mx-auto px-3 sm:px-6 py-12 md:py-[100px]">
+            <div class=" flex items-center justify-center">
+                <h4
+                    class=" text-center text-[28px] md:text-[32px] leading-[46.4px] font-kaushan text-green inline-block relative after:absolute after:w-[40px] sm:after:w-[60px] after:h-[2px] after:bg-green after:top-[50%] after:right-[-25%] sm:after:right-[-35%] before:absolute before:w-[40px] sm:before:w-[60px] before:h-[2px] before:bg-green before:top-[50%] 
+                    before:left-[-25%] sm:before:left-[-32%]">
+                    Before And After</h4>
+            </div>
+            <h2 class="text-[37px] md:text-[48px] font-archivo leading-[36.4px] md:leading-[42.4px] sm:leading-[50px] md:leading-[62.4px] font-archivo text-darkBlack text-center font-semibold pb-6 pt-2 sm:pt-[10px] md:pb-[35px]">Patient Image
+                Gallery</h2>
+            <div class=" flex flex-wrap -mx-3 pb-10 md:pb-[50px] justify-center">
+                <div class="w-full sm:w-6/12 flex items-center justify-center md:w-[33.33%] px-3">
+                    <div
+                        class=" flex flex-col justify-between max-w-[364px] xl:min-h-[451px] border-[1.1px] border-[#0000001A] duration-300 ease-linear group hover:shadow-ImageGallery">
+                        <div class=" relative">
+                            <div
+                                class=" flex items-center justify-center absolute top-0 w-full h-full bg-[#001008A3] duration-500 ease-linear group-hover:opacity-100 opacity-0">
+                                <img src="./assets/image/webp/Expand-outline.webp" alt="Expand-outline"
+                                    class=" max-w-[66.32px] w-full">
+                            </div>
+                            <img src="./assets/image/webp/PoreCongestion.webp" alt=" PoreCongestion" class=" w-full ">
+                        </div>
+                        <p
+                            class=" capitalize text-center text-[22px] sm:text-[25px] font-archivo font-semibold text-darkBlack pt-4 pb-[18.8px]">
+                            pore congestion</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-6/12 flex items-center justify-center mt-6 sm:mt-0 md:w-[33.33%] px-3">
+                    <div
+                        class=" flex flex-col justify-between max-w-[364px] xl:min-h-[451px] border-[1.1px] border-[#0000001A] duration-300 ease-linear group hover:shadow-ImageGallery">
+                        <div class=" relative">
+                            <div
+                                class=" flex items-center justify-center absolute top-0 w-full h-full bg-[#001008A3] duration-500 ease-linear group-hover:opacity-100 opacity-0">
+                                <img src="./assets/image/webp/Expand-outline.webp" alt="Expand-outline"
+                                    class=" max-w-[66.32px] w-full">
+                            </div>
+                            <img src="./assets/image/webp/FineLines.webp" alt=" FineLines" class=" w-full ">
+                        </div>
+                        <p
+                            class=" capitalize text-center text-[22px] sm:text-[25px] font-archivo font-semibold text-darkBlack pt-4 pb-[18.8px]">
+                            Fine lines</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-6/12 flex items-center justify-center mt-6 md:mt-0 md:w-[33.33%] px-3">
+                    <div
+                        class=" flex flex-col justify-between max-w-[364px] xl:min-h-[451px] border-[1.1px] border-[#0000001A] duration-300 ease-linear group hover:shadow-ImageGallery">
+                        <div class=" relative">
+                            <div
+                                class=" flex items-center justify-center absolute top-0 w-full h-full bg-[#001008A3] duration-500 ease-linear group-hover:opacity-100 opacity-0">
+                                <img src="./assets/image/webp/Expand-outline.webp" alt="Expand-outline"
+                                    class=" max-w-[66.32px] w-full">
+                            </div>
+                            <img src="./assets/image/webp/EnlargedPores.webp" alt=" EnlargedPores" class=" w-full ">
+                        </div>
+                        <p
+                            class=" capitalize text-center text-[22px] sm:text-[25px] font-archivo font-semibold text-darkBlack pt-4 pb-[18.8px]">
+                            enlarged pores</p>
+                    </div>
+                </div>
+            </div>
+            <button class="mx-auto px-4 sm:px-6 max-w-[387px] flex items-center justify-center py-2 sm:py-[15px] uppercase text-white bg-green min-h-[50px] text-base sm:text-[18px] font-semibold font-archivo border-[1.1px] border-green hover:border-darkBlack hover:text-darkBlack duration-300 ease-linear">See all before and after photos</button>
+        </div>
+    </section>
     <script src="./assets/js/app.js"></script>
 </body>
 

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.css">
+    <style>
+        .hero-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 13, 7, 0.8);
+            z-index: 1;
+        }
+
+        .hero-overlay>* {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                        "xs": "14px",
+                        sm: "16px",
+                        "lg": "40px",
+                        md: "18px",
+                        xl: "25px",
+                        "xmd": "20px",
+                        "2x1": "28px",
+                        "3x1": "58px",
+                        "4xl": "48px",
+                        "5x1": "58px",
+                        "6xl": "290px"
+                    },
+                    colors: {
+                        gray: "#B9BBBB",
+                        green: "#6E9277",
+                        black: "#000000",
+                        white: "#ffffff",
+                        lite_gray: "#F5F8F6",
+                        gray2: "#4D5852",
+                        liteblack: "#4D5852",
+                        darkgreen: "#48524A",
+                        darkwhite: "#F1EDE2",
+                        clifford: "#da373d",
+                        // self
+                        darkBlack: "#001008",
+                        inputCreamy: "#DED9CC",
+                        borderGrey: "#CDC9C0",
+                        lightWhite: "#B5BBB7",
+                        borderWhite: "#BABFBA", // border color light grey
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5",
+                        // added pediatrick heading color
+                        "pediatrick": "#001008",
+                        darkgrey: "#49534A",
+                        borderlightblack: "#CFCFCF"
+                    },
+                    fontFamily: {
+                        archivo: '"Archivo", sans-serif',
+                        kaushan: ' "Kaushan Script", cursive',
+                    }, backgroundImage: {
+                        // added herosection background img
+                        heroBg: "url('./assets/image/png",
+                        skinConcernBg: "url('./assets/image/png/woman-making-beauty-procedures-beauty-salon.webp')"
+                    },
+                    backgroundSize: {
+                        'full': '100% 100%',
+                    },
+                    screens: {
+                        'sm': '576px',
+                    },
+                    container: {
+                        center: true,
+                        screens: {
+                            sm: "540px",
+                            md: "720px",
+                            lg: "1022px",
+                            xl: "1164px",
+                        },
+                        padding: {
+                            DEFAULT: "12px",
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+
+    <header
+        class="bg-skinConcernBg bg-no-repeat bg-cover relative bg-bottom hero-overlay overflow-hidden max-w-[1920px] mx-auto">
+        <div class="container mx-auto px-3">
+            <nav class="h-[80px] flex items-center justify-between">
+                <a href="">
+                    <img class="max-w-[201px]" src="./assets/image/png/hero-logo.png" alt="hero-logo" /></a>
+                <div onclick="openNav()"
+                    class="menuIcon max-md:w-[30px] max-md:h-[30px] max-md:flex max-md:justify-between z-[15] max-md:flex-col max-md:cursor-pointer start-0 transition ease-linear duration-300 hidden">
+                    <span class="max-md:h-[4px] max-md:bg-[white]"></span>
+                    <span class="max-md:h-[4px] max-md:bg-[white]"></span>
+                    <span class="max-md:h-[4px] max-md:bg-[white]"></span>
+                </div>
+                <div onclick="openNav()"
+                    class="menuList max-md:w-full max-md:h-full max-md:min-h-screen max-md:bg-black max-md:justify-center max-md:items-center max-md:flex-col max-md:fixed max-md:top-0 max-md:-right-full max-md:z-[11] transition ease-linear duration-300">
+                    <ul
+                        class="lg:gap-9 gap-7 flex max-md:flex-col max-md:justify-center max-md:items-center max-md:min-h-screen transition ease-linear duration-300">
+                        <li class="relative inline-block group hidden md:block">
+                            <a href=""
+                                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300">Treatments
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="dropdown"
+                                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white">
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Treatments1
+                                </span>
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Treatments2
+                                </span>
+                            </a>
+                        </li>
+                        <li class="relative mb-3 md:hidden mb-0">
+                            <button
+                                class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                                data-collapse-target="collapse-1">
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-lightWhite">Treatments</span>
+                                <a class="absolute right-0 pt-1 group-open:opacity-0 text-[25px] leading-[108%]">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a
+                                    class="absolute right-0 pt-1 opacity-0 fa fa-minus group-open:opacity-100 text-[#FDDA60] text-[25px] leading-[108%]">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </button>
+                            <div data-collapse="collapse-1"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2">
+                                <div class="bg-green flex flex-col border border-white rounded-sm">
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Treatments1
+                                    </span>
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Treatments2
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative inline-block group hidden md:block">
+                            <a href=""
+                                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300">Skin
+                                Concerns
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="dropdown"
+                                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white">
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">skin1
+                                </span>
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">skin2
+                                </span>
+                            </a>
+                        </li>
+                        <li class="relative mb-3 md:hidden mb-0">
+                            <button
+                                class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                                data-collapse-target="collapse-2">
+                                <span class="font-archivo font-[100] text-base leading-4 text-lightWhite">Skin
+                                    Concerns</span>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                                <a
+                                    class="absolute right-0 pt-1 opacity-0 group-open:opacity-100 text-[25px] leading-[108%]">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </button>
+                            <div data-collapse="collapse-2"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2">
+                                <div class="bg-green flex flex-col border border-white rounded-sm">
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Skin1
+                                    </span>
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Skin2
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative inline-block group hidden md:block">
+                            <a href=""
+                                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300">Devices
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="dropdown"
+                                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white">
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">device1
+                                </span>
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">device2
+                                </span>
+                            </a>
+                        </li>
+                        <li class="relative mb-3 md:hidden mb-0">
+                            <button
+                                class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                                data-collapse-target="collapse-3">
+                                <span class="font-archivo font-[100] text-base leading-4 text-lightWhite">Devices</span>
+                                <a class="absolute right-0 pt-1 group-open:opacity-0 text-[25px] leading-[108%]">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a
+                                    class="absolute right-0 pt-1 opacity-0 group-open:opacity-100 text-[25px] leading-[108%]">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </button>
+                            <div data-collapse="collapse-3"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2">
+                                <div class="bg-green flex flex-col border border-white rounded-sm">
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Devices1
+                                    </span>
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Devices2
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button
+                                class="font-archivo font-[300] text-base leading-4 text-white border border-borderWhite py-4 px-6 hover:bg-green hover:border-green md:hidden block transition ease-linear duration-300">
+                                Book Now
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <button
+                    class="font-archivo font-[300] text-base leading-4 text-white border border-borderWhite py-4 px-6 hover:bg-green hover:border-green md:flex hidden transition ease-linear duration-300">
+                    Book Now
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-------------------- ACNE SECTION ---------------->
+    <section
+        class=" lg:pt-[119px] lg:pb-[100px] md:pt-20 sm:pt-16 pt-11 md:pb-20 sm:pb-16 pb-11   max-w-[1920px] relative mx-auto">
+        <span
+            class="absolute left-0 bottom-0 max-md:w-[300px] max-sm:w-[200px] max-lg:w-[300px] -translate-y-3 pointer-event-none">
+            <img src="./assets/image/png/Acne-side-leaf.png" alt="leaf" class="w-full opacity-30">
+        </span>
+        <div class=" container max-w-[1188px] px-6 mx-auto flex flex-col items-center justify-center relative z-10">
+            <div class=" -mx-3 flex flex-row flex-wrap items-center max-lg:flex-col-reverse max-lg:max-w-[620px]
+                max-lg:justify-center ">
+                <div class=" lg:w-1/2 px-3 max-lg:pt-5">
+                    <h1
+                        class=" font-archivo font-semibold md:text-3x1 sm:text-4xl text-lg lg:leading-[111px] leading-10 md:leading-[70px] text-black max-lg:text-center">
+                        Acne</h1>
+                    <p
+                        class=" lg:max-w-[465px] text-black opacity-70 font-archivo font-normal text-xmd pt-3 leading-7 max-lg:text-center">
+                        Acne is
+                        one of
+                        the most
+                        common skin diseases in
+                        America. Nonetheless, it can also be one of the
+                        most tricky to manage.
+                        Bacteria, hormones, and inflammation all play a role. At Halsey dermatology, we are experts in
+                        selecting and
+                        recommending the best acne treatment options for each patient.
+                    </p>
+                </div>
+                <div class=" lg:w-1/2 px-3">
+                    <div class="max-w-[620px]">
+                        <img src="./assets/image/webp/acne-img.webp" alt="ache img " class=" w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========Treatments for Acne1========== -->
+    <section>
+        <div class="container mx-auto px-3">
+            <h3
+                class="font-archivo font-semibold lg:text-5xl text-3xl leading-[62px] text-darkBlack lg:pb-[73px] md:pb-[20px] pb-[5px] text-center lg:pt-24 md:pt-10 sm:pt-12 pt-5">
+                Treatments for Acne
+            </h3>
+            <div class="flex max-lg:flex-wrap lg:gap-6 md:gap-4 gap-2 justify-center mb-12">
+                <div class="max-w-[226px] group relative">
+                    <p
+                        class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase">
+                        Most Popular
+                    </p>
+                    <div
+                        class="border-4 border-green max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300">
+                        <img class="w-full max-w-[226px] group-hover:rounded-t-none transition ease-linear duration-300 relative z-[-1]"
+                            src="./assets/image/webp/medical-visit1.webp" alt="medical-visit1" />
+                    </div>
+                    <p
+                        class="font-archivo font-semibold lg:text-2xl sm:text-xl text-lg text-darkBlack lg:pt-3.5 sm:pt-2.5 pt-1 text-center">
+                        Medical Visit
+                    </p>
+                </div>
+                <div class="max-w-[226px] group relative">
+                    <p
+                        class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase">
+                        Most Popular
+                    </p>
+                    <div
+                        class="border-4 border-green max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300">
+                        <img class="w-full max-w-[226px] transition ease-linear duration-300 relative z-[-1]"
+                            src="./assets/image/webp/skinwave2-img.webp" alt="skinwave2-img.webp" />
+                    </div>
+                    <p
+                        class="font-archivo font-semibold lg:text-2xl sm:text-xl text-lg text-darkBlack lg:pt-3.5 sm:pt-2.5 pt-1 text-center text-nowrap">
+                        Signature Skinwave
+                    </p>
+                </div>
+                <div class="max-w-[226px] group relative">
+                    <p
+                        class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase">
+                        Most Popular
+                    </p>
+                    <div
+                        class="border-4 border-green max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300">
+                        <img class="w-full max-w-[226px] transition ease-linear duration-300 relative z-[-1]"
+                            src="./assets/image/webp/acne-skinwave3.webp" alt="acne-skinwave3" />
+                    </div>
+                    <p
+                        class="font-archivo font-semibold lg:text-2xl sm:text-xl text-lg text-darkBlack lg:pt-3.5 sm:pt-2.5 pt-1 text-center">
+                        Acne Skinwave
+                    </p>
+                </div>
+                <div class="max-w-[226px] group relative">
+                    <p
+                        class="font-archivo font-semibold text-sm leading-[18px] text-white p-2.5 rounded-t-[10px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase">
+                        Most Popular
+                    </p>
+                    <div
+                        class="border-4 border-green max-w-[226px] rounded-[10px] group-hover:rounded-t-none transition ease-linear duration-300">
+                        <img class="w-full max-w-[226px] transition ease-linear duration-300 relative z-[-1]"
+                            src="./assets/image/webp/facial4.webp" alt="facial4" />
+                    </div>
+                    <p
+                        class="font-archivo font-semibold lg:text-2xl sm:text-xl text-lg text-darkBlack lg:pt-3.5 sm:pt-2.5 pt-1 text-center">
+                        Acne facial
+                    </p>
+                </div>
+            </div>
+
+            <a href="#down" class="flex justify-center cursor-pointer">
+                <div class="w-[38px] h-[38px] bg-green rounded-full flex justify-center items-center">
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.30866 6.20874L1.62553 1.2935L0.780945 2.17995L6.99982 8.70704L13.2186 2.18007L12.3731 1.29336L7.68989 6.20874L8.16682 6.70931L6.99982 6.70931L6.99873 6.70931L5.83173 6.70931L6.30866 6.20874Z"
+                            fill="#6E9277" stroke="white" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- APPOINTMENT SECTION -->
+
+    <section class=" lg:py-[100px] md:py-[70px] py-10">
+        <div class=" container max-w-[1188px] px-6 mx-auto">
+            <div class="-mx-3 flex flex-row flex-wrap items-center max-lg:flex-col-reverse ">
+                <div class=" lg:w-1/2 px-3 lg:pr-6 max-lg:mt-3">
+                    <div class=" flex items-center gap-4">
+                        <h3 class=" font-kaushan text-green text-base leading-[46px]">Appointment</h3>
+                        <div class="max-w-[60px] w-full h-[2px] bg-green"></div>
+                    </div>
+                    <h1
+                        class=" font-archivo font-semibold sm:text-5xl text-4xl text-black max-w-[484px] pt-2 leading-10 sm:leading-[62px]">
+                        Book Your
+                        Appointment Now
+                    </h1>
+                    <p class=" max-w-[508px] font-archivo  font-normal text-sm leading-6 pt-3">Have questions or ready
+                        to
+                        schedule your
+                        appointment? Reach out to our friendly team today. <a href="#" class="text-green"> Click here to
+                            Instantly Book
+                            Online </a>
+                    </p>
+                    <form action="" class=" lg:pt-6 md:pt-5 pt-4 ">
+                        <div class=" flex items-center gap-4 max-sm:flex-wrap">
+                            <input type="text" placeholder=" First Name"
+                                class=" w-full border border-grey-100 font-archivo opacity-70 py-3 px-3 outline-none">
+                            <input type="text" placeholder=" Last Name"
+                                class=" w-full border border-grey-100 font-archivo opacity-70 py-3 px-3 outline-none">
+                        </div>
+
+
+                        <select
+                            class=" w-full border border-grey-100 py-3 px-3 opacity-70 font-archivo lg:mt-4 mt-3 cursor-pointer outline-none"
+                            required>
+                            <option value="Phone Call">Phone Call</option>
+                            <option value="Secure Message">Secure Message</option>
+                        </select>
+
+                        <input type="number" placeholder=" Phone No"
+                            class=" w-full border border-grey-100 font-archivo opacity-70 py-3 px-3 lg:mt-4 mt-3  outline-none inputNumber"
+                            required min="0">
+
+                        <select
+                            class=" w-full border border-grey-100 py-3 px-3 opacity-70 font-archivo lg:mt-4 mt-3 cursor-pointer outline-none"
+                            required>
+                            <option value="Appointment">Appointment</option>
+                            <option value="More Information">More Information</option>
+                        </select>
+
+
+                        <textarea name="" cols="5"
+                            class="w-full border border-grey-100 font-archivo opacity-70 py-3 px-3 lg:mt-4 mt-3 resize-none text-black outline-none placeholder:text-black"
+                            placeholder="Comments/Information Requested" id=""></textarea>
+                        <div class=" flex items-start leading-[21px] py-2 pl-4 bg-green-50  gap-2 lg:mt-7 md:mt-5 mt-4">
+                            <div
+                                class="checkBox max-w-5 h-5 border-2 border-green rounded-sm  labelCheck mt-1 flex w-full cursor-pointer">
+                                <img src="./assets/image/png/greencheckimg.jpg" alt="check img"
+                                    class=" w-full h-full checkImg hidden">
+                            </div>
+                            <p
+                                class=" font-archivo labelCheck font-normal text-xs checkBoxText max-w-[494px] opacity-70 pr-3 cursor-pointer">
+                                "I
+                                hereby
+                                request to
+                                be contacted
+                                for
+                                the purpose
+                                of
+                                obtaining general marketing information
+                                about the devices /
+                                treatments listed above. I acknowledge that this information is not medical advice, and
+                                that
+                                any patient-specific advice
+                                or informed consent shall only be obtained at a visit with a qualified professional
+                                (MD/PA-C) on our staff."
+                            </p>
+                        </div>
+
+                        <button
+                            class=" font-archivo font-medium  text-white uppercase max-w-[165px] h-[50px] bg-green w-full lg:mt-10 md:mt-7 mt-5 hover:bg-white hover:bg-white hover:text-green ease-and-out duration-300 border border-green">Contact
+                            Us</button>
+                    </form>
+                </div>
+                <div class=" lg:w-1/2 px-3 lg:pl-6 max-lg:max-w-[630px]">
+
+                    <img src="./assets/image/webp/appointment-sec-img.webp" alt="Appointment" class="w-full  h-full">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALSEY SECTION -->
+
+    <section class="bg-green h-auto py-14">
+        <div class="container mx-auto my-auto">
+            <div class="flex items-center justify-center text-center gap-4">
+                <span><svg width="60" height="3" viewBox="0 0 60 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="60" height="2" fill="white" />
+                    </svg></span>
+                <h2 class="text-[32px] max-sm:text-[20px] font-normal font-kaushan text-white">Halsey Dermatology</h2>
+                <span><svg width="60" height="3" viewBox="0 0 60 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="60" height="2" fill="white" />
+                    </svg></span>
+            </div>
+            <p class="text-[48px] max-sm:text-[34px] font-semibold font-archivo text-white text-center">Portal &
+                Messaging</p>
+            <div class="flex items-center justify-center flex-wrap gap-5 mt-10">
+                <button
+                    class="Common_btn text-[18px] font-medium font-archivo text-white flex items-center justify-center text-center hover:bg-white hover:text-green">Message&nbsp;us</button>
+                <button
+                    class="Common_btn text-[18px] font-medium font-archivo text-white flex items-center justify-center text-center hover:bg-white hover:text-green">Patient&nbsp;portal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======footer========= -->
+    <footer class="bg-darkwhite lg:pt-20 pt-10 relative">
+        <div class="container mx-auto px-3">
+            <div class="flex flex-wrap flex-row mx-[-12px] sm:mb-10 mb-6 z-10 relative">
+                <div class="lg:w-[41.66%] px-[12px] lg:mb-0 sm:mb-6 mb-4">
+                    <a href="">
+                        <img class="max-w-[267px] lg:mb-12 sm:mb-5 mb-3" src="./assets/image/png/footer-logo.png"
+                            alt="footer-logo" /></a>
+                    <p class="font-archivo font-normal text-base leading-6 text-darkgreen underline underline-offset-4">
+                        3350 Noyac Rd
+                    </p>
+                    <p
+                        class="font-archivo font-normal text-base leading-6 text-darkgreen underline underline-offset-4 lg:mb-4 mb-2">
+                        Sag Harbor, NY 11963
+                    </p>
+                    <p class="font-archivo font-normal text-base leading-6 text-darkgreen">
+                        631.731.1099
+                    </p>
+                </div>
+                <div class="lg:w-[58.33%] px-[12px]">
+                    <div class="flex flex-wrap flex-row mx-[-12px]">
+                        <div class="sm:w-[25%] w-[50%] px-[12px] flex lg:justify-end">
+                            <ul>
+                                <li
+                                    class="font-archivo font-semibold text-sm leading-6 text-darkBlack lg:mb-[14px] sm:mb-[5px] mb-[2px]">
+                                    Quick links
+                                </li>
+                                <li class="lg:mb-[14px] mb-[5px]">
+                                    <a href=""
+                                        class="font-archivo font-normal text-sm leading-6 text-darkgreen hover:text-green transition ease-linear duration-300">Home</a>
+                                </li>
+                                <li class="lg:mb-[14px] mb-[5px]">
+                                    <a href=""
+                                        class="font-archivo font-normal text-sm leading-6 text-darkgreen hover:text-green transition ease-linear duration-300">Skin
+                                        Concerns</a>
+                                </li>
+                                <li class="lg:mb-[14px] mb-[5px]">
+                                    <a href=""
+                                        class="font-archivo font-normal text-sm leading-6 text-darkgreen hover:text-green transition ease-linear duration-300">Devices</a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        class="font-archivo font-normal text-sm leading-6 text-darkgreen hover:text-green transition ease-linear duration-300">Treatments</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sm:w-[25%] w-[50%] px-[12px] flex lg:justify-center">
+                            <ul>
+                                <li
+                                    class="font-archivo font-semibold text-sm leading-6 text-darkBlack lg:mb-[14px] mb-[5px]">
+                                    Links
+                                </li>
+                                <li class="lg:mb-[14px] sm:mb-[5px] mb-[2px]">
+                                    <a href=""
+                                        class="font-archivo font-normal text-sm leading-6 text-darkgreen hover:text-green transition ease-linear duration-300">Privacy
+                                        Policy</a>
+                                </li>
+                                <li class="lg:mb-[14px] mb-[5px]">
+                                    <a href=""
+                                        class="font-archivo font-normal text-sm leading-6 text-darkgreen hover:text-green transition ease-linear duration-300">Terms
+                                        of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sm:w-[50%] w-[50%] px-[12px] flex flex-col lg:items-end">
+                            <div class="">
+                                <p
+                                    class="font-archivo font-semibold text-base leading-4 text-darkBlack lg:mb-[18px] mb-[13px] sm:mt-0 mt-5">
+                                    Get in Touch
+                                </p>
+                                <form action="">
+                                    <div class="bg-inputCreamy flex max-w-[320px] w-full justify-between">
+                                        <input type="email" required placeholder="Type your Email"
+                                            class="font-archivo font-normal text-base leading-4 text-darkBlack bg-inputCreamy py-3 px-3 outline-none" />
+                                        <button type="submit"
+                                            class="font-archivo font-medium text-base leading-4 text-white bg-green xl:px-[25px] px-[12px] py-[11.5px] border-2 border-transparent hover:bg-white hover:text-green hover:border-2 hover:border-green transition ease-linear duration-300">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                                <p class="font-archivo font-semibold text-base leading-4 darkBlack mb-4 lg:mt-9 mt-5">
+                                    Let’s Connect
+                                </p>
+                                <div class="flex items-center gap-2">
+                                    <a href="https://www.facebook.com/" target="blank"
+                                        class="w-[30px] h-[30px] rounded-[50%] bg-green flex justify-center items-center hover:bg-darkBlack transition ease-linear duration-300">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.6667 10.2H13.0476L14 7H10.6667V5.4C10.6667 4.576 10.6667 3.8 12.5714 3.8H14V1.112C13.6895 1.0776 12.5171 1 11.279 1C8.69333 1 6.85714 2.3256 6.85714 4.76V7H4V10.2H6.85714V17H10.6667V10.2Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/" target="_blank"
+                                        class="w-[30px] h-[30px] rounded-[50%] bg-green flex justify-center items-center hover:bg-darkBlack transition ease-linear duration-300">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.77143 1.5C10.6152 1.50225 11.0434 1.50675 11.4132 1.51725L11.5587 1.5225C11.7267 1.5285 11.8924 1.536 12.0927 1.545C12.8907 1.5825 13.4352 1.7085 13.9129 1.89375C14.4079 2.08425 14.8249 2.34225 15.2419 2.7585C15.6233 3.13342 15.9184 3.58694 16.1067 4.0875C16.2919 4.56525 16.4179 5.10975 16.4554 5.9085C16.4644 6.108 16.4719 6.27375 16.4779 6.4425L16.4824 6.588C16.4937 6.957 16.4982 7.38525 16.4997 8.229L16.5004 8.7885V9.771C16.5023 10.3181 16.4965 10.8651 16.4832 11.412L16.4787 11.5575C16.4727 11.7262 16.4652 11.892 16.4562 12.0915C16.4187 12.8903 16.2912 13.434 16.1067 13.9125C15.9189 14.4133 15.6238 14.867 15.2419 15.2415C14.8669 15.6227 14.4134 15.9178 13.9129 16.1063C13.4352 16.2915 12.8907 16.4175 12.0927 16.455C11.9147 16.4634 11.7367 16.4709 11.5587 16.4775L11.4132 16.482C11.0434 16.4925 10.6152 16.4978 9.77143 16.4993L9.21193 16.5H8.23018C7.68288 16.5019 7.13558 16.4961 6.58843 16.4827L6.44293 16.4783C6.26489 16.4715 6.08689 16.4638 5.90893 16.455C5.11093 16.4175 4.56643 16.2915 4.08793 16.1063C3.58743 15.9183 3.1341 15.6231 2.75968 15.2415C2.37797 14.8667 2.0826 14.4132 1.89418 13.9125C1.70893 13.4347 1.58293 12.8903 1.54543 12.0915C1.53708 11.9135 1.52958 11.7355 1.52293 11.5575L1.51918 11.412C1.50536 10.8651 1.49911 10.3181 1.50043 9.771V8.229C1.49834 7.68195 1.50384 7.1349 1.51693 6.588L1.52218 6.4425C1.52818 6.27375 1.53568 6.108 1.54468 5.9085C1.58218 5.10975 1.70818 4.566 1.89343 4.0875C2.08177 3.58643 2.37772 3.13277 2.76043 2.7585C3.13475 2.37711 3.58779 2.08199 4.08793 1.89375C4.56643 1.7085 5.11018 1.5825 5.90893 1.545C6.10843 1.536 6.27493 1.5285 6.44293 1.5225L6.58843 1.518C7.13533 1.50467 7.68238 1.49892 8.22943 1.50075L9.77143 1.5ZM9.00043 5.25C8.00587 5.25 7.05204 5.64509 6.34878 6.34835C5.64552 7.05161 5.25043 8.00544 5.25043 9C5.25043 9.99456 5.64552 10.9484 6.34878 11.6517C7.05204 12.3549 8.00587 12.75 9.00043 12.75C9.99499 12.75 10.9488 12.3549 11.6521 11.6517C12.3553 10.9484 12.7504 9.99456 12.7504 9C12.7504 8.00544 12.3553 7.05161 11.6521 6.34835C10.9488 5.64509 9.99499 5.25 9.00043 5.25ZM9.00043 6.75C9.29591 6.74995 9.5885 6.8081 9.8615 6.92113C10.1345 7.03416 10.3826 7.19985 10.5915 7.40874C10.8005 7.61764 10.9663 7.86565 11.0794 8.13862C11.1925 8.41158 11.2508 8.70415 11.2508 8.99963C11.2509 9.2951 11.1927 9.58769 11.0797 9.86069C10.9667 10.1337 10.801 10.3818 10.5921 10.5907C10.3832 10.7997 10.1352 10.9655 9.86219 11.0786C9.58923 11.1917 9.29666 11.25 9.00118 11.25C8.40445 11.25 7.83215 11.0129 7.41019 10.591C6.98824 10.169 6.75118 9.59674 6.75118 9C6.75118 8.40326 6.98824 7.83097 7.41019 7.40901C7.83215 6.98705 8.40445 6.75 9.00118 6.75M12.9387 4.125C12.69 4.125 12.4516 4.22377 12.2758 4.39959C12.1 4.5754 12.0012 4.81386 12.0012 5.0625C12.0012 5.31114 12.1 5.5496 12.2758 5.72541C12.4516 5.90123 12.69 6 12.9387 6C13.1873 6 13.4258 5.90123 13.6016 5.72541C13.7774 5.5496 13.8762 5.31114 13.8762 5.0625C13.8762 4.81386 13.7774 4.5754 13.6016 4.39959C13.4258 4.22377 13.1873 4.125 12.9387 4.125Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-borderGrey"></div>
+        <p class="font-archivo font-normal text-sm leading-4 text-darkBlack sm:py-[22px] py-[17px] text-center">
+            Content ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            Sagaponack Medical PC dba Halsey Dermatology
+        </p>
+
+        <div class="absolute end-0 bottom-0 sm:block hidden">
+            <img class="max-w-[309px]" src="./assets/image/png/footer-leaf.png" alt="footer-leaf" />
+        </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
