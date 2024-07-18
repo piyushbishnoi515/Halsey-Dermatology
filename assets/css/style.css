@@ -241,12 +241,14 @@ select {
 }
 
 /* Footer and HEADER css */
-*{
+* {
     scroll-behavior: smooth;
 }
-.outline-none{
+
+.outline-none {
     outline: none !important;
 }
+
 .cross span:nth-child(1) {
     transform: rotate(58deg) translateY(17px);
     transition: 300ms;
@@ -279,4 +281,99 @@ select {
     height: 50px;
     background: #6E9277;
     padding: 15px 25px 15px 25px;
+}
+
+/* Devices Sections */
+
+@media (min-width:1024px) {
+    .text-vertical {
+        writing-mode: vertical-rl;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+}
+
+.slick-dots li button:before {
+    font-size: 9px !important;
+    line-height: 11px !important;
+    opacity: unset !important;
+    color: #A6CDAF;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 30px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #6E9277;
+}
+
+.slick-dots li.slick-active button:before {
+    position: relative;
+    display: inline-block;
+    width: 18px !important;
+    height: 9px !important;
+    border-radius: 7px !important;
+    margin: 0 2px;
+    padding: 0;
+    background: #6E9277 !important;
+    cursor: pointer;
+}
+
+
+/* treatment options */
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+input[type="range"] {
+    overflow: hidden;
+    width: 100%;
+    max-width: 239px;
+    height: 5px;
+    -webkit-appearance: none;
+    background: #0000001c;
+    border-radius: 262px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    margin-top: -1px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 26px;
+    height: 26px;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    margin-top: -8px;
+    position: relative;
+    z-index: 10;
+    border-radius: 262px;
+    box-shadow: -220px 0 0 200px black;
 }
