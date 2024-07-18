@@ -279,14 +279,13 @@ select {
 }
 
 /* Helix Section Css */
-
 .img-m-w {
     max-width: 226.43px;
     max-height: 226.43px;
 }
 
 .Common_btn {
-    width: 151px;
+    width: 170px;
     height: 50px;
     background: #6E9277;
     padding: 15px 25px 15px 25px;
