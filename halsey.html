@@ -5,24 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halsey Dermatology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/input.css">
     <link rel="stylesheet" href="./src/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                        "xs": "14px",
+                        sm: "16px",
+                        "lg": "40px",
+                        md: "18px",
+                        xl: "25px",
+                        "2x1": "28px",
+                        "3x1": "58px",
+                        "4xl": "48px",
+                        "5x1": "58px",
+                    },
+                    colors: {
+                        gray: "#B9BBBB",
+                        green: "#6E9277",
+                        black: "#000000",
+                        white: "#ffffff",
+                        lite_gray: "#F5F8F6",
+                        gray2: "#4D5852",
+                        liteblack: "#4D5852",
+                        darkgreen: "#48524A",
+                        darkwhite: "#F1EDE2",
+                        clifford: "#da373d",
+                        //   self
+                        darkBlack: "#001008",
+                        inputCreamy: "#DED9CC",
+                        borderGrey: "#CDC9C0",
+                        lightWhite: "#B5BBB7",
+                        borderWhite: "#BABFBA",                // border color light grey
+                        'grey-100': "rgba(0, 16, 8, 0.06)",
+                        // light green color
+                        "green-50": "#F1FFF5"
+                    },
+                    fontFamily: {
+                        archivo: '"Archivo", sans-serif',
+                        kaushan: ' "Kaushan Script", cursive',
+                    }, backgroundImage: {
+                        // added herosection background img
+                        heroBg: "url('./assets/image/png/heroGifImg.gif')",
+                    },
+                    backgroundSize: {
+                        'full': '100% 100%',
+                    },
+                    screens: {
+                        'sm': '576px',
+                    }
+                },
+            },
+        };
+    </script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
+
+        .img-m-w {
+            max-width: 226.43px;
+            max-height: 226.43px;
+        }
+
         .Common_btn {
-            width: 199px;
+            width: 151px;
             height: 50px;
-            background: #FFFFFF1A;
-            border: 1px solid #FFFFFF;
+            background: #6E9277;
             padding: 15px 25px 15px 25px;
         }
     </style>
-    <section class="bg-green h-auto py-14">
-        <div class="container mx-auto my-auto">
+    <!-- <section class="bg-green h-auto py-14">
+        <div class="max-w-[1188px] px-6 mx-auto">
             <div class="flex items-center justify-center text-center gap-4">
                 <span><svg width="60" height="3" viewBox="0 0 60 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="60" height="2" fill="white" />
@@ -39,6 +97,49 @@
                     class="Common_btn text-[18px] font-medium font-archivo text-white flex items-center justify-center text-center hover:bg-white hover:text-green">Message&nbsp;us</button>
                 <button
                     class="Common_btn text-[18px] font-medium font-archivo text-white flex items-center justify-center text-center hover:bg-white hover:text-green">Patient&nbsp;portal</button>
+            </div>
+        </div>
+    </section> -->
+    <section class="h-auto py-14">
+        <div class="max-w-[1188px] px-6 mx-auto">
+            <div class="flex items-center justify-center text-center gap-4">
+                <span><svg width="61" height="2" viewBox="0 0 61 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.359375" width="60" height="2" fill="#6E9277" />
+                    </svg></span>
+                <h2 class="text-[32px] max-sm:text-[20px] font-normal font-kaushan text-green m-0 p-0">treatments</h2>
+                <span><svg width="61" height="2" viewBox="0 0 61 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.359375" width="60" height="2" fill="#6E9277" />
+                    </svg></span>
+            </div>
+            <p class="text-[48px] max-sm:text-[21px] font-semibold font-archivo text-black text-center m-0 p-0">Skin
+                Concerns Addressed</p>
+            <div class="flex items-center justify-center flex-wrap gap-9 max-sm:gap-[0]">
+                <div class="mt-14 max-xl:gap-[0]">
+                    <img src="./assets/image/png/Wrinkles_Img.png" alt="#" class="img-m-w">
+                    <p class="text-[24px] max-sm:text-[20px] font-semibold font-archivo text-black text-center m-0 p-0">
+                        Wrinkles</p>
+                </div>
+                <div class="mt-14 max-xl:gap-[0]">
+                    <img src="./assets/image/png/Dullness_Img.png" alt="#" class="img-m-w">
+                    <p class="text-[24px] max-sm:text-[20px] font-semibold font-archivo text-black text-center m-0 p-0">
+                        Dullness</p>
+                </div>
+                <div class="mt-14 max-xl:gap-[0]">
+                    <img src="./assets/image/png/Skin-laxity_Img.png" alt="#" class="img-m-w">
+                    <p class="text-[24px] max-sm:text-[20px] font-semibold font-archivo text-black text-center m-0 p-0">
+                        Skin laxity</p>
+                </div>
+                <div class="mt-14 max-xl:mt-[0]">
+                    <img src="./assets/image/png/Prejuvenation_Img.png" alt="#" class="img-m-w">
+                    <p class="text-[24px] max-sm:text-[20px] font-semibold font-archivo text-black text-center m-0 p-0">
+                        Prejuvenation</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center flex-wrap gap-5 mt-10">
+                <button
+                    class="Common_btn text-[18px] font-medium font-archivo flex items-center justify-center text-center text-white hover:text-green hover:bg-white hover:border-[#6E9277] hover:border transition-all">BOOK&nbsp;NOW</button>
+                <button
+                    class="Common_btn text-[18px] font-medium font-archivo flex items-center justify-center text-center text-white hover:text-green hover:bg-white hover:border-[#6E9277] hover:border transition-all">MORE</button>
             </div>
         </div>
     </section>
