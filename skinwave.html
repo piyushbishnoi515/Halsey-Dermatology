@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .hero-overlay::after {
             content: '';
@@ -24,6 +30,66 @@
         .hero-overlay>* {
             position: relative;
             z-index: 2;
+        }
+
+        @media (min-width:1024px) {
+            .text-vertical {
+                writing-mode: vertical-rl;
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            list-style-type: none !important;
+            text-decoration: none !important;
+            box-sizing: border-box !important;
+        }
+
+        .slick-dots li button:before {
+            font-size: 9px !important;
+            line-height: 11px !important;
+            opacity: unset !important;
+            color:
+                #A6CDAF;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
+        }
+
+        .slick-dots {
+            bottom: -50px;
+        }
+
+        .slick-dots li button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 30px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+
+            background: transparent;
+        }
+
+        .slick-dots li.slick-active button:before {
+            opacity: .75;
+            color: #6E9277;
+        }
+
+        .slick-dots li.slick-active button:before {
+            position: relative;
+            display: inline-block;
+            width: 18px !important;
+            height: 9px !important;
+            border-radius: 7px !important;
+            margin: 0 2px;
+            padding: 0;
+            background: #6E9277 !important;
+            cursor: pointer;
         }
     </style>
     <script>
@@ -104,8 +170,462 @@
 </head>
 
 <body>
+    <header class="bg-skinConcernBg bg-no-repeat bg-cover relative bg-bottom hero-overlay  max-w-[1920px] mx-auto">
+        <div class="container max-w-[540px] md:max-w-[920px] lg:max-w-[992px] xl:max-w-[1164px] mx-auto px-3">
+            <nav class="h-[80px] flex items-center justify-between">
+                <a href="">
+                    <img class="max-w-[201px]" src="./assets/image/png/hero-logo.png" alt="hero-logo" /></a>
+                <div onclick="openNav()"
+                    class="menuIcon max-md:w-[30px] max-md:h-[30px] max-md:flex max-md:justify-between z-[15] max-md:flex-col max-md:cursor-pointer start-0 transition ease-linear duration-300 hidden">
+                    <span class="max-md:h-[4px] max-md:bg-[white]"></span>
+                    <span class="max-md:h-[4px] max-md:bg-[white]"></span>
+                    <span class="max-md:h-[4px] max-md:bg-[white]"></span>
+                </div>
+                <div onclick="openNav()"
+                    class="menuList max-md:w-full max-md:h-full max-md:min-h-screen max-md:bg-black max-md:justify-center max-md:items-center max-md:flex-col max-md:fixed max-md:top-0 max-md:-right-full max-md:z-[11] transition ease-linear duration-300">
+                    <ul
+                        class="lg:gap-9 gap-7 flex max-md:flex-col max-md:justify-center max-md:items-center max-md:min-h-screen transition ease-linear duration-300">
+                        <li class="relative inline-block group hidden md:block">
+                            <a href=""
+                                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300">Treatments
+                                <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="dropdown"
+                                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white">
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Treatments1
+                                </span>
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">Treatments2
+                                </span>
+                            </a>
+                        </li>
+                        <li class="relative mb-3 md:hidden mb-0">
+                            <button
+                                class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                                data-collapse-target="collapse-1">
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-lightWhite">Treatments</span>
+                                <a class="absolute right-0 pt-1 group-open:opacity-0 text-[25px] leading-[108%]">
+                                    <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="absolute right-0 pt-1 opacity-0  group-open:opacity-100">
+                                    <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </button>
+                            <div data-collapse="collapse-1"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2">
+                                <div class="bg-green flex flex-col border border-white rounded-sm">
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer">Treatments1
+                                    </span>
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer">Treatments2
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative inline-block group hidden md:block">
+                            <a href=""
+                                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 text-nowrap">Skin
+                                Concerns
+                                <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="dropdown"
+                                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white">
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">skin1
+                                </span>
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green">skin2
+                                </span>
+                            </a>
+                        </li>
+                        <li class="relative mb-3 md:hidden mb-0">
+                            <button
+                                class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                                data-collapse-target="collapse-2">
+                                <span class="font-archivo font-[100] text-base leading-4 text-lightWhite">Skin
+                                    Concerns</span>
+                                <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                                <a
+                                    class="absolute right-0 pt-1 opacity-0 group-open:opacity-100 text-[25px] leading-[108%]">
+                                    <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </button>
+                            <div data-collapse="collapse-2"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2">
+                                <div class="bg-green flex flex-col border border-white rounded-sm">
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer">Skin1
+                                    </span>
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer">Skin2
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative inline-block group hidden md:block">
+                            <a href=""
+                                class="font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300">Devices
+                                <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="dropdown"
+                                class="flex-col gap-2 z-[1] absolute hidden group-hover:flex duration-700 w-full items-start bg-green rounded-sm border border-white">
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer">device1
+                                </span>
+                                <span
+                                    class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer">device2
+                                </span>
+                            </a>
+                        </li>
+                        <li class="relative mb-3 md:hidden mb-0">
+                            <button
+                                class="relative flex items-center font-archivo font-[100] text-base leading-4 text-lightWhite flex items-center gap-0.5 hover:text-white transition ease-linear duration-300 transition-all w-full cursor-pointer group"
+                                data-collapse-target="collapse-3">
+                                <span class="font-archivo font-[100] text-base leading-4 text-lightWhite">Devices</span>
+                                <a class="absolute right-0 pt-1 group-open:opacity-0 text-[25px] leading-[108%]">
+                                    <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a
+                                    class="absolute right-0 pt-1 opacity-0 group-open:opacity-100 text-[25px] leading-[108%]">
+                                    <svg class="icon-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M6 8.5L10 12.5L14 8.5" stroke="white" stroke-opacity="0.5"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </button>
+                            <div data-collapse="collapse-3"
+                                class="h-0 overflow-hidden transition-all duration-300 ease-in-out mt-2">
+                                <div class="bg-green flex flex-col border border-white rounded-sm">
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer">Devices1
+                                    </span>
+                                    <span
+                                        class="font-archivo font-[100] text-base leading-4 text-white w-full p-1 hover:bg-white hover:text-green cursor-pointer">Devices2
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button
+                                class="font-archivo font-[300] text-base leading-4 text-white border border-borderWhite py-4 px-6 hover:bg-green hover:border-green md:hidden block transition ease-linear duration-300">
+                                Book Now
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <button
+                    class="font-archivo font-[300] text-base leading-4 text-white border border-borderWhite py-4 px-6 hover:bg-green hover:border-green md:flex hidden transition ease-linear duration-300 text-nowrap">
+                    Book Now
+                </button>
+            </nav>
+        </div>
+    </header>
 
-    <section class="h-auto py-14">
+    <!-- ========nav-bottom======== -->
+
+    <section class="bg-darkwhite h-[53px] flex items-center">
+        <div class="container">
+            <div class="flex items-center gap-7">
+                <div class="flex items-center gap-7">
+                    <p class="font-archivo font-bold text-base leading-7 darkBlack">Skin Concerns</p>
+                    <svg class="cursor-pointer" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.52227 0.5L0 1.91L4.94467 6.5L0 11.09L1.52227 12.5L8 6.5L1.52227 0.5Z"
+                            fill="#001008" />
+                    </svg>
+                </div>
+                <p class="font-archivo font-normal text-base leading-7 text-darkblack">Acne</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- skin wave hero -->
+    <header class=" relative">
+        <div class="container pt-[100px] max-lg:pt-[50px] ">
+            <div class="row flex flex-row mx-[-12px] flex-wrap ">
+                <div class=" w-7/12 max-lg:w-full px-3  ">
+                    <div class="responsive ">
+                        <div class=" !flex !justify-center   ">
+
+                            <img class="w-full max-w-[620px]  border-[1px] border-[#0000001A]"
+                                src="./assets/image/png/skin-wave.webp" alt="skin">
+                        </div>
+                        <div class=" !flex !justify-center   ">
+
+                            <img class="w-full max-w-[620px]  border-[1px] border-[#0000001A]"
+                                src="./assets/image/png/skin-wave.webp" alt="skin">
+                        </div>
+                        <div class=" !flex !justify-center   ">
+
+                            <img class="w-full max-w-[620px]  border-[1px] border-[#0000001A]"
+                                src="./assets/image/png/skin-wave.webp" alt="skin">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-5/12 max-lg:w-full max-lg:pt-[35px] px-3 flex  flex-col justify-center  lg:items-center">
+                    <div class="max-w-[463px] max-lg:max-w-[620px] ">
+                        <img width="177px" src="./assets/image/svg/skin-wave_logo.svg" alt="helixlogo">
+                        <h2
+                            class=" inline font-archivo font-semibold text-4xl max-sm:text-2xl leading-[62.4px] mt-[20px] ">
+                            How Skinwave
+                            Works
+                        </h2>
+                        <p
+                            class=" font-archivo font-normal text-sm mt-[15px] max-lg:mt-[4px] max-sm:text-[14px] leading-[24px] max-sm:leading-[17px] text-darkBlack  opacity-70 ">
+                            The Skinwave elevates hydration-based facials to new levels. Utilizing a dynamic blend of
+                            hydrogen therapy, electroporation, and aqua delivery systems, it deeply cleanses,
+                            exfoliates, and nourishes the skin. This innovative device also infuses antioxidant-rich
+                            solutions, promoting a radiant, healthier-looking complexion. With its gentle yet effective
+                            approach, Skinwave is perfect for all skin types, offering a refreshing and revitalizing
+                            experience with no downtime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" absolute max-lg:hidden z-0 top-[-9%] right-0"><img width="286.69px" class="min-h-[274px]"
+                    src="./assets/image/png/patti_vactor.png" alt="vactor"></div>
+        </div>
+    </header>
+
+    <!-- ===========treatment-options3====== -->
+    <section class="lg:pt-24 md:pt-14 sm:pt-10 pt-8">
+        <div class="container mx-auto px-3">
+            <h3
+                class="font-archivo font-semibold lg:text-5xl sm:text-4xl text-3xl leading-[62px] text-darkBlack lg:pb-12 md:pb-7 sm:pb-3 pb-2 text-center">
+                Treatment Options
+            </h3>
+            <div class="flex max-lg:flex-wrap lg:gap-5 gap-4 justify-center">
+                <div class="group max-w-[271px] w-full">
+                    <p
+                        class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase">
+                        Most Popular
+                    </p>
+                    <div
+                        class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4">
+                        <p
+                            class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]">
+                            Skinwave Deluxe
+                        </p>
+                        <div class="md:mb-8 mb-5">
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase">
+                                    Downtime:
+                                </p>
+                                <p class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase">
+                                    none
+                                </p>
+                            </div>
+                            <input type="range" min="0" class="slider" />
+                        </div>
+                        <div class="blank">
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase">
+                                    Pain Level:
+                                </p>
+                                <p class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase">
+                                    none
+                                </p>
+                            </div>
+                            <input type="range" class="slider" />
+                        </div>
+                        <div class="flex justify-center">
+                            <button
+                                class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group max-w-[271px] w-full">
+                    <p
+                        class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase">
+                        Most Popular
+                    </p>
+                    <div
+                        class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4">
+                        <p
+                            class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px] text-nowrap">
+                            Signature Skinwave
+                        </p>
+                        <div class="md:mb-8 mb-5">
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase">
+                                    Downtime:
+                                </p>
+                                <p class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase">
+                                    minimal
+                                </p>
+                            </div>
+                            <input type="range" min="0" class="slider" />
+                        </div>
+                        <div class="blank">
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase">
+                                    Pain Level:
+                                </p>
+                                <p class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase">
+                                    Moderate
+                                </p>
+                            </div>
+                            <input type="range" class="slider" />
+                        </div>
+                        <div class="flex justify-center">
+                            <button
+                                class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group max-w-[271px] w-full">
+                    <p
+                        class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase">
+                        Most Popular
+                    </p>
+                    <div
+                        class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4">
+                        <p
+                            class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[130px] sm:pb-[85px] pb-[40px]">
+                            Acne Skinwave
+                        </p>
+                        <div class="md:mb-8 mb-5">
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase">
+                                    Downtime:
+                                </p>
+                                <p class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase">
+                                    minimal
+                                </p>
+                            </div>
+                            <input type="range" min="0" class="slider" />
+                        </div>
+                        <div class="blank">
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase">
+                                    Pain Level:
+                                </p>
+                                <p class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase">
+                                    Moderate
+                                </p>
+                            </div>
+                            <input type="range" class="slider" />
+                        </div>
+                        <div class="flex justify-center">
+                            <button
+                                class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group max-w-[271px] w-full">
+                    <p
+                        class="font-archivo font-semibold text-sm leading-[18px] text-white p-3 rounded-t-[4px] bg-green text-center opacity-0 group-hover:opacity-100 transition ease-linear duration-300 mb-[-1px] uppercase">
+                        Most Popular
+                    </p>
+                    <div
+                        class="relative after:absolute after:border-green20 after:border-[1px] after:inset-0 after:rounded-[4px] hover:after:border-[2px] hover:after:border-green hover:after after:z-[-1] hover:after:rounded-t-none transition duration-300 ease-linear max-w-[271px] w-full lg:h-[461px] sm:h-[385px] h-[315px] lg:pt-5 lg:px-4 lg:pb-7 p-4">
+                        <p
+                            class="font-archivo font-semibold md:text-2xl text-lg text-black text-center lg:pb-[99px] md:pb-[30px] sm:pb-[56px] pb-[40px]">
+                            Skinwave with <span class="lg:block">Glide</span>
+                        </p>
+                        <div class="md:mb-8 mb-5">
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase">
+                                    Downtime:
+                                </p>
+                                <p class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase">
+                                    minimal
+                                </p>
+                            </div>
+                            <input type="range" min="0" class="slider" />
+                        </div>
+                        <div class="blank">
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-archivo font-semibold md:text-base text-sm leading-5 text-darkblack uppercase">
+                                    Pain Level:
+                                </p>
+                                <p class="font-archivo font-normal text-sm leading-[18px] text-liteblack uppercase">
+                                    Moderate
+                                </p>
+                            </div>
+                            <input type="range" class="slider" />
+                        </div>
+                        <div class="flex justify-center">
+                            <button
+                                class="font-archivo font-medium text-md leading-5 text-black md:py-3.5 py-2.5 md:px-6 px-3 border-[0.8px] text-black lg:mt-20 sm:mt-12 mt-8 hover:bg-green hover:text-white transition duration-300 ease-linear">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-auto pb-14 pt-[100px]">
         <div class="max-w-[1188px] px-6 mx-auto">
             <div class="flex items-center justify-center text-center gap-4">
                 <span><svg width="61" height="2" viewBox="0 0 61 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,6 +668,7 @@
             </div>
         </div>
     </section>
+
     <!------ FAQ-section --->
     <div class="bg-darkwhite">
         <div class="container py-[40px] lg:py-[80px]">
@@ -481,6 +1002,7 @@
             </div>
         </div>
     </div>
+
     <!-- IMAGE GALLERY SECTION -->
     <section>
         <div class="max-w-[1188px] mx-auto px-3 sm:px-6 py-12 md:py-[100px]">
@@ -548,8 +1070,8 @@
                 all before and after photos</button>
         </div>
     </section>
-    <!-- APPOINTMENT -->
 
+    <!-- APPOINTMENT -->
     <section class=" lg:py-[100px] md:py-[70px] py-10">
         <div class=" container max-w-[1188px] px-6 mx-auto">
             <div class="-mx-3 flex flex-row flex-wrap items-center max-lg:flex-col-reverse ">
@@ -608,7 +1130,7 @@
                                     class=" w-full h-full checkImg hidden">
                             </div>
                             <p
-                                class=" font-archivo labelCheck font-normal text-xs checkBoxText max-w-[494px] opacity-70 pr-3 cursor-pointer">
+                                class=" font-archivo labelCheck font-normal text-xs checkBoxText max-w-[494px] opacity-70 pr-3 cursor-pointer leading-[21px]">
                                 "I
                                 hereby
                                 request to
@@ -641,7 +1163,6 @@
     </section>
 
     <!-- HALSEY SECTION -->
-
     <section class="bg-green h-auto py-14">
         <div class="container mx-auto my-auto">
             <div class="flex items-center justify-center text-center gap-4">
@@ -663,7 +1184,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- ======footer========= -->
     <footer class="bg-darkwhite lg:pt-20 pt-10 relative">
@@ -788,7 +1308,13 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
     <script>
@@ -807,6 +1333,30 @@
                 }
             });
         });
+
+        // Slider
+
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 2000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false,
+
+        });
+
+        // HEADER JS
+        function openNav() {
+            document.querySelector(".menuList").classList.toggle("start-0");
+            document.body.classList.toggle("overflow-hidden");
+            document.querySelector(".menuIcon").classList.toggle("cross");
+        }
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("hidden");
+        }
     </script>
     <script src="./assets/js/app.js"></script>
 </body>
