@@ -23,7 +23,7 @@
     transform: rotate(117deg) translateY(19px);
     transition: 300ms;
     position: relative;
-    top: -1px;
+    top: 1px;
     right: -47%;
 }
 
@@ -241,13 +241,18 @@ select {
 }
 
 /* Footer and HEADER css */
-
+*{
+    scroll-behavior: smooth;
+}
+.outline-none{
+    outline: none !important;
+}
 .cross span:nth-child(1) {
     transform: rotate(58deg) translateY(17px);
     transition: 300ms;
     position: relative;
     top: 7px;
-    right: -47%;
+    right: -50%;
 }
 
 .cross span:nth-child(2) {
