@@ -91,6 +91,16 @@
             background: #6E9277 !important;
             cursor: pointer;
         }
+
+        /* the slides */
+        .slick-slide {
+            margin: 0 -18px;
+        }
+
+        /* the parent */
+        .slick-list {
+            margin: 0 27px;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -400,20 +410,30 @@
             <div class="row flex flex-row-reverse mx-[-12px] flex-wrap ">
                 <div class=" w-7/12 max-lg:w-full px-3  ">
                     <div class="responsive ">
-                        <div class=" !flex !justify-center   ">
+                        <div class="  ">
 
                             <img class="w-full max-w-[620px]  border-[1px] border-[#0000001A]"
-                                src="./assets/image/png/skin-wave.webp" alt="skin">
+                                src="./assets/image/png/Rectangle 11.png" alt="skin">
                         </div>
-                        <div class=" !flex !justify-center   ">
+                        <div class="  ">
 
                             <img class="w-full max-w-[620px]  border-[1px] border-[#0000001A]"
-                                src="./assets/image/png/skin-wave.webp" alt="skin">
+                                src="./assets/image/png/Rectangle 11.png" alt="skin">
                         </div>
-                        <div class=" !flex !justify-center   ">
+                        <div class="  ">
 
                             <img class="w-full max-w-[620px]  border-[1px] border-[#0000001A]"
-                                src="./assets/image/png/skin-wave.webp" alt="skin">
+                                src="./assets/image/png/Rectangle 11.png" alt="skin">
+                        </div>
+                        <div class="  ">
+
+                            <img class="w-full max-w-[620px]  border-[1px] border-[#0000001A]"
+                                src="./assets/image/png/Rectangle 11.png" alt="skin">
+                        </div>
+                        <div class="  ">
+
+                            <img class="w-full max-w-[620px]  border-[1px] border-[#0000001A]"
+                                src="./assets/image/png/Rectangle 11.png" alt="skin">
                         </div>
 
                     </div>
@@ -824,11 +844,12 @@
         $('.responsive').slick({
             dots: true,
             infinite: true,
-            speed: 2000,
+            // speed: 2000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            // autoplay: true,
             arrows: false,
+            variavleWidth: true,
 
         });
         // HEADER JS
